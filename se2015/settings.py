@@ -50,7 +50,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'onlineLearning.urls'
+ROOT_URLCONF = 'se2015.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'onlineLearning.wsgi.application'
+WSGI_APPLICATION = 'se2015.wsgi.application'
 
 
 # Database
