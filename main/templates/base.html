@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>
+      {% block page_title %}
+        Trang chủ
+      {% endblock page_title %}
+    </title>
+  <!-- Boostrap CSS loader -->
+  <link href = "static/css/base.css" rel="stylesheet">
+    {% block extra_head %}
+    {% endblock extra_head %}
+</head>
+
+<body>
+  {% block body_container %}
+  {% endblock body_container %}
+</body>
+</html>
