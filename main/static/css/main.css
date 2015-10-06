@@ -26,10 +26,10 @@
   color: inherit;
 }
 .main-jumbotron h2 {
-	color: #FFFFFF;
+  color: #FFFFFF;
 }
 .main-jumbotron p {
-	color: #FFFFFF;
+  color: #FFFFFF;
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
@@ -38,7 +38,7 @@
   border-top-color: #d5d5d5;
 }
 .container .main-jumbotron{
-	margin-top: 5px;
+  margin-top: 5px;
 },
 .container-fluid .main-jumbotron {
   border-radius: 6px;
@@ -62,25 +62,25 @@
   }
 }
 .main-jumbotron-button {
-	margin: 0px auto;
-	float: right;
+  margin: 0px auto;
+  float: right;
 }
 /*-----------------------------------------------*/
 .main-grade-menu-container {
-	background-color: #FFFFFF;
-	min-height: 50em;
-	border-radius: 10px;
+  background-color: #FFFFFF;
+  min-height: 50em;
+  border-radius: 10px;
 }
 .main-row-list-grades {
-	margin-left:10px; 
-	margin-right:10px; 
-	margin-top:20px; 
-	margin-bottom: 20px;
+  margin-left:10px; 
+  margin-right:10px; 
+  margin-top:20px; 
+  margin-bottom: 20px;
 }
 .main-thumbnai-image {
-	margin-left: 5em;
-	margin-top: 5em;
-	margin-right: 5em;
-	width: 200;
-	height: 200;
+  margin-left: 5em;
+  margin-top: 5em;
+  margin-right: 5em;
+  width: 200;
+  height: 200;
 }
