@@ -1,75 +1,86 @@
-/*--------------------------------------------------------------------*/
-/* navbar */
-.navbar-default {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
+/*-----------------------------------------------*/
+/* jumbotron */
+.main-jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  /* Using image as the background */
+  /* We should use SCSS to replace link of web site, for example
+  linkImage = abc.jpg
+  */
+  /*
+  It's better when we create an gradient bottom up with black color to highlight the text
+  */
+  background: url("http://webcorestudio.com/wp-content/uploads/2009/12/metal-apple-desktop-wallpaper.jpg") no-repeat center center; 
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
-/* title */
-.navbar-default .navbar-brand {
-    color: #777;
+
+.main-jumbotron h1,
+.main-jumbotron .h1 {
+  color: inherit;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #5E5E5E;
+.main-jumbotron h2 {
+	color: #FFFFFF;
 }
-/* link */
-.navbar-default .navbar-nav > li > a {
-    color: #777;
+.main-jumbotron p {
+	color: #FFFFFF;
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #333;
+.main-jumbotron > hr {
+  border-top-color: #d5d5d5;
 }
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #E7E7E7;
+.container .main-jumbotron{
+	margin-top: 5px;
+},
+.container-fluid .main-jumbotron {
+  border-radius: 6px;
 }
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #D5D5D5;
+.main-jumbotron .container {
+  max-width: 100%;
 }
-/* caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
-    border-top-color: #777;
-    border-bottom-color: #777;
+@media screen and (min-width: 768px) {
+  .main-jumbotron {
+    padding-top: 10em;
+    padding-bottom: 5px;
+  }
+  .container .main-jumbotron,
+  .container-fluid .main-jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .main-jumbotron h1,
+  .main-jumbotron .h1 {
+    font-size: 63px;
+  }
 }
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #333;
-    border-bottom-color: #333;
+.main-jumbotron-button {
+	margin: 0px auto;
+	float: right;
 }
-.navbar-default .navbar-nav > .open > a .caret, 
-.navbar-default .navbar-nav > .open > a:hover .caret, 
-.navbar-default .navbar-nav > .open > a:focus .caret {
-    border-top-color: #555;
-    border-bottom-color: #555;
-}
-/* mobile version */
-.navbar-default .navbar-toggle {
-    border-color: #DDD;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #DDD;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #CCC;
-}
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
-    }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
-    }
-}
-/*--------------------------------------------------------------------*/
-.body-background {
-	background-color: #f0f0f0;
+/*-----------------------------------------------*/
+.main-grade-menu-container {
+	background-color: #FFFFFF;
 	min-height: 50em;
+	border-radius: 10px;
+}
+.main-row-list-grades {
+	margin-left:10px; 
+	margin-right:10px; 
+	margin-top:20px; 
+	margin-bottom: 20px;
+}
+.main-thumbnai-image {
+	margin-left: 5em;
+	margin-top: 5em;
+	margin-right: 5em;
+	width: 200;
+	height: 200;
 }
