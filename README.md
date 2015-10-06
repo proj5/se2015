@@ -11,6 +11,8 @@ Framework: Django + AngularJS
 
 How to run
 -----------------------------
+Init Database: sh init.sh
+
 Migrate:   python manage.py migrate
 
 Runserver: python manage.py runserver
