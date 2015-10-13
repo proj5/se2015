@@ -47,8 +47,9 @@ class Skill(models.Model):
 
 
 class Exam(models.Model):
+    grade = models.ForeignKey(Grade, related_name="exams")
     name = models.CharField(max_length=200)
     exercises = models.ManyToManyField(Exercise, blank=True)
 
-    def __unicode(self):
+    def __unicode__(self):
         return self.name

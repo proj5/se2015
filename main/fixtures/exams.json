@@ -1,0 +1,1 @@
+[{"fields": {"grade": 1, "exercises": [1, 2, 3], "name": "Exam 1"}, "model": "exercises.exam", "pk": 1}, {"fields": {"grade": 1, "exercises": [4, 5, 6], "name": "Exam 2"}, "model": "exercises.exam", "pk": 2}]
