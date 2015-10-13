@@ -1,1 +1,1 @@
-[{"fields": {"school": "", "date_of_birth": "2015-10-06", "user": 1, "address": ""}, "model": "users.useraccount", "pk": 1}, {"fields": {"school": "", "date_of_birth": "2015-10-06", "user": 2, "address": ""}, "model": "users.useraccount", "pk": 2}]
+[{"fields": {"school": "", "date_of_birth": "2015-10-06", "user": 1, "address": ""}, "model": "users.account", "pk": 1}, {"fields": {"school": "", "date_of_birth": "2015-10-06", "user": 2, "address": ""}, "model": "users.account", "pk": 2}]
