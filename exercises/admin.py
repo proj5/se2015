@@ -5,13 +5,11 @@ from exercises.models import Grade, Skill, Exercise
 
 class ExerciseAdmin(admin.ModelAdmin):
     fieldsets = [
-        ('Group', {'fields': ['skill']}),
         ('Content', {'fields': ['question', 'answer']}),
         ('Date information', {'fields': ['pub_date']}),
     ]
     list_display = (
         'question',
-        'skill',
         'answer',
         'pub_date'
     )
