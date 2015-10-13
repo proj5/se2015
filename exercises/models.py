@@ -8,7 +8,7 @@ class Grade(models.Model):
     num_skills = models.IntegerField(default=0)
     num_exercises = models.IntegerField(default=0)
 
-    def __str__(self):
+    def __unicode__(self):
         return self.name
 
     def count_num_skills(self):
@@ -25,7 +25,7 @@ class Skill(models.Model):
     name = models.CharField(max_length=200)
     num_exercises = models.IntegerField(default=0)
 
-    def __str__(self):
+    def __unicode__(self):
         return self.name
 
     def count_num_exercises(self):
@@ -42,5 +42,5 @@ class Exercise(models.Model):
         default=timezone.now()
     )
 
-    def __str__(self):
+    def __unicode__(self):
         return self.question
