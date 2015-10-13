@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 /*-----------------------------------------------*/
 /* jumbotron */
 .main-jumbotron {
@@ -14,7 +16,9 @@
   /*
   It's better when we create an gradient bottom up with black color to highlight the text
   */
-  background: url("http://webcorestudio.com/wp-content/uploads/2009/12/metal-apple-desktop-wallpaper.jpg") no-repeat center center; 
+  /*background: url("http://dougleschan.com/singapore-maths-is-fun/wp-content/uploads/2015/02/maths-enrichment13.jpg") no-repeat center center; */
+  background: url("/static/image/cover.jpg") no-repeat center center;
+
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
