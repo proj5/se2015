@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from exercises.models import Grade, Skill, Exercise
+from exercises.models import Grade, Skill, Exercise, Exam
 
 
 class ExerciseAdmin(admin.ModelAdmin):
@@ -18,4 +18,5 @@ class ExerciseAdmin(admin.ModelAdmin):
 
 admin.site.register(Grade)
 admin.site.register(Skill)
+admin.site.register(Exam)
 admin.site.register(Exercise, ExerciseAdmin)

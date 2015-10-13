@@ -44,3 +44,11 @@ class Skill(models.Model):
     def count_num_exercises(self):
         self.num_exercises = self.exercises.all().count()
         return self.num_exercises
+
+
+class Exam(models.Model):
+    name = models.CharField(max_length=200)
+    exercises = models.ManyToManyField(Exercise, blank=True)
+
+    def __unicode(self):
+        return self.name
