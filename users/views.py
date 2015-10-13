@@ -1,4 +1,4 @@
-from rest_framework import permissions, status, views, viewsets
+from rest_framework import permissions, status, viewsets
 from rest_framework.response import Response
 
 from users.models import UserAccount
@@ -26,13 +26,17 @@ class UserAccountViewSet(viewsets.ModelViewSet):
         print(request.data)
 
         if serializer.is_valid():
-            print("OK here")
-            #print(serializer.validated_data)
-            UserAccount.objects.create_user(**serializer.validated_data)
+            data = serializer.validated_data['user']
 
-            return Response(serializer.validated_data, status=status.HTTP_201_CREATED)
-        else:
-            print("Error here")
+            username = data.get('username')
+            email = data.get('email')
+            password = data.get('password')
+
+            UserAccount.objects.create_user(username, email, password,
+                                            **serializer.validated_data)
+
+            return Response(serializer.validated_data,
+                            status=status.HTTP_201_CREATED)
 
         return Response({
             'status': 'Bad request',
