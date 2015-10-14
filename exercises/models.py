@@ -1,6 +1,5 @@
 from django.db import models
 from django.db.models import Sum
-from django.utils import timezone
 
 
 class Grade(models.Model):
@@ -24,8 +23,8 @@ class Exercise(models.Model):
     question = models.CharField(max_length=1000)
     answer = models.CharField(max_length=200)
     pub_date = models.DateTimeField(
-        'published date',
-        default=timezone.now()
+        # 'published date',
+        auto_now_add=True,
     )
 
     def __unicode__(self):

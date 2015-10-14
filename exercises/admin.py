@@ -4,6 +4,7 @@ from exercises.models import Grade, Skill, Exercise, Exam
 
 
 class ExerciseAdmin(admin.ModelAdmin):
+    readonly_fields = ['pub_date']
     fieldsets = [
         ('Content', {'fields': ['question', 'answer']}),
         ('Date information', {'fields': ['pub_date']}),
