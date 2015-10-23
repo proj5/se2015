@@ -1,1 +1,0 @@
-!function(){"use strict";function e(e,t){function r(e,r,s){return t.post("/api/v1/accounts/",{user:{username:s,password:r,email:e}})}var s={register:r};return s}angular.module("se2015.users.services").factory("Authentication",e),e.$inject=["$cookies","$http"]}();

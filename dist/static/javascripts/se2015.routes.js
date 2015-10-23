@@ -1,1 +1,0 @@
-!function(){"use strict";function e(e){e.when("/register",{controller:"RegisterController",controllerAs:"vm",templateUrl:"/static/templates/users/register.html"}).otherwise("/")}angular.module("se2015.routes").config(e),e.$inject=["$routeProvider"]}();

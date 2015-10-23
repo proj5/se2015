@@ -1,1 +1,0 @@
-!function(){"use strict";function e(e){e.defaults.xsrfHeaderName="X-CSRFToken",e.defaults.xsrfCookieName="csrftoken"}angular.module("se2015",["se2015.routes","se2015.users","se2015.config"]),angular.module("se2015").run(e),e.$inject=["$http"],angular.module("se2015.routes",["ngRoute"]),angular.module("se2015.config",[])}();
