@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-
+  
   angular
     .module('se2015.users.controllers')
     .controller('RegisterController', RegisterController);
@@ -18,10 +18,25 @@
     /**
     * @name register
     * @desc Register a new user
-    * @memberOf thinkster.authentication.controllers.RegisterController
+    * @memberOf se2015.users.controllers.RegisterController
     */
     function register() {
-      Authentication.register(vm.email, vm.password, vm.username);
+      Authentication.register(vm.username, vm.email, vm.password);
     }
+
+    activate();
+
+    /**
+     * @name activate
+     * @desc Actions to be performed when this controller is instantiated
+     * @memberOf se2015.users.controllers.RegisterController
+     */
+    function activate() {
+      // If the user is authenticated, they should not be here.
+      if (Authentication.isAuthenticated()) {
+        $location.url('/');
+      }
+    }
+    
   }
 })();

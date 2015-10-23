@@ -1,12 +1,12 @@
 (function () {
   'use strict';
-
+  
   angular
     .module('se2015.routes')
     .config(config);
 
   config.$inject = ['$routeProvider'];
-  window.alert("Route Provider")
+
   /**
   * @name config
   * @desc Define valid application routes
@@ -16,6 +16,15 @@
       controller: 'RegisterController', 
       controllerAs: 'vm',
       templateUrl: '/static/templates/users/register.html'
-    }).otherwise('/');
+    }).when('/login', {
+      controller: 'LoginController',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/users/login.html'
+    }
+    ).when('/main', {
+      templateUrl: '/static/templates/main/main.html'
+    }).when('/admin', {
+      redirectTo: '/'
+    }).otherwise('/main')
   }
 })();

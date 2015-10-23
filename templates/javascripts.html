@@ -2,17 +2,12 @@
 {% load staticfiles %}
 
 {% compress js %}
-<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/bootstrap-material-design/dist/js/material.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/bootstrap-material-design/dist/js/ripples.js' %}"></script>
-<script type="text/javascript" src="{% static 'bower_components/underscore/underscore.js' %}"></script>
 
 <script type="text/javascript" src="{% static 'bower_components/angular/angular.js' %}"></script>
 <script type="text/javascript" src="{% static 'bower_components/angular-route/angular-route.js' %}"></script>
 <script type="text/javascript" src="{% static 'bower_components/angular-cookies/angular-cookies.js' %}"></script>
 
-<script type="text/javascript" src="{% static 'bower_components/ngDialog/js/ngDialog.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/ng-dialog/js/ngDialog.js' %}"></script>
 
 <script type="text/javascript" src="{% static 'javascripts/se2015.js' %}"></script>
 
@@ -21,4 +16,6 @@
 <script type="text/javascript" src="{% static 'javascripts/users/users.module.js' %}"></script>
 <script type="text/javascript" src="{% static 'javascripts/users/services/users.service.js' %}"></script>
 <script type="text/javascript" src="{% static 'javascripts/users/controllers/register.controller.js' %}"></script>
+<script type="text/javascript" src="{% static 'javascripts/users/controllers/login.controller.js' %}"></script>
+
 {% endcompress %}

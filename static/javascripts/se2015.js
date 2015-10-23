@@ -1,12 +1,12 @@
 (function () {
   'use strict';
-
+  
   angular
     .module('se2015', [
+      'se2015.config',
       'se2015.routes',
-      'se2015.users',
-      'se2015.config'
-    ]);
+      'se2015.users'
+  ]);
 
   angular
     .module('se2015')
@@ -29,4 +29,3 @@
   angular
     .module('se2015.config', []);
 })();
-
