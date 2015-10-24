@@ -2,20 +2,14 @@
 <html lang="en" ng-app="se2015">
 <head>
   <meta charset="utf-8">
-  <title>
-
-    {% block page_title %}
-      Trang chủ
-    {% endblock page_title %}
-  </title>
+  <title>Trang chủ</title>
 
   <base href="/" /> 
   
   <!-- Boostrap CSS loader -->
   <link href = "static/css/bootstrap.css" rel="stylesheet">
   <link href = "static/css/base.css" rel="stylesheet">
-  {% block extra_head %}
-  {% endblock extra_head %}
+  <link href = "static/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +37,7 @@
               <li><a href="#">Forum</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Login</a></li>
+              <li><a href="/login">Login</a></li>
             </ul>
           </div>
         </div>
@@ -54,9 +48,7 @@
     <!-- Body -->
     <div class="row">
       <div class="col-md-2"></div>
-      <div class="col-md-8">
-        {% block body_container %}
-        {% endblock body_container %}
+      <div ng-view class="col-md-8">
       </div>
       <div class="col-md-2"></div>
     </div>
@@ -92,5 +84,6 @@
     </div>
     <!-- End footer -->
   </div>
+  {% include 'javascripts.html' %}
 </body>
 </html>
