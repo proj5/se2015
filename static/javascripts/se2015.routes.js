@@ -20,11 +20,23 @@
       controller: 'LoginController',
       controllerAs: 'vm',
       templateUrl: 'static/templates/users/login.html'
-    }
-    ).when('/main', {
+    })
+    .when('/learning', {
+      controller: 'LearningController',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/learning.html'
+    })
+    .when('/learning/:gradeId', {
+      controller: 'QuestionController',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/question.html'
+    })
+    .when('/main', {
       templateUrl: '/static/templates/main/main.html'
-    }).when('/admin', {
+    })
+    .when('/admin', {
       redirectTo: '/'
-    }).otherwise('/main')
+    })
+    .otherwise('/main')
   }
 })();
