@@ -7,4 +7,4 @@ class ExerciseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exercise
         fields = ('id', 'question', 'answer', 'pub_date')
-        read_only_fields = ('id', 'pub_data')
+        read_only_fields = ('id', 'pub_date')
