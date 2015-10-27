@@ -59,11 +59,9 @@ class LoginView(views.APIView):
             if account.is_active:
                 login(request, account)
 
-                print("Here 3")
                 serialized = UserSerializer(account)
 
                 return Response(serialized.data)
-                # return Response({'status': 'OK', 'message': 'Logged in'})
             else:
                 return Response({
                     'status': 'Unauthorized',
