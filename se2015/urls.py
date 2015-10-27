@@ -5,10 +5,13 @@ from rest_framework_nested import routers
 
 from users.views import UserAccountViewSet, LoginView, LogoutView
 from se2015.views import IndexView
+from exercises.views import ExerciseViewSet
 # from main.views import IndexView
 
 router = routers.SimpleRouter()
 router.register(r'accounts', UserAccountViewSet)
+
+router.register(r'exercises', ExerciseViewSet)
 
 urlpatterns = [
     url(r'^api/v1/', include(router.urls)),

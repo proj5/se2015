@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Clear old database
-rm db.sqlite3
+# rm db.sqlite3
 
 # Create new database
 python manage.py migrate

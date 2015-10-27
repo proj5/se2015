@@ -35,9 +35,15 @@
               <li><a href="#">Contest</a></li>
               <li><a href="#">Ranking</a></li>
               <li><a href="#">Forum</a></li>
-            </ul>
+            </ul>s
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/login">Login</a></li>
+              {% if user.is_authenticated %}
+                {{ user.username }}
+              {% else %}
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+
+              {% endif %}
             </ul>
           </div>
         </div>
