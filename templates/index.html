@@ -35,14 +35,14 @@
               <li><a href="#">Contest</a></li>
               <li><a href="#">Ranking</a></li>
               <li><a href="#">Forum</a></li>
-            </ul>s
+            </ul>
             <ul class="nav navbar-nav navbar-right">
               {% if user.is_authenticated %}
-                {{ user.username }}
+                <li class="navbar-username"><a href="#">{{ user.username }}</a></li>
+                <!-- Logout button -->
               {% else %}
                 <li><a href="/login">Login</a></li>
                 <li><a href="/register">Register</a></li>
-
               {% endif %}
             </ul>
           </div>
