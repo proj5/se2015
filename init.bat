@@ -12,6 +12,10 @@ python manage.py migrate
 :: user:user
 python manage.py loaddata auth.json
 python manage.py loaddata users.json
+python manage.py loaddata grades.json
+python manage.py loaddata exercises.json
+python manage.py loaddata skills.json
+python manage.py loaddata exams.json
 
 :: Force check pep8 when commit
 set filename=.git/hooks/pre-commit
