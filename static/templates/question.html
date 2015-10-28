@@ -1,5 +1,5 @@
 <div>
-  <div>
+  <div class="questionDetail">
     {{vm.data.question}}
     <br/>
     Your answer here:
@@ -9,10 +9,10 @@
       <button type="button" class="btn btn-primary" ng-click="vm.change()">Change question</button>        
     </form>
     <div ng-show="vm.submitted">
-      <div ng-show="vm.data.answer == vm.answer">
-        Your answer is correct!
+      <div class="questionCorrect" ng-show="vm.data.answer == vm.answer">
+      Your answer is correct
       </div>
-      <div ng-hide="vm.data.answer == vm.answer">
+      <div class="questionWrong" ng-hide="vm.data.answer == vm.answer">
         Your answer is wrong!
       </div>
     </div>               
