@@ -12,10 +12,16 @@
 * User have to specify gradeID and call the API to retrieve JSON file which contains a question data from server
 * JSON file format
   * "id": "" 
+  * "questionType": "" (questionType is number)   
   * "description": "" 
   * "imagePath": "" 
   * "answer": "" 
 
+* More details about question type:
+  * "1": single-choice question  
+  * "2": multi-choice question
+  * "3": short-answered question
+    
 ---
 **API to get contest questions**
 * User have to specify gradeID and call the API to retrieve a JSON file contains a fixed number of questions
