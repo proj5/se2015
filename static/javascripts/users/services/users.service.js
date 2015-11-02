@@ -7,10 +7,6 @@
 
   Authentication.$inject = ['$cookies', '$http'];
 
-  /**
-  * @namespace Authentication
-  * @returns {Factory}
-  */
   function Authentication($cookies, $http) {
     
     var Authentication = {
@@ -27,7 +23,7 @@
 
     ////////////////////
 
-    /**
+    /*
     * @name register
     * @desc Try to register a new user
     * @param {string} username The username entered by the user
@@ -103,7 +99,6 @@
        */
       function logoutSuccessFn(data, status, headers, config) {
         Authentication.unauthenticate();
-
         window.location = '/';
       }
 
@@ -112,7 +107,7 @@
        * @desc Log "Epic failure!" to the console
        */
       function logoutErrorFn(data, status, headers, config) {
-        console.error('Epic failure!');
+        console.error('Logout Error');
       }
     }
 

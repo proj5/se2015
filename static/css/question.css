@@ -1,0 +1,10 @@
+/* question */
+.questionDetail {
+    font-size: 2em;
+}
+.questionCorrect {
+	color: green;
+}
+.questionWrong {
+	color: red;
+}

@@ -133,7 +133,7 @@ class LoginView(views.APIView):
 class LogoutView(views.APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
-    # Handle POST request to login a user
+    # Handle POST request to logout a user
     def post(self, request, format=None):
         logout(request)
 

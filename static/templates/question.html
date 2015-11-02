@@ -1,0 +1,20 @@
+<div>
+  <div class="questionDetail">
+    {{vm.data.question}}
+    <br/>
+    Your answer here:
+    <form>
+      <input type="text" ng-model="vm.answer" ng-change="vm.submitted = false"></input>
+      <button type="button" class="btn btn-primary" ng-click="vm.submitted = true">Submit</button>
+      <button type="button" class="btn btn-primary" ng-click="vm.change()">Change question</button>        
+    </form>
+    <div ng-show="vm.submitted">
+      <div class="questionCorrect" ng-show="vm.data.answer == vm.answer">
+      Your answer is correct
+      </div>
+      <div class="questionWrong" ng-hide="vm.data.answer == vm.answer">
+        Your answer is wrong!
+      </div>
+    </div>               
+  </div>
+</div>

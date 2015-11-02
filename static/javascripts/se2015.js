@@ -6,7 +6,9 @@
       'se2015.config',
       'se2015.routes',
       'se2015.users',
-      'se2015.profiles'
+      'se2015.profiles',
+      'se2015.layout',
+      'se2015.controllers'
   ]);
 
   angular
@@ -29,4 +31,8 @@
 
   angular
     .module('se2015.config', []);
+    
+  angular.module('se2015.controllers', [
+    'ngResource'
+  ]);
 })();
