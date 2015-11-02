@@ -7,15 +7,8 @@
 
   Authentication.$inject = ['$cookies', '$http'];
 
-  /**
-  * @namespace Authentication
-  * @returns {Factory}
-  */
   function Authentication($cookies, $http) {
-    /**
-    * @name Authentication
-    * @desc The Factory to be returned
-    */
+    
     var Authentication = {
       getAuthenticatedAccount: getAuthenticatedAccount,
       isAuthenticated: isAuthenticated,
@@ -30,22 +23,23 @@
 
     ////////////////////
 
-    /**
+    /*
     * @name register
     * @desc Try to register a new user
     * @param {string} username The username entered by the user
     * @param {string} password The password entered by the user
     * @param {string} email The email entered by the user
     * @returns {Promise}
-    * @memberOf se2015.authentication.services.Authentication
     */
-    function register(username, email, password) {
+    function register(username, email, password, school, class_in_school) {
       return $http.post('/api/v1/accounts/', {
         user:{
           username: username,
           password: password,
           email: email
-        }
+        },
+        school: school,
+        class_in_school: class_in_school
       }).then(registerSuccessFn, registerErrorFn);
 
       /**
@@ -105,7 +99,6 @@
        */
       function logoutSuccessFn(data, status, headers, config) {
         Authentication.unauthenticate();
-
         window.location = '/';
       }
 
@@ -114,7 +107,7 @@
        * @desc Log "Epic failure!" to the console
        */
       function logoutErrorFn(data, status, headers, config) {
-        console.error('Epic failure!');
+        console.error('Logout Error');
       }
     }
 

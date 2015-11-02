@@ -16,7 +16,7 @@
 <body>
   <div class="base-body-background">
     <!-- Nav bar -->
-    <nav role="navigation" class="navbar navbar-default">
+    <nav role="navigation" class="navbar navbar-default" ng-controller="NavbarController as vm">
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -40,7 +40,8 @@
             <ul class="nav navbar-nav navbar-right">
               {% if user.is_authenticated %}
                 <li class="navbar-username"><a href="#">{{ user.username }}</a></li>
-                <li class=""><a href="/">Logout</a></li>
+                <li><a href="/user/{{ user.username }}/settings">Settings</a></li>
+                <li><a href="javascript:void(0)" ng-click="vm.logout()">Logout</a></li>
               {% else %}
                 <li><a href="/login">Login</a></li>
                 <li><a href="/register">Register</a></li>

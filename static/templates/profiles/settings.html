@@ -1,0 +1,35 @@
+<div class="col-md-4 col-md-offset-4">
+  <div class="well" ng-show="vm.profile">
+    <form role="form" class="settings" ng-submit="vm.update()">
+      <div class="form-group">
+        <label for="settings__email">Email</label>
+        <input type="text" class="form-control" id="settings__email" ng-model="vm.profile.user.email" />
+      </div>
+
+      <div class="form-group">
+        <label for="settings__password">New Password</label>
+        <input type="password" class="form-control" id="settings__password" ng-model="vm.profile.user.password" />
+      </div>
+
+      <div class="form-group">
+        <label for="settings__confirm-password">Confirm Password</label>
+        <input type="password" class="form-control" id="settings__confirm-password" ng-model="vm.profile.user.confirm_password" />
+      </div>
+
+      <div class="form-group">
+        <label for="settings__school">School</label>
+        <input type="text" class="form-control" id="settings__school" ng-model="vm.profile.school" />
+      </div>
+
+      <div class="form-group">
+        <label for="settings__class">Class</label>
+        <input type="text" class="form-control" id="settings__class" ng-model="vm.profile.class_in_school" />
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-danger pull-right" ng-click="vm.destroy()">Delete Account</button>
+      </div>
+    </form>
+  </div>
+</div>

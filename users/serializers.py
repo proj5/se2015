@@ -5,10 +5,27 @@ from django.contrib.auth.models import User
 
 
 class UserSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True, required=False)
+    confirm_password = serializers.CharField(write_only=True, required=False)
+
     class Meta:
         model = User
-        fields = ('username', 'email', 'password', 'first_name', 'last_name')
+        fields = ('username', 'email', 'password', 'confirm_password',
+                  'first_name', 'last_name')
         lookup_field = 'username'
+
+    def update(self, instance, validated_data):
+        instance.email = validated_data.get('email', instance.email)
+        instance.save()
+
+        password = validated_data.get('password', None)
+        confirm_password = validated_data.get('confirm_password', None)
+
+        if password and confirm_password and password == confirm_password:
+            instance.set_password(password)
+            instance.save()
+
+        return instance
 
 
 class UserAccountSerializer(serializers.ModelSerializer):
@@ -16,12 +33,7 @@ class UserAccountSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserAccount
-        fields = ('user', 'school', 'class_in_school',
+        fields = ('id', 'user', 'school', 'class_in_school',
                   'created_at', 'updated_at')
 
-        # lookup_field = 'user__username'
         read_only_fields = ('created_at', 'updated_at',)
-
-    def create(self, validated_data):
-        print("Attention Here <--------")
-        return UserAccount.objects.create_user(validated_data)
