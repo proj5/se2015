@@ -12,10 +12,7 @@
   * @returns {Factory}
   */
   function Authentication($cookies, $http) {
-    /**
-    * @name Authentication
-    * @desc The Factory to be returned
-    */
+    
     var Authentication = {
       getAuthenticatedAccount: getAuthenticatedAccount,
       isAuthenticated: isAuthenticated,
@@ -37,15 +34,16 @@
     * @param {string} password The password entered by the user
     * @param {string} email The email entered by the user
     * @returns {Promise}
-    * @memberOf se2015.authentication.services.Authentication
     */
-    function register(username, email, password) {
+    function register(username, email, password, school, class_in_school) {
       return $http.post('/api/v1/accounts/', {
         user:{
           username: username,
           password: password,
           email: email
-        }
+        },
+        school: school,
+        class_in_school: class_in_school
       }).then(registerSuccessFn, registerErrorFn);
 
       /**

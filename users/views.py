@@ -1,19 +1,17 @@
 import json
 
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import update_session_auth_hash
 
-from rest_framework import permissions, status, viewsets, views
+from rest_framework import permissions, status, views
 from rest_framework.response import Response
 
-from users.models import UserAccount
+from users.models import UserAccount, User
 from users.permissions import IsAccountOwner
 from users.serializers import UserAccountSerializer, UserSerializer
 
 
-class UserAccountViewSet(viewsets.ModelViewSet):
-    queryset = UserAccount.objects.all()
-    serializer_class = UserAccountSerializer
-    lookup_field = 'user__username'
+class UserListView(views.APIView):
 
     def get_permissions(self):
         if self.request.method in permissions.SAFE_METHODS:
@@ -22,10 +20,17 @@ class UserAccountViewSet(viewsets.ModelViewSet):
         if self.request.method == 'POST':
             return (permissions.AllowAny(),)
 
-        return (permissions.IsAuthenticated(), IsAccountOwner(),)
+        return (permissions.IsAuthenticated())
 
-    def create(self, request):
-        serializer = self.serializer_class(data=request.data)
+    # Handel GET request to get list of all users
+    def get(self, request, format=None):
+        users = UserAccount.objects.all()
+        serializer = UserAccountSerializer(users, many=True)
+        return Response(serializer.data)
+
+    # Handel POST request to create new users
+    def post(self, request, format=None):
+        serializer = UserAccountSerializer(data=request.data)
 
         if serializer.is_valid():
             data = serializer.validated_data['user']
@@ -46,7 +51,58 @@ class UserAccountViewSet(viewsets.ModelViewSet):
         }, status=status.HTTP_400_BAD_REQUEST)
 
 
+class UserDetailView(views.APIView):
+
+    def get_permissions(self):
+        if self.request.method in permissions.SAFE_METHODS:
+            return (permissions.AllowAny(),)
+
+        return (permissions.IsAuthenticated(), IsAccountOwner(),)
+
+    def get_object(self, username):
+        return UserAccount.objects.get(user__username=username)
+
+    # Handel GET request to get a specific user
+    def get(self, request, username, format=None):
+        user = self.get_object(username)
+        serializer = UserAccountSerializer(user, data=request.data)
+        return Response(serializer.data)
+
+    # Handle PUT request to update user profile
+    def put(self, request, username, format=None):
+        data = UserAccountSerializer(data=request.data).data
+
+        user = User.objects.get(username=username)
+        user_serializer = UserSerializer(user,
+                                         data=data['user'])
+
+        if user_serializer.is_valid():
+            user_serializer.save()
+
+            account = self.get_object(username)
+            account.school = data.get('school')
+            account.class_in_school = data.get('class_in_school')
+            account.save()
+
+            update_session_auth_hash(request, user)
+
+            return Response(UserAccountSerializer(account).data)
+
+        return Response(user_serializer.errors,
+                        status=status.HTTP_400_BAD_REQUEST)
+
+    # Handle DELETE request
+    def delete(self, request, username, format=None):
+        user_account = self.get_object(username)
+        user_account.delete()
+        user = User.objects.get(username=username)
+        user.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
 class LoginView(views.APIView):
+
+    # Handle POST request to login a user
     def post(self, request, format=None):
         data = json.loads(request.body)
 
@@ -77,6 +133,7 @@ class LoginView(views.APIView):
 class LogoutView(views.APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
+    # Handle POST request to login a user
     def post(self, request, format=None):
         logout(request)
 

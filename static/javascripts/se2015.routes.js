@@ -16,15 +16,28 @@
       controller: 'RegisterController', 
       controllerAs: 'vm',
       templateUrl: '/static/templates/users/register.html'
-    }).when('/login', {
+    })
+    .when('/login', {
       controller: 'LoginController',
       controllerAs: 'vm',
       templateUrl: 'static/templates/users/login.html'
-    }
-    ).when('/main', {
+    })
+    .when('/main', {
       templateUrl: '/static/templates/main/main.html'
-    }).when('/admin', {
+    })
+    .when('/admin', {
       redirectTo: '/'
-    }).otherwise('/main')
+    })
+    .when('/user/:username', {
+      controller: 'ProfileController',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/profiles/profile.html'
+    })
+    .when('/user/:username/settings', {
+      controller: 'ProfileSettingsController',
+      controllerAs: 'vm',
+      templateUrl: '/static/templates/profiles/settings.html'
+    })
+    .otherwise('/main')
   }
 })();

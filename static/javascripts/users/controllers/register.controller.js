@@ -15,13 +15,12 @@
 
     vm.register = register;
 
-    /**
+    /*
     * @name register
     * @desc Register a new user
-    * @memberOf se2015.users.controllers.RegisterController
     */
     function register() {
-      Authentication.register(vm.username, vm.email, vm.password);
+      Authentication.register(vm.username, vm.email, vm.password, vm.school, vm.class_in_school);
     }
 
     activate();
