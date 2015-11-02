@@ -1,4 +1,3 @@
-from django.test import TestCase
 from rest_framework.test import APITestCase
 from rest_framework import status
 
@@ -8,7 +7,7 @@ from rest_framework import status
 class AuthenticationTest(APITestCase):
     fixtures = ['auth', 'users']
 
-    def test_login(self):
+    def test_login_success(self):
         url = '/api/v1/auth/login/'
 
         # Success login
@@ -16,11 +15,15 @@ class AuthenticationTest(APITestCase):
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
+    def test_login_wrong_password(self):
+        url = '/api/v1/auth/login/'
         # Wrong password
         data = {'username': 'user', 'password': '123'}
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
+    def test_login_no_account(self):
+        url = '/api/v1/auth/login/'
         # No account
         data = {'username': 'abc', 'password': 'abc'}
         response = self.client.post(url, data, format='json')
