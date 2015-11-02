@@ -21,33 +21,17 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
-            <!--
-            <li class="navbar-username"><a href="/user/{{ user.username }}">{{ user.username }}</a></li>
-            <li><a href="/user/{{ user.username }}/settings">Settings</a></li>
-            <li><a href="javascript:void(0)" ng-click="vm.logout()">Logout</a></li>
-            -->
-            <!--
-            <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id = "dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                {{ user.username }}
+            <div class="dropdown nav navbar-nav navbar-right">
+              <li class="navbar-username dropdown-toggle" type="button" id = "dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <a href="#">{{ user.username }}</a>
                 <span class-"caret"></span>
-              </button>
-            
+              </li>
               <ul class="dropdown-menu" aria-labelledby="dropdownAccount">
                 <li><a href="/user/{{ user.username }}">Profile</a></li>
                 <li><a href="/user/{{ user.username }}/settings">Settings</a></li>
                 <li><a href="javascript:void(0)" ng-click="vm.logout()">Logout</a></li>
               </ul>
             </div>
-            --><div class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
-    <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-    </ul>
-</div>
-
-
           {% else %}
             <li><a href="/login">Login</a></li>
             <li><a href="/register">Register</a></li>
