@@ -1,0 +1,44 @@
+<nav role="navigation" class="navbar navbar-default" ng-controller="NavbarController as vm">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">EasyMath</a>
+      </div>
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/learning">Learning</a></li>
+          <li><a href="#">Contest</a></li>
+          <li><a href="#">Ranking</a></li>
+          <li><a href="#">Forum</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          {% if user.is_authenticated %}
+            <div class="dropdown nav navbar-nav navbar-right">
+              <li class="navbar-username dropdown-toggle" type="button" id = "dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <a href="#">{{ user.username }}</a>
+                <span class-"caret"></span>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="dropdownAccount">
+                <li><a href="/user/{{ user.username }}">Profile</a></li>
+                <li><a href="/user/{{ user.username }}/settings">Settings</a></li>
+                <li><a href="javascript:void(0)" ng-click="vm.logout()">Logout</a></li>
+              </ul>
+            </div>
+          {% else %}
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</nav>
