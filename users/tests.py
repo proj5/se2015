@@ -4,6 +4,29 @@ from rest_framework import status
 # Create your tests here.
 
 
+class UserAccountTest(APITestCase):
+    fixtures = ['auth', 'users']
+
+    def test_get_user_success(self):
+        url = '/api/v1/accounts/user/'
+        response = self.client.get(url)
+
+        # Check status code
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        # Check user data
+        user_data = response.data['user']
+        self.assertEqual(user_data['username'], 'user')
+        self.assertEqual(user_data['email'], 'user@email.com')
+        self.assertEqual(user_data['first_name'], 'User')
+        self.assertEqual(user_data['last_name'], 'Nguyen')
+
+    def test_get_user_fail(self):
+        url = '/api/v1/accounts/abc/'
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+
 class AuthenticationTest(APITestCase):
     fixtures = ['auth', 'users']
 

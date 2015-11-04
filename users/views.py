@@ -64,9 +64,12 @@ class UserDetailView(views.APIView):
 
     # Handel GET request to get a specific user
     def get(self, request, username, format=None):
-        user = self.get_object(username)
-        serializer = UserAccountSerializer(user, data=request.data)
-        return Response(serializer.data)
+        try:
+            user = self.get_object(username)
+            serializer = UserAccountSerializer(user, data=request.data)
+            return Response(serializer.data)
+        except:
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
     # Handle PUT request to update user profile
     def put(self, request, username, format=None):
