@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     'compressor',
     'users',
     'exercises',
+    'records',
 )
 
 MIDDLEWARE_CLASSES = (
