@@ -1,1 +1,1 @@
-[{"fields": {"grade": 1, "exercises": [1, 3], "name": "Addition", "num_exercises": 2}, "model": "exercises.skill", "pk": 1}, {"fields": {"grade": 1, "exercises": [2, 6], "name": "Division", "num_exercises": 2}, "model": "exercises.skill", "pk": 2}]
+[{"fields": {"grade": 1, "name": "Addition", "num_exercises": 3}, "model": "exercises.skill", "pk": 1}, {"fields": {"grade": 1, "name": "Division", "num_exercises": 3}, "model": "exercises.skill", "pk": 2}]
