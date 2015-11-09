@@ -7,8 +7,8 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
+        ('exercises', '0002_auto_20151109_1125'),
         ('users', '0001_initial'),
-        ('exercises', '0001_initial'),
     ]
 
     operations = [
@@ -34,25 +34,6 @@ class Migration(migrations.Migration):
                 ('exam_record', models.ForeignKey(related_name='exercise_records', default=None, blank=True, to='records.ExamRecord', null=True)),
                 ('exercise', models.ForeignKey(related_name='records', to='exercises.Exercise')),
                 ('user', models.ForeignKey(related_name='exercise_records', to='users.UserAccount')),
-            ],
-        ),
-        migrations.CreateModel(
-            name='GradeRecord',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('score', models.IntegerField(default=0)),
-                ('grade', models.ForeignKey(related_name='grade_records', to='exercises.Grade')),
-                ('user', models.ForeignKey(related_name='grade_records', to='users.UserAccount')),
-            ],
-        ),
-        migrations.CreateModel(
-            name='SkillRecord',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('score', models.IntegerField(default=0)),
-                ('exercise_records', models.ManyToManyField(related_name='skill_records', to='records.ExerciseRecord')),
-                ('grade_record', models.ForeignKey(to='records.GradeRecord')),
-                ('skill', models.ForeignKey(to='exercises.Exercise')),
             ],
         ),
     ]
