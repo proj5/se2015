@@ -32,7 +32,6 @@ class AuthenticationTest(APITestCase):
 
     def test_login_success(self):
         url = '/api/v1/auth/login/'
-
         # Success login
         data = {'username': 'user', 'password': 'user'}
         response = self.client.post(url, data, format='json')

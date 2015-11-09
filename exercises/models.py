@@ -19,7 +19,27 @@ class Grade(models.Model):
         return self.num_exercises
 
 
+class Skill(models.Model):
+    grade = models.ForeignKey(Grade, related_name="skills")
+    name = models.CharField(max_length=200)
+    num_exercises = models.IntegerField(default=0)
+
+    def __unicode__(self):
+        return self.name
+
+    def count_num_exercises(self):
+        self.num_exercises = self.exercises.all().count()
+        return self.num_exercises
+
+
 class Exercise(models.Model):
+    skill = models.ForeignKey(
+        Skill,
+        default=None,
+        null=True,
+        blank=True,
+        related_name='exercises'
+    )
     question = models.CharField(max_length=1000)
     answer = models.CharField(max_length=200)
     pub_date = models.DateTimeField(
@@ -29,20 +49,6 @@ class Exercise(models.Model):
 
     def __unicode__(self):
         return self.question
-
-
-class Skill(models.Model):
-    grade = models.ForeignKey(Grade, related_name="skills")
-    name = models.CharField(max_length=200)
-    num_exercises = models.IntegerField(default=0)
-    exercises = models.ManyToManyField(Exercise, blank=True)
-
-    def __unicode__(self):
-        return self.name
-
-    def count_num_exercises(self):
-        self.num_exercises = self.exercises.all().count()
-        return self.num_exercises
 
 
 class Exam(models.Model):
