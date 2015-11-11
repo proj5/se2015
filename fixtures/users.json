@@ -1,1 +1,22 @@
-[{"fields": {"school": "Đại học Công nghệ", "user": 1, "created_at":"2015-10-06T13:25:09.749Z", "updated_at":"2015-10-06T13:25:09.749Z"}, "model": "users.useraccount", "pk": 1}, {"fields": {"school": "ĐHSPHN", "user": 2, "created_at":"2015-10-06T13:26:42.918Z", "updated_at": "2015-10-06T13:26:42.918Z"}, "model": "users.useraccount", "pk": 2}]
+[
+  {
+    "fields": {
+      "created_at": "2015-10-06T13:25:09.749Z", 
+      "school": "\u0110\u1ea1i h\u1ecdc C\u00f4ng ngh\u1ec7", 
+      "updated_at": "2015-10-06T13:25:09.749Z", 
+      "user": 1
+    }, 
+    "model": "users.useraccount", 
+    "pk": 1
+  }, 
+  {
+    "fields": {
+      "created_at": "2015-10-06T13:26:42.918Z", 
+      "school": "\u0110HSPHN", 
+      "updated_at": "2015-10-06T13:26:42.918Z", 
+      "user": 2
+    }, 
+    "model": "users.useraccount", 
+    "pk": 2
+  }
+]
