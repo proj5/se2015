@@ -1,1 +1,1 @@
-[{"fields": {"name": "Grade 1", "num_exercises": 0, "num_skills": 0}, "model": "exercises.grade", "pk": 1}]
+[{"fields": {"name": 1, "num_exercises": 0, "num_skills": 0}, "model": "exercises.grade", "pk": 1}]
