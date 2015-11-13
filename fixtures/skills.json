@@ -3,6 +3,7 @@
     "fields": {
       "grade": 1, 
       "name": "Addition", 
+	  "id_in_grade": 1,
       "num_exercises": 3
     }, 
     "model": "exercises.skill", 
@@ -12,6 +13,7 @@
     "fields": {
       "grade": 1, 
       "name": "Division", 
+	  "id_in_grade": 2,
       "num_exercises": 3
     }, 
     "model": "exercises.skill", 
