@@ -1,1 +1,62 @@
-[{"fields": {"answer": "2", "pub_date": "2015-10-13T12:37:10Z", "skill": 1, "question": "1+1="}, "model": "exercises.exercise", "pk": 1}, {"fields": {"answer": "1", "pub_date": "2015-10-13T12:37:51Z", "skill": 2, "question": "1/1="}, "model": "exercises.exercise", "pk": 2}, {"fields": {"answer": "4", "pub_date": "2015-10-13T12:38:18Z", "skill": 1, "question": "2+2="}, "model": "exercises.exercise", "pk": 3}, {"fields": {"answer": "6", "pub_date": "2015-10-13T12:38:25Z", "skill": 1, "question": "3+3="}, "model": "exercises.exercise", "pk": 4}, {"fields": {"answer": "2", "pub_date": "2015-10-13T12:38:30Z", "skill": 2, "question": "2/1="}, "model": "exercises.exercise", "pk": 5}, {"fields": {"answer": "2", "pub_date": "2015-10-13T12:38:39Z", "skill": 2, "question": "4/2="}, "model": "exercises.exercise", "pk": 6}]
+[
+  {
+    "fields": {
+      "answer": "2", 
+      "pub_date": "2015-10-13T12:37:10Z", 
+      "question": "1+1=", 
+      "skill": 1
+    }, 
+    "model": "exercises.exercise", 
+    "pk": 1
+  }, 
+  {
+    "fields": {
+      "answer": "1", 
+      "pub_date": "2015-10-13T12:37:51Z", 
+      "question": "1/1=", 
+      "skill": 2
+    }, 
+    "model": "exercises.exercise", 
+    "pk": 2
+  }, 
+  {
+    "fields": {
+      "answer": "4", 
+      "pub_date": "2015-10-13T12:38:18Z", 
+      "question": "2+2=", 
+      "skill": 1
+    }, 
+    "model": "exercises.exercise", 
+    "pk": 3
+  }, 
+  {
+    "fields": {
+      "answer": "6", 
+      "pub_date": "2015-10-13T12:38:25Z", 
+      "question": "3+3=", 
+      "skill": 1
+    }, 
+    "model": "exercises.exercise", 
+    "pk": 4
+  }, 
+  {
+    "fields": {
+      "answer": "2", 
+      "pub_date": "2015-10-13T12:38:30Z", 
+      "question": "2/1=", 
+      "skill": 2
+    }, 
+    "model": "exercises.exercise", 
+    "pk": 5
+  }, 
+  {
+    "fields": {
+      "answer": "2", 
+      "pub_date": "2015-10-13T12:38:39Z", 
+      "question": "4/2=", 
+      "skill": 2
+    }, 
+    "model": "exercises.exercise", 
+    "pk": 6
+  }
+]
