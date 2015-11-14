@@ -1,11 +1,20 @@
 [
   {
     "fields": {
-      "name": 1, 
-      "num_exercises": 0, 
-      "num_skills": 0
-    }, 
-    "model": "exercises.grade", 
+      "name": 1,
+      "num_exercises": 7,
+      "num_skills": 2
+    },
+    "model": "exercises.grade",
     "pk": 1
+  },
+  {
+    "fields": {
+      "name": 2,
+      "num_exercises": 6,
+      "num_skills": 2
+    },
+    "model": "exercises.grade",
+    "pk": 2
   }
 ]
