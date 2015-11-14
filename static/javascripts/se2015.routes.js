@@ -25,12 +25,12 @@
     .when('/learning', {
       controller: 'LearningController',
       controllerAs: 'vm',
-      templateUrl: 'static/templates/learning.html'
+      templateUrl: 'static/templates/learning/learning.html'
     })
     .when('/learning/:gradeId', {
       controller: 'QuestionController',
       controllerAs: 'vm',
-      templateUrl: 'static/templates/question.html'
+      templateUrl: 'static/templates/learning/question.html'
     })
     .when('/main', {
       templateUrl: '/static/templates/main/main.html'

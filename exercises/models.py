@@ -3,12 +3,12 @@ from django.db.models import Sum
 
 
 class Grade(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.IntegerField(default=1)
     num_skills = models.IntegerField(default=0)
     num_exercises = models.IntegerField(default=0)
 
     def __unicode__(self):
-        return self.name
+        return str(self.name)
 
     def count_num_skills(self):
         self.num_skills = self.skills.all().count()
@@ -22,6 +22,7 @@ class Grade(models.Model):
 class Skill(models.Model):
     grade = models.ForeignKey(Grade, related_name="skills")
     name = models.CharField(max_length=200)
+    id_in_grade = models.IntegerField(default=1)
     num_exercises = models.IntegerField(default=0)
 
     def __unicode__(self):
