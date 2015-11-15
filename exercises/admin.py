@@ -12,12 +12,37 @@ class ExerciseAdmin(admin.ModelAdmin):
     list_display = (
         'question',
         'answer',
+        'skill',
         'pub_date'
     )
     list_filter = ['pub_date']
     search_fields = ['question']
 
-admin.site.register(Grade)
-admin.site.register(Skill)
-admin.site.register(Exam)
+
+class SkillAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'grade',
+        'num_exercises',
+    )
+
+
+class GradeAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'num_skills',
+        'num_exercises',
+    )
+
+
+class ExamAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'grade'
+    )
+
+
+admin.site.register(Grade, GradeAdmin)
+admin.site.register(Skill, SkillAdmin)
+admin.site.register(Exam, ExamAdmin)
 admin.site.register(Exercise, ExerciseAdmin)

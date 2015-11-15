@@ -1,6 +1,31 @@
+<!--
 <div class="profile" ng-show="vm.profile">
   <div class="jumbotron profile__header">
     <h1 class="profile__username">{{ vm.profile.user.username }}</h1>
     <h2 class="profile__email">{{ vm.profile.user.email }}</h2>
+  </div>
+</div>
+-->
+
+<div class="profile" ng-show="vm.profile">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      {{ vm.profile.user.username }}
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        Avatar should be here
+      </div>
+      <div class="col-md-6 panel-body">
+        <h3 class="user-profile-name">{{ vm.profile.user.last_name }} {{ vm.profile.user.first_name }} </h3>
+        <p>School: {{ vm.profile.school }} </p>
+        <p>Class: {{ vm.profile.class_in_school }} </p>
+        <p>Created at: {{ vm.profile.created_at | date }}
+        <p>Email: {{ vm.profile.user.email }}
+      </div>
+      <div class="col-md-3">
+        Record of user should be here
+      </div>
+    
   </div>
 </div>

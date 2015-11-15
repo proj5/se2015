@@ -4,15 +4,15 @@
     <br/>
     Your answer here:
     <form>
-      <input type="text" ng-model="vm.answer" ng-change="vm.submitted = false"></input>
-      <button type="button" class="btn btn-primary" ng-click="vm.submitted = true">Submit</button>
+      <input type="text" ng-model="vm.userAnswer" ng-change="vm.submitted = false"></input>
+      <button type="button" class="btn btn-primary" ng-click="vm.checkAnswer()">Submit</button>
       <button type="button" class="btn btn-primary" ng-click="vm.change()">Change question</button>        
     </form>
     <div ng-show="vm.submitted">
-      <div class="questionCorrect" ng-show="vm.data.answer == vm.answer">
+      <div class="questionCorrect" ng-show="vm.answerCorrect">
       Your answer is correct
       </div>
-      <div class="questionWrong" ng-hide="vm.data.answer == vm.answer">
+      <div class="questionWrong" ng-hide="vm.answerCorrect">
         Your answer is wrong!
       </div>
     </div>               

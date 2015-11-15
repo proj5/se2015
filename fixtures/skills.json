@@ -1,1 +1,42 @@
-[{"fields": {"grade": 1, "name": "Addition", "num_exercises": 3}, "model": "exercises.skill", "pk": 1}, {"fields": {"grade": 1, "name": "Division", "num_exercises": 3}, "model": "exercises.skill", "pk": 2}]
+[
+  {
+    "fields": {
+      "grade": 1,
+      "id_in_grade": 1,
+      "name": "Ph\u00e9p c\u1ed9ng",
+      "num_exercises": 3
+    },
+    "model": "exercises.skill",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "grade": 2,
+      "id_in_grade": 2,
+      "name": "Ph\u00e9p chia",
+      "num_exercises": 3
+    },
+    "model": "exercises.skill",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "grade": 1,
+      "id_in_grade": 2,
+      "name": "S\u1ed1 l\u1edbn nh\u1ea5t, nh\u1ecf nh\u1ea5t",
+      "num_exercises": 4
+    },
+    "model": "exercises.skill",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "grade": 2,
+      "id_in_grade": 1,
+      "name": "Ph\u00e9p nh\u00e2n",
+      "num_exercises": 3
+    },
+    "model": "exercises.skill",
+    "pk": 4
+  }
+]
