@@ -26,12 +26,7 @@
       controller: 'LearningController',
       controllerAs: 'vm',
       templateUrl: 'static/templates/learning/learning.html'
-    })
-    .when('/learning/:gradeId', {
-      controller: 'SkillController',
-      controllerAs: 'vm',
-      templateUrl: 'static/templates/learning/skill.html'
-    })
+    })    
     .when('/learning/:gradeId/:skillId', {
       controller: 'QuestionController',
       controllerAs: 'vm',

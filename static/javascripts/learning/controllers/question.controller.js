@@ -28,7 +28,7 @@
     vm.change = function() {                           
       vm.url = "api/v1/exercise/" + vm.gradeId + "/" + vm.skillId + "/";
       vm.submitted = false;        
-      vm.userAnswer = "0";            
+      vm.userAnswer = "";            
       vm.answerCorrect = false;
       getExercise();  
     };   

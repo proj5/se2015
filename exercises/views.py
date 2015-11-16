@@ -1,9 +1,9 @@
 from rest_framework import viewsets, permissions, views
 from rest_framework.response import Response
 
-from exercises.models import Exercise, Skill
+from exercises.models import Exercise, Skill, Grade
 from exercises.serializers import ExerciseSerializer, ExerciseAnswerSerializer
-from exercises.serializers import SkillSerializer
+from exercises.serializers import SkillSerializer, GradeSerializer
 from rest_framework.response import Response
 from rest_framework import status
 
@@ -22,11 +22,10 @@ class ExerciseViewSet(viewsets.ModelViewSet):
 
 class ExerciseView(views.APIView):
 
-    def get_permission(self):
+    def get_permissions(self):
         if self.request.method == 'GET':
-            return (permissions.AllowAny(),)
-
-        return False
+            return (permissions.AllowAny(),)        
+        return (permissions.IsAuthenticated(),)
 
     def get(self, request, grade_id, skill_id, format=None):
         skills = Skill.objects.filter(grade__name=grade_id)
@@ -58,13 +57,29 @@ class ExerciseView(views.APIView):
 
 class SkillView(views.APIView):
 
-    def get_permission(self):
+    def get_permissions(self):
         if self.request.method == 'GET':
             return (permissions.AllowAny(),)
+        return (permissions.IsAuthenticated(), )
 
     def get(self, request, grade_id, format=None):
         skills = Skill.objects.filter(grade__name=grade_id)
 
         serializer = SkillSerializer(skills, many=True)
+
+        return Response(serializer.data)
+
+
+class GradeView(views.APIView):
+
+    def get_permissions(self):
+        if self.request.method in 'GET':
+            return (permissions.AllowAny(),)
+        return (permissions.IsAuthenticated(), )
+
+    def get(self, request, format=None):
+        grades = Grade.objects.all()
+
+        serializer = GradeSerializer(grades, many=True)
 
         return Response(serializer.data)

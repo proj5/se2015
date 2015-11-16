@@ -17,21 +17,16 @@
   <div class="col-md-3">
     <div class="list-group">
       <p class="list-group-item disabled">Lớp</p>
-      <a href="/learning/{{ vm.gradeId }}" class="list-group-item">Lớp {{vm.gradeId}}</a>
-      <a href="/learning/{{ vm.gradeId }}" class="list-group-item">Lớp {{vm.gradeId}}</a>
-      <a href="/learning/{{ vm.gradeId }}" class="list-group-item">Lớp {{vm.gradeId}}</a>
-      <a href="/learning/{{ vm.gradeId }}" class="list-group-item">Lớp {{ vm.gradeId}}</a>
+      <div ng-repeat="grade in vm.grades track by $index">
+        <p class="list-group-item" ng-click="vm.currentGrade = grade; vm.switchGrade()">Lớp {{grade.name}}</p>
+      </div>      
     </div>
   </div>
   <div class="col-md-9">
     <div class="well">
-      <h2>Lớp {{ vm.gradeId }}</h2>
-      List skill hiện ở đây này hihihihi
-      <ul>
-        <li><a href="">Cộng</a></li>
-        <li><a href="">Trừ</a></li>
-        <li><a href="">Nhân</a></li>
-        <li><a href="">Chia</a></li>
+      <h2>Lớp {{ vm.currentGrade.name }}</h2>      
+      <ul ng-repeat="skill in vm.skills track by $index">
+        <li><a href="/learning/{{vm.currentGrade.id}}/{{skill.id_in_grade}}">{{skill.name}}</a></li>        
       </ul>
     </div>
   </div>
