@@ -34,4 +34,5 @@ class ExerciseRecord(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return self.exercise.__unicode__() + ' ' + self.answer
+        return self.user.__unicode__() + ' ' + self.exercise.__unicode__() + \
+            ' ' + self.answer
