@@ -1,3 +1,4 @@
+<!--
 <div>
   <div class="questionDetail">
     {{vm.data.question}}
@@ -10,11 +11,46 @@
     </form>
     <div ng-show="vm.submitted">
       <div class="questionCorrect" ng-show="vm.answerCorrect">
-      Your answer is correct
+        Your answer is correct
       </div>
       <div class="questionWrong" ng-hide="vm.answerCorrect">
         Your answer is wrong!
       </div>
     </div>               
+  </div>
+</div> 
+-->
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <ol class="question-breadcrumb">
+      <li><a href="#">Lớp {{ vm.data.skill.grade.name }}</a></li>
+      <li><a href="#">{{ vm.data.skill.name }}</a></li>
+    </ol>
+  </div>
+  <div class="panel-body">
+    <div class="question-Detail well">
+      <p class="question-Require"> Trả lời câu hỏi sau: </p>
+      <p class="question-Text"> {{ vm.data.question }} </p>
+    </div>
+    <div class="question-Answer-Container">
+      <form>
+        <input type="text" ng-model="vm.userAnswer" ng-change="vm.submitted = false"></input>
+        <button type="button" class="btn-md btn-primary" ng-click="vm.checkAnswer()">Nộp bài</button>
+        <button type="button" class="btn-md btn-primary" ng-click="vm.change()">Đổi câu hỏi</button>        
+      </form>
+    </div>
+    <div class="question-alert-after-submit">
+      <div ng-show="vm.submitted">
+        <p></p>
+        <div ng-show="vm.answerCorrect">
+          <div class="alert alert-success" role="alert">Bé trả lời đúng rồi, chúc mừng bé!</div>
+        </div>
+        <div class="question-Wrong" ng-hide="vm.answerCorrect">
+          <div class="alert alert-danger" role="alert">Bé trả lời sai mất rồi, làm lại nhé!</div>
+        </div>
+      </div> 
+    </div>
+
   </div>
 </div>
