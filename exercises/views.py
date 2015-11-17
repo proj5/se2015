@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from exercises.models import Exercise, Skill, Grade
 from exercises.serializers import ExerciseSerializer, ExerciseAnswerSerializer
 from exercises.serializers import SkillSerializer, GradeSerializer
+from records.models import ExerciseRecord
 from rest_framework.response import Response
 from rest_framework import status
 
@@ -24,7 +25,7 @@ class ExerciseView(views.APIView):
 
     def get_permissions(self):
         if self.request.method == 'GET':
-            return (permissions.AllowAny(),)        
+            return (permissions.AllowAny(),)
         return (permissions.IsAuthenticated(),)
 
     def get(self, request, grade_id, skill_id, format=None):
@@ -47,9 +48,20 @@ class ExerciseView(views.APIView):
         serializer = ExerciseAnswerSerializer(exercise, data=request.data)
 
         if serializer.is_valid():
+            # Save record
+            record = ExerciseRecord(
+                exercise=exercise,
+                answer=request.data.get('answer'),
+                user=request.user.profile
+            )
+
             if request.data.get('answer') == exercise.answer:
+                record.score = 10
+                record.save()
                 return Response(True)
             else:
+                record.score = 0
+                record.save()
                 return Response(False)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

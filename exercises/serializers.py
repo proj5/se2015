@@ -6,6 +6,7 @@ from exercises.models import Grade
 
 
 class ExerciseSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Exercise
         fields = ('id', 'question', 'answer', 'pub_date')
@@ -13,6 +14,7 @@ class ExerciseSerializer(serializers.ModelSerializer):
 
 
 class ExerciseAnswerSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Exercise
         fields = ('id', 'answer')
@@ -20,6 +22,7 @@ class ExerciseAnswerSerializer(serializers.ModelSerializer):
 
 
 class SkillSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Skill
         fields = ('name', 'id_in_grade')
@@ -27,6 +30,7 @@ class SkillSerializer(serializers.ModelSerializer):
 
 
 class GradeSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Grade
         fields = ('id', 'name')
