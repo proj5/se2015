@@ -12,7 +12,6 @@ class ExerciseRecordView(views.APIView):
         return (permissions.IsAuthenticated(),)
 
     def get(self, request, username):
-        print username
         records = ExerciseRecord.objects.filter(user__user__username=username)
         count_correct_answer = 0
         count_wrong_answer = 0
