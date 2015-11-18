@@ -5,7 +5,6 @@ from exercises.models import Exercise, Skill, Grade
 from exercises.serializers import ExerciseSerializer, ExerciseAnswerSerializer
 from exercises.serializers import SkillSerializer, GradeSerializer
 from records.models import ExerciseRecord
-from rest_framework.response import Response
 from rest_framework import status
 
 from random import randint
