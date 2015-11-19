@@ -7,6 +7,7 @@ from users.views import UserListView, LoginView, LogoutView, UserDetailView
 from se2015.views import IndexView
 
 from exercises.views import ExerciseViewSet, ExerciseView, SkillView, GradeView
+from records.views import ExerciseRecordView
 
 
 router = routers.SimpleRouter()
@@ -18,6 +19,9 @@ urlpatterns = [
     url(r'^api/v1/exercise/(?P<grade_id>.+)/$', SkillView.as_view()),
     url(r'^api/v1/grades/$', GradeView.as_view()),
     url(r'^api/v1/', include(router.urls)),
+    url(r'^api/v1/accounts/records/(?P<username>.+)/$',
+        ExerciseRecordView.as_view(),
+        name='recordDetail'),
     url(r'^api/v1/accounts/(?P<username>.+)/$', UserDetailView.as_view(),
         name='detail'),
     url(r'^api/v1/accounts/', UserListView.as_view(), name='list'),
