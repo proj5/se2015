@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('se2015.profiles.controllers')
+    .module('se2015.profiles.controllers', ['chart.js'])
     .controller('ProfileController', ProfileController);
 
   ProfileController.$inject = ['$location', '$routeParams', 'Profile', '$http'];
@@ -14,6 +14,8 @@
 
     activate();
     getRecord();
+
+    vm.labels = ["Đúng", "Sai"];
 
     /*
     * @desc Actions to be performed when this controller is instantiated
@@ -46,6 +48,7 @@
         vm.count_correct_answer = response.data.count_correct_answer;
         vm.count_wrong_answer = response.data.count_wrong_answer;
         vm.total_record = response.data.total_record;
+        vm.dataChart = [vm.count_correct_answer, vm.count_wrong_answer]
       }, function errorCallback(response) {
         console.log("Error");
       });
