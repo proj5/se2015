@@ -20,8 +20,6 @@
     }
 
     vm.isActive = function (currentLocation) {
-      console.log(currentLocation);
-      console.log($location.path());
       return currentLocation === $location.path();
     }
   }
