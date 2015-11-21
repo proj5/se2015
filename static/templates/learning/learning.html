@@ -18,7 +18,12 @@
     <div class="list-group">
       <p class="list-group-item disabled">Lớp</p>
       <div ng-repeat="grade in vm.grades track by $index">
-        <p class="list-group-item" ng-click="vm.currentGrade = grade; vm.switchGrade()">Lớp {{grade.name}}</p>
+        <div ng-if="vm.currentGrade == grade">
+          <a class="list-group-item active" ng-click="vm.currentGrade = grade; vm.switchGrade()">Lớp {{grade.name}}</a>  
+        </div>
+        <div ng-if="vm.currentGrade != grade">
+          <a class="list-group-item" ng-click="vm.currentGrade = grade; vm.switchGrade()">Lớp {{grade.name}}</a>  
+        </div>
       </div>      
     </div>
   </div>

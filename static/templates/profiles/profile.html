@@ -26,9 +26,13 @@
       <div class="col-md-4">
         <h3 class="user-statistic">Thông số</h3>
         <p>Tổng điểm: {{ vm.total_score }}</p>
-        <p>Số lần trả lời đúng: {{ vm.count_correct_answer }}</p>
+        <!--<p>Số lần trả lời đúng: {{ vm.count_correct_answer }}</p>
         <p>Số lần trả lời sai: {{ vm.count_wrong_answer }}</p>
-        <p>Phần trăm làm đúng: {{ (vm.count_correct_answer/(vm.total_record))*100 }} %</p>
+        <p>Phần trăm làm đúng: {{ (vm.count_correct_answer/(vm.total_record))*100 }} %</p>-->
+        <canvas id="pie" class="chart chart-pie"
+          chart-data="vm.dataChart" chart-labels="vm.labels">
+        </canvas> 
+        <p style="text-align: center">Biểu đồ phần trăm câu làm đúng</p>
       </div>
     
   </div>

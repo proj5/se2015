@@ -5,9 +5,9 @@
     .module('se2015.layout.controllers')
     .controller('NavbarController', NavbarController);
 
-  NavbarController.$inject = ['$scope', 'Authentication'];
+  NavbarController.$inject = ['$scope', 'Authentication', '$location'];
 
-  function NavbarController($scope, Authentication) {
+  function NavbarController($scope, Authentication, $location) {
     var vm = this;
 
     vm.logout = logout;
@@ -17,6 +17,10 @@
     */
     function logout() {
       Authentication.logout();
+    }
+
+    vm.isActive = function (currentLocation) {
+      return currentLocation === $location.path();
     }
   }
 })();
