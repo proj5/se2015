@@ -1,5 +1,5 @@
 from django.db import models
-from exercises.models import Grade, Exercise, Skill, Exam
+from exercises.models import Exercise, Exam
 from users.models import UserAccount
 
 # Create your models here.
@@ -28,11 +28,26 @@ class ExerciseRecord(models.Model):
     )
     user = models.ForeignKey(UserAccount, related_name='exercise_records')
 
-    answer = models.CharField(max_length=200)
     score = models.IntegerField(default=0)
     done_time = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
-        return self.user.__unicode__() + ' ' + self.exercise.__unicode__() + \
-            ' ' + self.answer
+        str = self.user.__unicode__() + ' ' + self.exercise.__unicode__() + ' '
+        for string in self.answer.all():
+            str + string.__unicode__() + ' '
+        return str
+
+
+class UserAnswerRecord(models.Model):
+    exercise_record = models.ForeignKey(
+        ExerciseRecord,
+        default=None,
+        null=True,
+        blank=True,
+        related_name='answer'
+    )
+    answer = models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return self.answer

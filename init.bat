@@ -17,6 +17,7 @@ python manage.py loaddata skills.json
 python manage.py loaddata exercises.json
 python manage.py loaddata exams.json
 python manage.py loaddata records.json
+python manage.py loaddata possible_answer.json
 
 :: Force check pep8 when commit
 set filename=.git/hooks/pre-commit

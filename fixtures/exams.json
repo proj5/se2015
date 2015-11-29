@@ -1,28 +1,46 @@
 [
-  {
-    "fields": {
-      "grade": 1,
-      "exercises": [
-        1,
-        3,
-        8
-      ],
-      "name": "Exam 1"
-    },
-    "model": "exercises.exam",
-    "pk": 1
+{
+  "fields": {
+    "grade": 1,
+    "time_limit": 270,
+    "exercises": [
+      1,
+      3,
+      8
+    ],
+    "name": "Exam 1",
+    "num_exercises": 3
   },
-  {
-    "fields": {
-      "grade": 1,
-      "exercises": [
-        4,
-        7,
-        9
-      ],
-      "name": "Exam 2"
-    },
-    "model": "exercises.exam",
-    "pk": 2
-  }
+  "model": "exercises.exam",
+  "pk": 1
+},
+{
+  "fields": {
+    "grade": 1,
+    "time_limit": 360,
+    "exercises": [
+      4,
+      7,
+      9,
+      14
+    ],
+    "name": "Exam 2",
+    "num_exercises": 4
+  },
+  "model": "exercises.exam",
+  "pk": 2
+},
+{
+  "fields": {
+    "grade": 3,
+    "time_limit": 90,
+    "exercises": [
+      16
+    ],
+    "name": "Exam 3",
+    "num_exercises": 1
+  },
+  "model": "exercises.exam",
+  "pk": 3
+}
 ]

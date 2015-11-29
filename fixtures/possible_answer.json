@@ -1,0 +1,74 @@
+[
+{
+  "fields": {
+    "possible_answer": "2",
+    "is_correct_answer": false,
+    "exercise": 14
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 1
+},
+{
+  "fields": {
+    "possible_answer": "4",
+    "is_correct_answer": false,
+    "exercise": 14
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 2
+},
+{
+  "fields": {
+    "possible_answer": "8",
+    "is_correct_answer": false,
+    "exercise": 14
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 3
+},
+{
+  "fields": {
+    "possible_answer": "10",
+    "is_correct_answer": true,
+    "exercise": 14
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 4
+},
+{
+  "fields": {
+    "possible_answer": "3 * 4",
+    "is_correct_answer": true,
+    "exercise": 16
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 5
+},
+{
+  "fields": {
+    "possible_answer": "4 / 3",
+    "is_correct_answer": false,
+    "exercise": 16
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 6
+},
+{
+  "fields": {
+    "possible_answer": "2 + 4",
+    "is_correct_answer": false,
+    "exercise": 16
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 7
+},
+{
+  "fields": {
+    "possible_answer": "20 - 8",
+    "is_correct_answer": true,
+    "exercise": 16
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 8
+}
+]
