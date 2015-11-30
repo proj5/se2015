@@ -45,7 +45,7 @@ class ExerciseTest(APITestCase):
 
         self.assertEqual(response.data, False)
 
-    def test_post_answer_multiple_choice(self):
+    def test_post_answer_multiple_choice_correct(self):
         url = '/api/v1/auth/login/'
         # Success login
         data = {'username': 'user', 'password': 'user'}
@@ -61,6 +61,12 @@ class ExerciseTest(APITestCase):
         })
         self.assertEqual(response.data, True)
 
+    def test_post_answer_multiple_choice_too_many_answers(self):
+        url = '/api/v1/auth/login/'
+        # Success login
+        data = {'username': 'user', 'password': 'user'}
+        response = self.client.post(url, data, format='json')
+
         url = '/api/v1/exercise/3/1/'
         response = self.client.post(url, {
             "id": 16,
@@ -72,7 +78,7 @@ class ExerciseTest(APITestCase):
         })
         self.assertEqual(response.data, False)
 
-    def test_post_exam(self):
+    def test_post_exam_correct(self):
         url = '/api/v1/auth/login/'
         # Success login
         data = {'username': 'user', 'password': 'user'}
@@ -88,16 +94,6 @@ class ExerciseTest(APITestCase):
         })
         self.assertEqual(response.data, 1)
 
-        url = '/api/exam/3/'
-        response = self.client.post(url, {
-            "id": 3,
-            "exercises": [
-                {"id": 16, "answer": ["3 * 4", "20 - 8", "2 + 4"]}
-            ],
-            "done_time": 80
-        })
-        self.assertEqual(response.data, 0)
-
         url = '/api/exam/2/'
         response = self.client.post(url, {
             "id": 2,
@@ -110,3 +106,19 @@ class ExerciseTest(APITestCase):
             "done_time": 250
         })
         self.assertEqual(response.data, 4)
+
+    def test_post_exam_wrong_too_many_answers(self):
+        url = '/api/v1/auth/login/'
+        # Success login
+        data = {'username': 'user', 'password': 'user'}
+        response = self.client.post(url, data, format='json')
+
+        url = '/api/exam/3/'
+        response = self.client.post(url, {
+            "id": 3,
+            "exercises": [
+                {"id": 16, "answer": ["3 * 4", "20 - 8", "2 + 4"]}
+            ],
+            "done_time": 80
+        })
+        self.assertEqual(response.data, 0)
