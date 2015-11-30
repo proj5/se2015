@@ -66,7 +66,7 @@ class UserDetailView(views.APIView):
     def get(self, request, username, format=None):
         try:
             user = self.get_object(username)
-            serializer = UserAccountSerializer(user, data=request.data)
+            serializer = UserAccountSerializer(user)
             return Response(serializer.data)
         except:
             return Response(status=status.HTTP_404_NOT_FOUND)
