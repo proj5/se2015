@@ -1,8 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
-
 
 class UserAccountManager(models.Manager):
     def create_user(self, username, email, password, **kwargs):
@@ -28,6 +26,12 @@ class UserAccountManager(models.Manager):
 
 class UserAccount(models.Model):
     user = models.OneToOneField(User, related_name='profile')
+
+    avatar = models.ImageField(
+        upload_to='static/img/',
+        default='static/img/default.jpg'
+    )
+    facebook_id = models.CharField(max_length=200, null=True, blank=True)
 
     # date_of_birth = models.DateField(null=True, blank=True)
     school = models.CharField(max_length=50, null=True, blank=True)

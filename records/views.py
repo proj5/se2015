@@ -1,7 +1,22 @@
 from rest_framework import permissions, views
 from rest_framework.response import Response
 
-from records.models import ExerciseRecord
+from records.models import ExerciseRecord, ExamRecord
+from records.serializers import ExamRecordSerializer
+
+
+class ExamRecordView(views.APIView):
+
+    def get_permissions(self):
+        if self.request.method == 'GET':
+            return (permissions.AllowAny(),)
+        return (permissions.IsAuthenticated(),)
+
+    def get(self, request, exam_id):
+        # Each exam record has primary key (exam, user) so need to use filter
+        records = ExamRecord.objects.filter(exam__id=exam_id).all()
+        serializer = ExamRecordSerializer(records, many=True)
+        return Response(serializer.data)
 
 
 class ExerciseRecordView(views.APIView):

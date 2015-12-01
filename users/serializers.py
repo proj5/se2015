@@ -33,7 +33,18 @@ class UserAccountSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserAccount
-        fields = ('id', 'user', 'school', 'class_in_school',
-                  'created_at', 'updated_at')
+        fields = (
+            'id', 'user', 'school', 'class_in_school',
+            # enable this line when client update this
+            # 'facebook_id', 'avatar',
+            'created_at', 'updated_at'
+        )
 
         read_only_fields = ('created_at', 'updated_at',)
+
+
+class AvatarSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = UserAccount
+        fields = ('avatar',)
