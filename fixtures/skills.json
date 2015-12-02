@@ -1,42 +1,62 @@
 [
-  {
-    "fields": {
-      "grade": 1,
-      "id_in_grade": 1,
-      "name": "Ph\u00e9p c\u1ed9ng",
-      "num_exercises": 3
-    },
-    "model": "exercises.skill",
-    "pk": 1
+{
+  "fields": {
+    "grade": 1,
+    "id_in_grade": 1,
+    "name": "Ph\u00e9p c\u1ed9ng hai s\u1ed1 c\u00f3 m\u1ed9t ch\u1eef s\u1ed1",
+    "num_exercises": 4
   },
-  {
-    "fields": {
-      "grade": 2,
-      "id_in_grade": 2,
-      "name": "Ph\u00e9p chia",
-      "num_exercises": 3
-    },
-    "model": "exercises.skill",
-    "pk": 2
+  "model": "exercises.skill",
+  "pk": 1
+},
+{
+  "fields": {
+    "grade": 2,
+    "id_in_grade": 2,
+    "name": "Ph\u00e9p chia",
+    "num_exercises": 3
   },
-  {
-    "fields": {
-      "grade": 1,
-      "id_in_grade": 2,
-      "name": "S\u1ed1 l\u1edbn nh\u1ea5t, nh\u1ecf nh\u1ea5t",
-      "num_exercises": 4
-    },
-    "model": "exercises.skill",
-    "pk": 3
+  "model": "exercises.skill",
+  "pk": 2
+},
+{
+  "fields": {
+    "grade": 1,
+    "id_in_grade": 2,
+    "name": "S\u1ed1 l\u1edbn nh\u1ea5t, nh\u1ecf nh\u1ea5t",
+    "num_exercises": 4
   },
-  {
-    "fields": {
-      "grade": 2,
-      "id_in_grade": 1,
-      "name": "Ph\u00e9p nh\u00e2n",
-      "num_exercises": 3
-    },
-    "model": "exercises.skill",
-    "pk": 4
-  }
+  "model": "exercises.skill",
+  "pk": 3
+},
+{
+  "fields": {
+    "grade": 2,
+    "id_in_grade": 1,
+    "name": "Ph\u00e9p nh\u00e2n",
+    "num_exercises": 3
+  },
+  "model": "exercises.skill",
+  "pk": 4
+},
+{
+  "fields": {
+    "grade": 1,
+    "id_in_grade": 3,
+    "name": "Th\u1eddi gian",
+    "num_exercises": 1
+  },
+  "model": "exercises.skill",
+  "pk": 5
+},
+{
+  "fields": {
+    "grade": 3,
+    "id_in_grade": 1,
+    "name": "Ph\u00e9p to\u00e1n cho k\u1ebft qu\u1ea3 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng",
+    "num_exercises": 1
+  },
+  "model": "exercises.skill",
+  "pk": 6
+}
 ]

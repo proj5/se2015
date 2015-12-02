@@ -1,132 +1,194 @@
 [
-  {
-    "fields": {
-      "answer": "2",
-      "pub_date": "2015-10-13T12:37:10Z",
-      "skill": 1,
-      "question": "1+1="
-    },
-    "model": "exercises.exercise",
-    "pk": 1
+{
+  "fields": {
+    "image": "",
+    "question": "1+1=",
+    "question_type": "AN",
+    "answer": "2",
+    "skill": 1,
+    "pub_date": "2015-10-13T12:37:10Z"
   },
-  {
-    "fields": {
-      "answer": "1",
-      "pub_date": "2015-10-13T12:37:51Z",
-      "skill": 2,
-      "question": "1/1="
-    },
-    "model": "exercises.exercise",
-    "pk": 2
+  "model": "exercises.exercise",
+  "pk": 1
+},
+{
+  "fields": {
+    "image": "",
+    "question": "1/1=",
+    "question_type": "AN",
+    "answer": "1",
+    "skill": 2,
+    "pub_date": "2015-10-13T12:37:51Z"
   },
-  {
-    "fields": {
-      "answer": "4",
-      "pub_date": "2015-10-13T12:38:18Z",
-      "skill": 1,
-      "question": "2+2="
-    },
-    "model": "exercises.exercise",
-    "pk": 3
+  "model": "exercises.exercise",
+  "pk": 2
+},
+{
+  "fields": {
+    "image": "",
+    "question": "2+2=",
+    "question_type": "AN",
+    "answer": "4",
+    "skill": 1,
+    "pub_date": "2015-10-13T12:38:18Z"
   },
-  {
-    "fields": {
-      "answer": "6",
-      "pub_date": "2015-10-13T12:38:25Z",
-      "skill": 1,
-      "question": "3+3="
-    },
-    "model": "exercises.exercise",
-    "pk": 4
+  "model": "exercises.exercise",
+  "pk": 3
+},
+{
+  "fields": {
+    "image": "",
+    "question": "3+3=",
+    "question_type": "AN",
+    "answer": "6",
+    "skill": 1,
+    "pub_date": "2015-10-13T12:38:25Z"
   },
-  {
-    "fields": {
-      "answer": "2",
-      "pub_date": "2015-10-13T12:38:30Z",
-      "skill": 2,
-      "question": "2/1="
-    },
-    "model": "exercises.exercise",
-    "pk": 5
+  "model": "exercises.exercise",
+  "pk": 4
+},
+{
+  "fields": {
+    "image": "",
+    "question": "2/1=",
+    "question_type": "AN",
+    "answer": "2",
+    "skill": 2,
+    "pub_date": "2015-10-13T12:38:30Z"
   },
-  {
-    "fields": {
-      "answer": "2",
-      "pub_date": "2015-10-13T12:38:39Z",
-      "skill": 2,
-      "question": "4/2="
-    },
-    "model": "exercises.exercise",
-    "pk": 6
+  "model": "exercises.exercise",
+  "pk": 5
+},
+{
+  "fields": {
+    "image": "",
+    "question": "4/2=",
+    "question_type": "AN",
+    "answer": "2",
+    "skill": 2,
+    "pub_date": "2015-10-13T12:38:39Z"
   },
-  {
-    "fields": {
-      "answer": "7",
-      "pub_date": "2015-11-14T07:26:16.620Z",
-      "skill": 3,
-      "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o? 4, 6, 7, 3, 2"
-    },
-    "model": "exercises.exercise",
-    "pk": 7
+  "model": "exercises.exercise",
+  "pk": 6
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o? 4, 6, 7, 3, 2",
+    "question_type": "AN",
+    "answer": "7",
+    "skill": 3,
+    "pub_date": "2015-11-14T07:26:16.620Z"
   },
-  {
-    "fields": {
-      "answer": "9",
-      "pub_date": "2015-11-14T07:27:00.371Z",
-      "skill": 3,
-      "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o? 2, 5, 8, 2, 9"
-    },
-    "model": "exercises.exercise",
-    "pk": 8
+  "model": "exercises.exercise",
+  "pk": 7
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o? 2, 5, 8, 2, 9",
+    "question_type": "AN",
+    "answer": "9",
+    "skill": 3,
+    "pub_date": "2015-11-14T07:27:00.371Z"
   },
-  {
-    "fields": {
-      "answer": "2",
-      "pub_date": "2015-11-14T07:27:31.267Z",
-      "skill": 3,
-      "question": "S\u1ed1 nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o? 4, 3, 9, 6, 2"
-    },
-    "model": "exercises.exercise",
-    "pk": 9
+  "model": "exercises.exercise",
+  "pk": 8
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o? 4, 3, 9, 6, 2",
+    "question_type": "AN",
+    "answer": "2",
+    "skill": 3,
+    "pub_date": "2015-11-14T07:27:31.267Z"
   },
-  {
-    "fields": {
-      "answer": "4",
-      "pub_date": "2015-11-14T07:28:11.738Z",
-      "skill": 3,
-      "question": "S\u1ed1 nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o? 8, 4, 5, 6, 7"
-    },
-    "model": "exercises.exercise",
-    "pk": 10
+  "model": "exercises.exercise",
+  "pk": 9
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o? 8, 4, 5, 6, 7",
+    "question_type": "AN",
+    "answer": "4",
+    "skill": 3,
+    "pub_date": "2015-11-14T07:28:11.738Z"
   },
-  {
-    "fields": {
-      "answer": "2",
-      "pub_date": "2015-11-14T07:45:16.459Z",
-      "skill": 4,
-      "question": "2*1="
-    },
-    "model": "exercises.exercise",
-    "pk": 11
+  "model": "exercises.exercise",
+  "pk": 10
+},
+{
+  "fields": {
+    "image": "",
+    "question": "2*1=",
+    "question_type": "AN",
+    "answer": "2",
+    "skill": 4,
+    "pub_date": "2015-11-14T07:45:16.459Z"
   },
-  {
-    "fields": {
-      "answer": "4",
-      "pub_date": "2015-11-14T07:45:25.428Z",
-      "skill": 4,
-      "question": "2*2="
-    },
-    "model": "exercises.exercise",
-    "pk": 12
+  "model": "exercises.exercise",
+  "pk": 11
+},
+{
+  "fields": {
+    "image": "",
+    "question": "2*2=",
+    "question_type": "AN",
+    "answer": "4",
+    "skill": 4,
+    "pub_date": "2015-11-14T07:45:25.428Z"
   },
-  {
-    "fields": {
-      "answer": "6",
-      "pub_date": "2015-11-14T07:45:32.584Z",
-      "skill": 4,
-      "question": "2*3="
-    },
-    "model": "exercises.exercise",
-    "pk": 13
-  }
+  "model": "exercises.exercise",
+  "pk": 12
+},
+{
+  "fields": {
+    "image": "",
+    "question": "2*3=",
+    "question_type": "AN",
+    "answer": "6",
+    "skill": 4,
+    "pub_date": "2015-11-14T07:45:32.584Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 13
+},
+{
+  "fields": {
+    "image": "",
+    "question": "9+1=",
+    "question_type": "SC",
+    "answer": "10",
+    "skill": 1,
+    "pub_date": "2015-11-25T07:13:47.553Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 14
+},
+{
+  "fields": {
+    "image": "static/img/clock_vp9ULcK.jpg",
+    "question": "\u0110\u1ed3ng h\u1ed3 \u0111ang ch\u1ec9 m\u1ea5y gi\u1edd? (ghi \u0111\u00e1p \u00e1n theo d\u1ea1ng hh:mm)",
+    "question_type": "AN",
+    "answer": "10:10",
+    "skill": 5,
+    "pub_date": "2015-11-27T16:28:01.847Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 15
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u1eefng ph\u00e9p to\u00e1n n\u00e0o d\u01b0\u1edbi \u0111\u00e2y cho k\u1ebft qu\u1ea3 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi ph\u00e9p to\u00e1n sau:\r\n6 + 6",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 6,
+    "pub_date": "2015-11-27T16:31:45.879Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 16
+}
 ]

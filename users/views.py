@@ -9,6 +9,7 @@ from rest_framework.response import Response
 from users.models import UserAccount, User
 from users.permissions import IsAccountOwner
 from users.serializers import UserAccountSerializer, UserSerializer
+from users.serializers import AvatarSerializer
 
 
 class UserListView(views.APIView):
@@ -20,15 +21,15 @@ class UserListView(views.APIView):
         if self.request.method == 'POST':
             return (permissions.AllowAny(),)
 
-        return (permissions.IsAuthenticated())
+        return (permissions.IsAuthenticated(),)
 
-    # Handel GET request to get list of all users
+    # Handle GET request to get list of all users
     def get(self, request, format=None):
         users = UserAccount.objects.all()
         serializer = UserAccountSerializer(users, many=True)
         return Response(serializer.data)
 
-    # Handel POST request to create new users
+    # Handle POST request to create new users
     def post(self, request, format=None):
         serializer = UserAccountSerializer(data=request.data)
 
@@ -38,9 +39,12 @@ class UserListView(views.APIView):
             username = data.get('username')
             email = data.get('email')
             password = data.get('password')
-
-            UserAccount.objects.create_user(username, email, password,
-                                            **serializer.validated_data)
+            # client should post facebook_id to enable this
+            # facebook_id = data.get('facebook_id')
+            UserAccount.objects.create_user(
+                username, email, password,
+                **serializer.validated_data
+            )
 
             return Response(serializer.validated_data,
                             status=status.HTTP_201_CREATED)
@@ -62,11 +66,11 @@ class UserDetailView(views.APIView):
     def get_object(self, username):
         return UserAccount.objects.get(user__username=username)
 
-    # Handel GET request to get a specific user
+    # Handle GET request to get a specific user
     def get(self, request, username, format=None):
         try:
             user = self.get_object(username)
-            serializer = UserAccountSerializer(user, data=request.data)
+            serializer = UserAccountSerializer(user)
             return Response(serializer.data)
         except:
             return Response(status=status.HTTP_404_NOT_FOUND)
@@ -85,6 +89,8 @@ class UserDetailView(views.APIView):
             account = self.get_object(username)
             account.school = data.get('school')
             account.class_in_school = data.get('class_in_school')
+            # client should put facebook_id to enable this
+            # account.facebook_id = data.get('facebook_id')
             account.save()
 
             update_session_auth_hash(request, user)
@@ -141,3 +147,26 @@ class LogoutView(views.APIView):
         logout(request)
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)
+
+
+class AvatarView(views.APIView):
+
+    def get_permissions(self):
+        if self.request.method == 'GET':
+            return (permissions.AllowAny(),)
+
+        return (permissions.IsAuthenticated(),)
+
+    def get(self, request, username, format=None):
+        user = UserAccount.objects.get(user__username=username)
+        serializer = AvatarSerializer(user)
+        return Response(serializer.data)
+
+    def post(self, request, username):
+        user = UserAccount.objects.get(user__username=username)
+        serializer = AvatarSerializer(user, data=request.data)
+        if serializer.is_valid():
+            user.avatar = serializer.validated_data['avatar']
+            user.save()
+            return Response(True)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

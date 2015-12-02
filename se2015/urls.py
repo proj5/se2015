@@ -1,24 +1,24 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from rest_framework_nested import routers
-
 from users.views import UserListView, LoginView, LogoutView, UserDetailView
+from users.views import AvatarView
 from se2015.views import IndexView
 
-from exercises.views import ExerciseViewSet, ExerciseView, SkillView, GradeView
-from records.views import ExerciseRecordView
+from records.views import ExerciseRecordView, ExamRecordView
+from exercises.views import ExerciseView, SkillView, GradeView, ExamDetailView
+from exercises.views import ExamListView
 
-
-router = routers.SimpleRouter()
-router.register(r'exercises', ExerciseViewSet)
 
 urlpatterns = [
+    url(r'^api/avatar/(?P<username>.+)/$', AvatarView.as_view()),
+    url(r'^api/exam_list/(?P<grade_id>.+)/$', ExamListView.as_view()),
+    url(r'^api/exam/(?P<exam_id>.+)/$', ExamDetailView.as_view()),
+    url(r'^api/exam_record/(?P<exam_id>.+)/$', ExamRecordView.as_view()),
     url(r'^api/v1/exercise/(?P<grade_id>.+)/(?P<skill_id>.+)/$',
         ExerciseView.as_view()),
     url(r'^api/v1/exercise/(?P<grade_id>.+)/$', SkillView.as_view()),
     url(r'^api/v1/grades/$', GradeView.as_view()),
-    url(r'^api/v1/', include(router.urls)),
     url(r'^api/v1/accounts/records/(?P<username>.+)/$',
         ExerciseRecordView.as_view(),
         name='recordDetail'),

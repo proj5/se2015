@@ -1,223 +1,142 @@
 [
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:26:51.694Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 1,
-      "answer": "6",
-      "exercise": 4
-    },
-    "model": "records.exerciserecord",
-    "pk": 1
+{
+  "fields": {
+    "exam_record": null,
+    "created_at": "2015-11-29T15:23:32.134Z",
+    "done_time": 0,
+    "score": 10,
+    "user": 1,
+    "exercise": 1
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:27:05.430Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 1,
-      "answer": "4",
-      "exercise": 3
-    },
-    "model": "records.exerciserecord",
-    "pk": 2
+  "model": "records.exerciserecord",
+  "pk": 1
+},
+{
+  "fields": {
+    "exam_record": null,
+    "created_at": "2015-11-29T15:38:23.834Z",
+    "done_time": 0,
+    "score": 10,
+    "user": 1,
+    "exercise": 3
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:27:17.243Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 1,
-      "answer": "2",
-      "exercise": 1
-    },
-    "model": "records.exerciserecord",
-    "pk": 3
+  "model": "records.exerciserecord",
+  "pk": 2
+},
+{
+  "fields": {
+    "exam_record": null,
+    "created_at": "2015-11-29T15:38:42.895Z",
+    "done_time": 0,
+    "score": 10,
+    "user": 1,
+    "exercise": 9
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:27:23.827Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 1,
-      "answer": "4",
-      "exercise": 10
-    },
-    "model": "records.exerciserecord",
-    "pk": 4
+  "model": "records.exerciserecord",
+  "pk": 3
+},
+{
+  "fields": {
+    "exam_record": null,
+    "created_at": "2015-11-29T15:38:56.768Z",
+    "done_time": 0,
+    "score": 10,
+    "user": 1,
+    "exercise": 13
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:27:31.123Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 1,
-      "answer": "2",
-      "exercise": 9
-    },
-    "model": "records.exerciserecord",
-    "pk": 5
+  "model": "records.exerciserecord",
+  "pk": 4
+},
+{
+  "fields": {
+    "exam_record": null,
+    "created_at": "2015-11-29T15:39:37.623Z",
+    "done_time": 0,
+    "score": 0,
+    "user": 2,
+    "exercise": 9
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:27:38.114Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 1,
-      "answer": "9",
-      "exercise": 8
-    },
-    "model": "records.exerciserecord",
-    "pk": 6
+  "model": "records.exerciserecord",
+  "pk": 5
+},
+{
+  "fields": {
+    "exam_record": null,
+    "created_at": "2015-11-29T15:41:18.806Z",
+    "done_time": 0,
+    "score": 10,
+    "user": 2,
+    "exercise": 3
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:27:56.137Z",
-      "done_time": 0,
-      "score": 0,
-      "user": 2,
-      "answer": "2",
-      "exercise": 4
-    },
-    "model": "records.exerciserecord",
-    "pk": 7
+  "model": "records.exerciserecord",
+  "pk": 6
+},
+{
+  "fields": {
+    "exam_record": null,
+    "created_at": "2015-11-29T15:41:29.495Z",
+    "done_time": 0,
+    "score": 10,
+    "user": 2,
+    "exercise": 2
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:27:59.877Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 2,
-      "answer": "4",
-      "exercise": 3
-    },
-    "model": "records.exerciserecord",
-    "pk": 8
+  "model": "records.exerciserecord",
+  "pk": 7
+},
+{
+  "fields": {
+    "answer": "2",
+    "exercise_record": 1
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:28:03.512Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 2,
-      "answer": "2",
-      "exercise": 1
-    },
-    "model": "records.exerciserecord",
-    "pk": 9
+  "model": "records.useranswerrecord",
+  "pk": 1
+},
+{
+  "fields": {
+    "answer": "4",
+    "exercise_record": 2
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:28:07.634Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 2,
-      "answer": "6",
-      "exercise": 4
-    },
-    "model": "records.exerciserecord",
-    "pk": 10
+  "model": "records.useranswerrecord",
+  "pk": 2
+},
+{
+  "fields": {
+    "answer": "2",
+    "exercise_record": 3
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:28:25.533Z",
-      "done_time": 0,
-      "score": 0,
-      "user": 2,
-      "answer": "2",
-      "exercise": 12
-    },
-    "model": "records.exerciserecord",
-    "pk": 11
+  "model": "records.useranswerrecord",
+  "pk": 3
+},
+{
+  "fields": {
+    "answer": "6",
+    "exercise_record": 4
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:28:28.770Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 2,
-      "answer": "4",
-      "exercise": 12
-    },
-    "model": "records.exerciserecord",
-    "pk": 12
+  "model": "records.useranswerrecord",
+  "pk": 4
+},
+{
+  "fields": {
+    "answer": "3",
+    "exercise_record": 5
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:28:31.402Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 2,
-      "answer": "2",
-      "exercise": 11
-    },
-    "model": "records.exerciserecord",
-    "pk": 13
+  "model": "records.useranswerrecord",
+  "pk": 5
+},
+{
+  "fields": {
+    "answer": "4",
+    "exercise_record": 6
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:28:39.858Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 2,
-      "answer": "2",
-      "exercise": 6
-    },
-    "model": "records.exerciserecord",
-    "pk": 14
+  "model": "records.useranswerrecord",
+  "pk": 6
+},
+{
+  "fields": {
+    "answer": "1",
+    "exercise_record": 7
   },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:28:43.362Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 2,
-      "answer": "1",
-      "exercise": 2
-    },
-    "model": "records.exerciserecord",
-    "pk": 15
-  },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:28:48.514Z",
-      "done_time": 0,
-      "score": 0,
-      "user": 2,
-      "answer": "1",
-      "exercise": 5
-    },
-    "model": "records.exerciserecord",
-    "pk": 16
-  },
-  {
-    "fields": {
-      "exam_record": null,
-      "created_at": "2015-11-17T07:28:53.402Z",
-      "done_time": 0,
-      "score": 10,
-      "user": 2,
-      "answer": "2",
-      "exercise": 5
-    },
-    "model": "records.exerciserecord",
-    "pk": 17
-  }
+  "model": "records.useranswerrecord",
+  "pk": 7
+}
 ]
