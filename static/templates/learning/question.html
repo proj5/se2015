@@ -14,11 +14,30 @@
       </div>
     </div>
     <div class="question-Answer-Container">
-      <form>
-        <input type="text" ng-model="vm.userAnswer" ng-change="vm.submitted = false"></input>
-        <button type="button" class="btn-md btn-primary" ng-click="vm.checkAnswer()">Nộp bài</button>
-        <button type="button" class="btn-md btn-primary" ng-click="vm.change()">Đổi câu hỏi</button>
-      </form>
+      <div ng-if="vm.data.question_type == 'AN'">
+        <form>
+          <input type="text" ng-model="vm.userAnswer" ng-change="vm.submitted = false"></input>
+        </form>
+      </div>
+      <div ng-if="vm.data.question_type == 'MC'">
+        <div ng-repeat="answer in vm.data.possible">
+          <label>
+            <input type="checkbox" ng-click="vm.chooseAnswer(answer.possible_answer)">
+              {{answer.possible_answer}}
+          </label>
+        </div>
+      </div>
+      <div ng-if="vm.data.question_type == 'SC'">
+        <div ng-repeat="answer in vm.data.possible">
+          <label>
+            <input type="radio" ng-model="vm.userAnswer" ng-change="vm.submitted = false" value="{{answer.possible_answer}}">
+              {{answer.possible_answer}}
+          </label>
+        </div>
+      </div>
+      <button type="button" class="btn-md btn-primary" ng-click="vm.checkAnswer()">Nộp bài</button>
+      <button type="button" class="btn-md btn-primary" ng-click="vm.change()">Đổi câu hỏi</button>
+
     </div>
     <div class="question-alert-after-submit">
       <div ng-show="vm.submitted">

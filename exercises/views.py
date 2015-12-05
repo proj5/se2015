@@ -171,7 +171,9 @@ class ExerciseView(views.APIView):
                     if answer.is_correct_answer:
                         count1 += 1
                 count2 = 0
-                for answer in request.data.getlist('answer'):
+                string_answer = request.data.get('answer')
+                list_answer = string_answer.split('|')
+                for answer in list_answer:
                     count2 += 1
                 if not count1 == count2:
                     return False
@@ -179,7 +181,7 @@ class ExerciseView(views.APIView):
                 for answer in exercise.possible.all():
                     if answer.is_correct_answer:
                         found = False
-                        for _answer in request.data.getlist('answer'):
+                        for _answer in list_answer:
                             if _answer == answer.possible_answer:
                                 found = True
                                 break
