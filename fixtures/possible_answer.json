@@ -37,7 +37,7 @@
 },
 {
   "fields": {
-    "possible_answer": "3 * 4",
+    "possible_answer": "3 x 4",
     "is_correct_answer": true,
     "exercise": 16
   },
@@ -46,7 +46,7 @@
 },
 {
   "fields": {
-    "possible_answer": "4 / 3",
+    "possible_answer": "4 : 3",
     "is_correct_answer": false,
     "exercise": 16
   },
@@ -70,5 +70,1418 @@
   },
   "model": "exercises.possibleanswer",
   "pk": 8
+},
+{
+  "fields": {
+    "possible_answer": "16 + 4",
+    "is_correct_answer": true,
+    "exercise": 37
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 9
+},
+{
+  "fields": {
+    "possible_answer": "100 + 5",
+    "is_correct_answer": false,
+    "exercise": 37
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 10
+},
+{
+  "fields": {
+    "possible_answer": "16 : 4",
+    "is_correct_answer": false,
+    "exercise": 37
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 11
+},
+{
+  "fields": {
+    "possible_answer": "1000 : 50",
+    "is_correct_answer": true,
+    "exercise": 37
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 12
+},
+{
+  "fields": {
+    "possible_answer": "120 : 30",
+    "is_correct_answer": false,
+    "exercise": 38
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 13
+},
+{
+  "fields": {
+    "possible_answer": "5 x 6",
+    "is_correct_answer": true,
+    "exercise": 38
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 14
+},
+{
+  "fields": {
+    "possible_answer": "7 x 4",
+    "is_correct_answer": false,
+    "exercise": 38
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 15
+},
+{
+  "fields": {
+    "possible_answer": "25 + 5",
+    "is_correct_answer": true,
+    "exercise": 38
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 16
+},
+{
+  "fields": {
+    "possible_answer": "35 + 0",
+    "is_correct_answer": true,
+    "exercise": 39
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 17
+},
+{
+  "fields": {
+    "possible_answer": "7 x 5",
+    "is_correct_answer": false,
+    "exercise": 39
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 18
+},
+{
+  "fields": {
+    "possible_answer": "40 - 5",
+    "is_correct_answer": true,
+    "exercise": 39
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 19
+},
+{
+  "fields": {
+    "possible_answer": "6 x 6",
+    "is_correct_answer": false,
+    "exercise": 39
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 20
+},
+{
+  "fields": {
+    "possible_answer": "9 x 5",
+    "is_correct_answer": true,
+    "exercise": 40
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 21
+},
+{
+  "fields": {
+    "possible_answer": "1 + 6",
+    "is_correct_answer": false,
+    "exercise": 40
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 22
+},
+{
+  "fields": {
+    "possible_answer": "7 x 9",
+    "is_correct_answer": false,
+    "exercise": 40
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 23
+},
+{
+  "fields": {
+    "possible_answer": "6 x 7",
+    "is_correct_answer": false,
+    "exercise": 40
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 24
+},
+{
+  "fields": {
+    "possible_answer": "11 + 8",
+    "is_correct_answer": false,
+    "exercise": 41
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 25
+},
+{
+  "fields": {
+    "possible_answer": "11 + 18",
+    "is_correct_answer": true,
+    "exercise": 41
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 26
+},
+{
+  "fields": {
+    "possible_answer": "11 + 28",
+    "is_correct_answer": false,
+    "exercise": 41
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 27
+},
+{
+  "fields": {
+    "possible_answer": "11 + 38",
+    "is_correct_answer": false,
+    "exercise": 41
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 28
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": false,
+    "exercise": 52
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 29
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": false,
+    "exercise": 52
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 30
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": true,
+    "exercise": 52
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 31
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c b\u1eb9t",
+    "is_correct_answer": false,
+    "exercise": 52
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 32
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": true,
+    "exercise": 53
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 33
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": false,
+    "exercise": 53
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 34
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": false,
+    "exercise": 53
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 35
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c b\u1eb9t",
+    "is_correct_answer": false,
+    "exercise": 53
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 36
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": false,
+    "exercise": 54
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 37
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": false,
+    "exercise": 54
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 38
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": true,
+    "exercise": 54
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 39
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c b\u1eb9t",
+    "is_correct_answer": false,
+    "exercise": 54
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 40
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": true,
+    "exercise": 55
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 41
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": false,
+    "exercise": 55
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 42
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": false,
+    "exercise": 55
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 43
+},
+{
+  "fields": {
+    "possible_answer": "C\u00e1i \u00e1o c\u1ee7a Nam \u0111\u1eaft nh\u01b0 c\u00e1i \u00e1o c\u1ee7a Hi\u1ec1n",
+    "is_correct_answer": false,
+    "exercise": 62
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 44
+},
+{
+  "fields": {
+    "possible_answer": "C\u00e1i \u00e1o c\u1ee7a Nam \u0111\u1eaft h\u01a1n c\u00e1i \u00e1o c\u1ee7a Hi\u1ec1n",
+    "is_correct_answer": false,
+    "exercise": 62
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 45
+},
+{
+  "fields": {
+    "possible_answer": "C\u00e1i \u00e1o c\u1ee7a Nam r\u1ebb h\u01a1n c\u00e1i \u00e1o c\u1ee7a Hi\u1ec1n",
+    "is_correct_answer": true,
+    "exercise": 62
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 46
+},
+{
+  "fields": {
+    "possible_answer": "C\u00e1i gi\u01b0\u1eddng c\u1ee7a Phong d\u00e0i nh\u01b0 c\u00e1i gi\u01b0\u1eddng c\u1ee7a An",
+    "is_correct_answer": false,
+    "exercise": 63
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 47
+},
+{
+  "fields": {
+    "possible_answer": "C\u00e1i gi\u01b0\u1eddng c\u1ee7a Phong d\u00e0i h\u01a1n c\u00e1i gi\u01b0\u1eddng c\u1ee7a An",
+    "is_correct_answer": false,
+    "exercise": 63
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 48
+},
+{
+  "fields": {
+    "possible_answer": "C\u00e1i gi\u01b0\u1eddng c\u1ee7a Phong ng\u1eafn h\u01a1n c\u00e1i gi\u01b0\u1eddng c\u1ee7a An",
+    "is_correct_answer": true,
+    "exercise": 63
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 49
+},
+{
+  "fields": {
+    "possible_answer": "C\u00e1i b\u00e0n c\u1ee7a B\u00ecnh",
+    "is_correct_answer": false,
+    "exercise": 64
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 50
+},
+{
+  "fields": {
+    "possible_answer": "C\u00e1i b\u00e0n c\u1ee7a Hoa",
+    "is_correct_answer": true,
+    "exercise": 64
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 51
+},
+{
+  "fields": {
+    "possible_answer": "C\u00e1i b\u00e0n c\u1ee7a Hi\u1ec1n",
+    "is_correct_answer": false,
+    "exercise": 64
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 52
+},
+{
+  "fields": {
+    "possible_answer": "Ch\u01b0a \u0111\u1ee7 th\u00f4ng tin \u0111\u1ec3 k\u1ebft lu\u1eadn",
+    "is_correct_answer": false,
+    "exercise": 64
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 53
+},
+{
+  "fields": {
+    "possible_answer": "Phong n\u1eb7ng nh\u01b0 Hoa",
+    "is_correct_answer": false,
+    "exercise": 65
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 54
+},
+{
+  "fields": {
+    "possible_answer": "Phong nh\u1eb9 h\u01a1n Hoa",
+    "is_correct_answer": true,
+    "exercise": 65
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 55
+},
+{
+  "fields": {
+    "possible_answer": "Phong n\u1eb7ng h\u01a1n Hoa",
+    "is_correct_answer": false,
+    "exercise": 65
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 56
+},
+{
+  "fields": {
+    "possible_answer": "C\u1eb7p s\u00e1ch c\u1ee7a Nam",
+    "is_correct_answer": true,
+    "exercise": 66
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 57
+},
+{
+  "fields": {
+    "possible_answer": "C\u1eb7p s\u00e1ch c\u1ee7a An",
+    "is_correct_answer": false,
+    "exercise": 66
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 58
+},
+{
+  "fields": {
+    "possible_answer": "C\u1eb7p s\u00e1ch c\u1ee7a Hoa",
+    "is_correct_answer": false,
+    "exercise": 66
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 59
+},
+{
+  "fields": {
+    "possible_answer": "Ch\u01b0a \u0111\u1ee7 th\u00f4ng tin \u0111\u1ec3 k\u1ebft lu\u1eadn",
+    "is_correct_answer": false,
+    "exercise": 66
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 60
+},
+{
+  "fields": {
+    "possible_answer": "2",
+    "is_correct_answer": true,
+    "exercise": 72
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 61
+},
+{
+  "fields": {
+    "possible_answer": "4",
+    "is_correct_answer": true,
+    "exercise": 72
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 62
+},
+{
+  "fields": {
+    "possible_answer": "5",
+    "is_correct_answer": false,
+    "exercise": 72
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 63
+},
+{
+  "fields": {
+    "possible_answer": "7",
+    "is_correct_answer": true,
+    "exercise": 72
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 64
+},
+{
+  "fields": {
+    "possible_answer": "1",
+    "is_correct_answer": true,
+    "exercise": 73
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 65
+},
+{
+  "fields": {
+    "possible_answer": "3",
+    "is_correct_answer": true,
+    "exercise": 73
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 66
+},
+{
+  "fields": {
+    "possible_answer": "9",
+    "is_correct_answer": true,
+    "exercise": 73
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 67
+},
+{
+  "fields": {
+    "possible_answer": "27",
+    "is_correct_answer": true,
+    "exercise": 73
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 68
+},
+{
+  "fields": {
+    "possible_answer": "28",
+    "is_correct_answer": false,
+    "exercise": 74
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 69
+},
+{
+  "fields": {
+    "possible_answer": "10",
+    "is_correct_answer": false,
+    "exercise": 74
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 70
+},
+{
+  "fields": {
+    "possible_answer": "15",
+    "is_correct_answer": true,
+    "exercise": 74
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 71
+},
+{
+  "fields": {
+    "possible_answer": "3",
+    "is_correct_answer": true,
+    "exercise": 74
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 72
+},
+{
+  "fields": {
+    "possible_answer": "5",
+    "is_correct_answer": true,
+    "exercise": 74
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 73
+},
+{
+  "fields": {
+    "possible_answer": "1",
+    "is_correct_answer": true,
+    "exercise": 74
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 74
+},
+{
+  "fields": {
+    "possible_answer": "4",
+    "is_correct_answer": true,
+    "exercise": 75
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 75
+},
+{
+  "fields": {
+    "possible_answer": "1",
+    "is_correct_answer": true,
+    "exercise": 75
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 76
+},
+{
+  "fields": {
+    "possible_answer": "5",
+    "is_correct_answer": false,
+    "exercise": 75
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 77
+},
+{
+  "fields": {
+    "possible_answer": "6",
+    "is_correct_answer": false,
+    "exercise": 75
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 78
+},
+{
+  "fields": {
+    "possible_answer": "2",
+    "is_correct_answer": true,
+    "exercise": 75
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 79
+},
+{
+  "fields": {
+    "possible_answer": "26",
+    "is_correct_answer": false,
+    "exercise": 75
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 80
+},
+{
+  "fields": {
+    "possible_answer": "20",
+    "is_correct_answer": true,
+    "exercise": 76
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 81
+},
+{
+  "fields": {
+    "possible_answer": "10",
+    "is_correct_answer": true,
+    "exercise": 76
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 82
+},
+{
+  "fields": {
+    "possible_answer": "3",
+    "is_correct_answer": false,
+    "exercise": 76
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 83
+},
+{
+  "fields": {
+    "possible_answer": "12",
+    "is_correct_answer": false,
+    "exercise": 76
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 84
+},
+{
+  "fields": {
+    "possible_answer": "4",
+    "is_correct_answer": true,
+    "exercise": 76
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 85
+},
+{
+  "fields": {
+    "possible_answer": "5",
+    "is_correct_answer": true,
+    "exercise": 76
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 86
+},
+{
+  "fields": {
+    "possible_answer": "300",
+    "is_correct_answer": true,
+    "exercise": 77
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 87
+},
+{
+  "fields": {
+    "possible_answer": "450",
+    "is_correct_answer": true,
+    "exercise": 77
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 88
+},
+{
+  "fields": {
+    "possible_answer": "382",
+    "is_correct_answer": false,
+    "exercise": 77
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 89
+},
+{
+  "fields": {
+    "possible_answer": "150",
+    "is_correct_answer": true,
+    "exercise": 77
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 90
+},
+{
+  "fields": {
+    "possible_answer": "0",
+    "is_correct_answer": true,
+    "exercise": 78
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 91
+},
+{
+  "fields": {
+    "possible_answer": "30",
+    "is_correct_answer": true,
+    "exercise": 78
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 92
+},
+{
+  "fields": {
+    "possible_answer": "50",
+    "is_correct_answer": false,
+    "exercise": 78
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 93
+},
+{
+  "fields": {
+    "possible_answer": "70",
+    "is_correct_answer": false,
+    "exercise": 78
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 94
+},
+{
+  "fields": {
+    "possible_answer": "13",
+    "is_correct_answer": true,
+    "exercise": 79
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 95
+},
+{
+  "fields": {
+    "possible_answer": "27",
+    "is_correct_answer": false,
+    "exercise": 79
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 96
+},
+{
+  "fields": {
+    "possible_answer": "36",
+    "is_correct_answer": false,
+    "exercise": 79
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 97
+},
+{
+  "fields": {
+    "possible_answer": "39",
+    "is_correct_answer": true,
+    "exercise": 79
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 98
+},
+{
+  "fields": {
+    "possible_answer": "51",
+    "is_correct_answer": false,
+    "exercise": 80
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 99
+},
+{
+  "fields": {
+    "possible_answer": "52",
+    "is_correct_answer": false,
+    "exercise": 80
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 100
+},
+{
+  "fields": {
+    "possible_answer": "53",
+    "is_correct_answer": false,
+    "exercise": 80
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 101
+},
+{
+  "fields": {
+    "possible_answer": "54",
+    "is_correct_answer": true,
+    "exercise": 80
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 102
+},
+{
+  "fields": {
+    "possible_answer": "5",
+    "is_correct_answer": false,
+    "exercise": 81
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 103
+},
+{
+  "fields": {
+    "possible_answer": "5; -5",
+    "is_correct_answer": false,
+    "exercise": 81
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 104
+},
+{
+  "fields": {
+    "possible_answer": "5; 0",
+    "is_correct_answer": false,
+    "exercise": 81
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 105
+},
+{
+  "fields": {
+    "possible_answer": "5; 0; -5",
+    "is_correct_answer": false,
+    "exercise": 81
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 106
+},
+{
+  "fields": {
+    "possible_answer": "2",
+    "is_correct_answer": false,
+    "exercise": 102
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 107
+},
+{
+  "fields": {
+    "possible_answer": "3",
+    "is_correct_answer": false,
+    "exercise": 102
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 108
+},
+{
+  "fields": {
+    "possible_answer": "4",
+    "is_correct_answer": false,
+    "exercise": 102
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 109
+},
+{
+  "fields": {
+    "possible_answer": "5",
+    "is_correct_answer": true,
+    "exercise": 102
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 110
+},
+{
+  "fields": {
+    "possible_answer": "3",
+    "is_correct_answer": false,
+    "exercise": 103
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 111
+},
+{
+  "fields": {
+    "possible_answer": "5",
+    "is_correct_answer": false,
+    "exercise": 103
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 112
+},
+{
+  "fields": {
+    "possible_answer": "7",
+    "is_correct_answer": false,
+    "exercise": 103
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 113
+},
+{
+  "fields": {
+    "possible_answer": "9",
+    "is_correct_answer": false,
+    "exercise": 103
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 114
+},
+{
+  "fields": {
+    "possible_answer": "2",
+    "is_correct_answer": false,
+    "exercise": 104
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 115
+},
+{
+  "fields": {
+    "possible_answer": "3",
+    "is_correct_answer": false,
+    "exercise": 104
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 116
+},
+{
+  "fields": {
+    "possible_answer": "4",
+    "is_correct_answer": true,
+    "exercise": 104
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 117
+},
+{
+  "fields": {
+    "possible_answer": "5",
+    "is_correct_answer": false,
+    "exercise": 104
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 118
+},
+{
+  "fields": {
+    "possible_answer": "0",
+    "is_correct_answer": false,
+    "exercise": 105
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 119
+},
+{
+  "fields": {
+    "possible_answer": "13",
+    "is_correct_answer": true,
+    "exercise": 105
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 120
+},
+{
+  "fields": {
+    "possible_answer": "8",
+    "is_correct_answer": false,
+    "exercise": 105
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 121
+},
+{
+  "fields": {
+    "possible_answer": "6",
+    "is_correct_answer": false,
+    "exercise": 105
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 122
+},
+{
+  "fields": {
+    "possible_answer": "15",
+    "is_correct_answer": false,
+    "exercise": 106
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 123
+},
+{
+  "fields": {
+    "possible_answer": "10",
+    "is_correct_answer": false,
+    "exercise": 106
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 124
+},
+{
+  "fields": {
+    "possible_answer": "20",
+    "is_correct_answer": true,
+    "exercise": 106
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 125
+},
+{
+  "fields": {
+    "possible_answer": "17",
+    "is_correct_answer": false,
+    "exercise": 106
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 126
+},
+{
+  "fields": {
+    "possible_answer": "10",
+    "is_correct_answer": true,
+    "exercise": 107
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 127
+},
+{
+  "fields": {
+    "possible_answer": "11",
+    "is_correct_answer": false,
+    "exercise": 107
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 128
+},
+{
+  "fields": {
+    "possible_answer": "12",
+    "is_correct_answer": false,
+    "exercise": 107
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 129
+},
+{
+  "fields": {
+    "possible_answer": "13",
+    "is_correct_answer": false,
+    "exercise": 107
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 130
+},
+{
+  "fields": {
+    "possible_answer": "9",
+    "is_correct_answer": false,
+    "exercise": 108
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 131
+},
+{
+  "fields": {
+    "possible_answer": "5",
+    "is_correct_answer": false,
+    "exercise": 108
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 132
+},
+{
+  "fields": {
+    "possible_answer": "7",
+    "is_correct_answer": false,
+    "exercise": 108
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 133
+},
+{
+  "fields": {
+    "possible_answer": "8",
+    "is_correct_answer": true,
+    "exercise": 108
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 134
+},
+{
+  "fields": {
+    "possible_answer": "11",
+    "is_correct_answer": false,
+    "exercise": 109
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 135
+},
+{
+  "fields": {
+    "possible_answer": "13",
+    "is_correct_answer": true,
+    "exercise": 109
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 136
+},
+{
+  "fields": {
+    "possible_answer": "14",
+    "is_correct_answer": false,
+    "exercise": 109
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 137
+},
+{
+  "fields": {
+    "possible_answer": "10",
+    "is_correct_answer": false,
+    "exercise": 109
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 138
+},
+{
+  "fields": {
+    "possible_answer": "12",
+    "is_correct_answer": false,
+    "exercise": 115
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 139
+},
+{
+  "fields": {
+    "possible_answer": "15",
+    "is_correct_answer": false,
+    "exercise": 115
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 140
+},
+{
+  "fields": {
+    "possible_answer": "16",
+    "is_correct_answer": true,
+    "exercise": 115
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 141
+},
+{
+  "fields": {
+    "possible_answer": "19",
+    "is_correct_answer": false,
+    "exercise": 115
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 142
+},
+{
+  "fields": {
+    "possible_answer": "11",
+    "is_correct_answer": true,
+    "exercise": 116
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 143
+},
+{
+  "fields": {
+    "possible_answer": "9",
+    "is_correct_answer": false,
+    "exercise": 116
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 144
+},
+{
+  "fields": {
+    "possible_answer": "12",
+    "is_correct_answer": false,
+    "exercise": 116
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 145
+},
+{
+  "fields": {
+    "possible_answer": "10",
+    "is_correct_answer": false,
+    "exercise": 116
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 146
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": false,
+    "exercise": 117
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 147
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": false,
+    "exercise": 117
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 148
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": true,
+    "exercise": 117
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 149
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": false,
+    "exercise": 118
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 150
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": true,
+    "exercise": 118
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 151
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": false,
+    "exercise": 118
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 152
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": false,
+    "exercise": 119
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 153
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": false,
+    "exercise": 119
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 154
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": true,
+    "exercise": 119
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 155
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": false,
+    "exercise": 120
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 156
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": true,
+    "exercise": 120
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 157
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": false,
+    "exercise": 120
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 158
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": false,
+    "exercise": 121
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 159
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": false,
+    "exercise": 121
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 160
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": true,
+    "exercise": 121
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 161
+},
+{
+  "fields": {
+    "possible_answer": "12 + 14",
+    "is_correct_answer": true,
+    "exercise": 122
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 162
+},
+{
+  "fields": {
+    "possible_answer": "10 + 16",
+    "is_correct_answer": true,
+    "exercise": 122
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 163
+},
+{
+  "fields": {
+    "possible_answer": "13 + 13",
+    "is_correct_answer": true,
+    "exercise": 122
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 164
+},
+{
+  "fields": {
+    "possible_answer": "9 + 15",
+    "is_correct_answer": false,
+    "exercise": 122
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 165
 }
 ]
