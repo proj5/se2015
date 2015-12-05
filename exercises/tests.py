@@ -1,6 +1,34 @@
 from rest_framework.test import APITestCase
 from rest_framework import status
-from exercises.models import Exercise, Skill
+from exercises.models import Exercise, Skill, Grade
+
+
+class SkillTest(APITestCase):
+    fixtures = [
+        'auth', 'users', 'grades', 'skills'
+    ]
+
+    def test_create_skill(self):
+        grade = Grade.objects.get(pk=1)
+        skill = Skill(name='Test', id_in_grade=10, grade=grade)
+
+        grade_num_skills = grade.num_skills
+        skill.save()
+        # The number of skills should increase
+        self.assertEqual(grade.num_skills, grade_num_skills + 1)
+
+    def test_get_list_skill(self):
+        grade_id = 1
+        url = '/api/v1/exercise/' + str(grade_id) + '/'
+        response = self.client.get(url)
+
+        # Check status code
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # Check number of skills
+        self.assertEqual(
+            len(response.data),
+            len(Skill.objects.filter(grade__id=grade_id))
+        )
 
 
 class ExerciseTest(APITestCase):
