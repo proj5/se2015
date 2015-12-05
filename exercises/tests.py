@@ -3,6 +3,24 @@ from rest_framework import status
 from exercises.models import Exercise, Skill, Grade
 
 
+class GradeTest(APITestCase):
+    fixtures = [
+        'auth', 'users', 'grades', 'skills'
+    ]
+
+    def test_get_list_grade(self):
+        url = '/api/v1/grades/'
+        response = self.client.get(url)
+
+        # Check status code
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # Check number of grades
+        self.assertEqual(
+            len(response.data),
+            len(Grade.objects.all())
+        )
+
+
 class SkillTest(APITestCase):
     fixtures = [
         'auth', 'users', 'grades', 'skills'
