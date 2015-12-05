@@ -9,6 +9,9 @@
     <div class="question-Detail well">
       <p class="question-Require"> Trả lời câu hỏi sau: </p>
       <p class="question-Text"> {{ vm.data.question }} </p>
+      <div ng-if = "vm.image != ''">
+        <img class = "question-img" src="{{vm.data.image}}">
+      </div>
     </div>
     <div class="question-Answer-Container">
       <form>
