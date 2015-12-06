@@ -114,7 +114,7 @@ class ExerciseTest(APITestCase):
         response = self.client.post(url, data, format='json')
 
         url = '/api/exam/3/'
-        response = self.	client.post(url, {
+        response = self.client.post(url, {
             "id": 3,
             "exercises": [
                 {"id": 16, "answer": ["3 x 4", "20 - 8", "2 + 4"]}

@@ -266,7 +266,7 @@
 {
   "fields": {
     "image": "",
-    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 55-11 l\u00e0 bao nhi\u00eau?",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 55 - 11 l\u00e0 bao nhi\u00eau?",
     "question_type": "AN",
     "answer": "44",
     "skill": 8,
@@ -278,7 +278,7 @@
 {
   "fields": {
     "image": "",
-    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 89-23 l\u00e0 bao nhi\u00eau?",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 89 - 23 l\u00e0 bao nhi\u00eau?",
     "question_type": "AN",
     "answer": "66",
     "skill": 8,
@@ -290,7 +290,7 @@
 {
   "fields": {
     "image": "",
-    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 56-36 l\u00e0 bao nhi\u00eau?",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 56 - 36 l\u00e0 bao nhi\u00eau?",
     "question_type": "AN",
     "answer": "20",
     "skill": 8,
@@ -302,9 +302,9 @@
 {
   "fields": {
     "image": "",
-    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 99-75 l\u00e0 bao nhi\u00eau?",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 67 - 52 l\u00e0 bao nhi\u00eau?",
     "question_type": "AN",
-    "answer": "24",
+    "answer": "15",
     "skill": 8,
     "pub_date": "2015-12-03T14:53:29.261Z"
   },
@@ -314,7 +314,7 @@
 {
   "fields": {
     "image": "",
-    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 81-64 l\u00e0 bao nhi\u00eau?",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 81 - 64 l\u00e0 bao nhi\u00eau?",
     "question_type": "AN",
     "answer": "17",
     "skill": 8,
@@ -554,7 +554,7 @@
 {
   "fields": {
     "image": "",
-    "question": "T\u00ecm X:\r\n( 1 gi\u1edd 34 ph\u00fat ) x 7\r\n= X gi\u1edd 48 ph\u00fat",
+    "question": "T\u00ecm X:\r\n( 1 gi\u1edd 34 ph\u00fat ) x 7 = X gi\u1edd 48 ph\u00fat",
     "question_type": "AN",
     "answer": "9",
     "skill": 11,
@@ -566,7 +566,7 @@
 {
   "fields": {
     "image": "",
-    "question": "T\u00ecm X:\r\n( 1 gi\u1edd 02 ph\u00fat ) x 6\r\n= 6 gi\u1edd X ph\u00fat",
+    "question": "T\u00ecm X:\r\n( 1 gi\u1edd 02 ph\u00fat ) x 6 = 6 gi\u1edd X ph\u00fat",
     "question_type": "AN",
     "answer": "12",
     "skill": 11,
@@ -578,7 +578,7 @@
 {
   "fields": {
     "image": "",
-    "question": "T\u00ecm X:\r\n( 2 gi\u1edd 23 ph\u00fat ) x 8\r\n= X gi\u1edd 4 ph\u00fat",
+    "question": "T\u00ecm X:\r\n( 2 gi\u1edd 23 ph\u00fat ) x 8 = X gi\u1edd 4 ph\u00fat",
     "question_type": "AN",
     "answer": "19",
     "skill": 11,
@@ -590,7 +590,7 @@
 {
   "fields": {
     "image": "",
-    "question": "T\u00ecm X:\r\n8 gi\u1edd 31 ph\u00fat + 12 gi\u1edd 21 ph\u00fat\r\n= X gi\u1edd 52 ph\u00fat",
+    "question": "T\u00ecm X:\r\n8 gi\u1edd 31 ph\u00fat + 12 gi\u1edd 21 ph\u00fat = X gi\u1edd 52 ph\u00fat",
     "question_type": "AN",
     "answer": "20",
     "skill": 11,
@@ -602,7 +602,7 @@
 {
   "fields": {
     "image": "",
-    "question": "T\u00ecm X:\r\n( 19 gi\u1edd 57 ph\u00fat ) : 7\r\n= 2 gi\u1edd X ph\u00fat",
+    "question": "T\u00ecm X:\r\n( 19 gi\u1edd 57 ph\u00fat ) : 7 = 2 gi\u1edd X ph\u00fat",
     "question_type": "AN",
     "answer": "51",
     "skill": 11,
@@ -958,18 +958,6 @@
   },
   "model": "exercises.exercise",
   "pk": 80
-},
-{
-  "fields": {
-    "image": "",
-    "question": "C\u00e1c b\u1ed9i s\u1ed1 c\u1ee7a 5 v\u00e0 nh\u1ecf h\u01a1n 7 l\u00e0:",
-    "question_type": "SC",
-    "answer": "0",
-    "skill": 17,
-    "pub_date": "2015-12-03T18:08:01.092Z"
-  },
-  "model": "exercises.exercise",
-  "pk": 81
 },
 {
   "fields": {
@@ -1462,5 +1450,1193 @@
   },
   "model": "exercises.exercise",
   "pk": 122
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u1eefng ph\u00e9p to\u00e1n n\u00e0o d\u01b0\u1edbi \u0111\u00e2y cho k\u1ebft qu\u1ea3 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi ph\u00e9p t\u00ednh sau: 22 + 5",
+    "question_type": "MC",
+    "answer": "27",
+    "skill": 6,
+    "pub_date": "2015-12-06T14:13:09.256Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 123
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u1eefng ph\u00e9p to\u00e1n n\u00e0o d\u01b0\u1edbi \u0111\u00e2y cho k\u1ebft qu\u1ea3 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi ph\u00e9p t\u00ednh sau: 2 x 3 x 7",
+    "question_type": "AN",
+    "answer": "42",
+    "skill": 6,
+    "pub_date": "2015-12-06T14:15:46.663Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 124
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u1eefng ph\u00e9p to\u00e1n n\u00e0o d\u01b0\u1edbi \u0111\u00e2y cho k\u1ebft qu\u1ea3 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi ph\u00e9p t\u00ednh sau: (26 + 23) : 7",
+    "question_type": "AN",
+    "answer": "7",
+    "skill": 6,
+    "pub_date": "2015-12-06T14:17:40.542Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 125
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n31\t75\t11\t67\t79",
+    "question_type": "AN",
+    "answer": "79",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:32:03.323Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 126
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n41\t44\t18\t36\t55",
+    "question_type": "AN",
+    "answer": "55",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:33:16.229Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 127
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n91\t61\t76\t18\t6",
+    "question_type": "AN",
+    "answer": "91",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:33:40.042Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 128
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n4\t60\t40\t41\t40",
+    "question_type": "AN",
+    "answer": "60",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:34:14.192Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 129
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n72\t74\t1\t5\t63",
+    "question_type": "AN",
+    "answer": "74",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:34:42.018Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 130
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n72\t74\t1\t5\t63",
+    "question_type": "AN",
+    "answer": "1",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:34:56.194Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 131
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n18\t62\t12\t48\t24",
+    "question_type": "AN",
+    "answer": "12",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:35:17.530Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 132
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n78\t67\t38\t57\t14",
+    "question_type": "AN",
+    "answer": "14",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:35:41.493Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 133
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n34\t63\t46\t90\t44",
+    "question_type": "AN",
+    "answer": "34",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:35:57.688Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 134
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 sau \u0111\u00e2y l\u00e0 s\u1ed1 n\u00e0o?\r\n7\t26\t11\t58\t11",
+    "question_type": "AN",
+    "answer": "7",
+    "skill": 3,
+    "pub_date": "2015-12-06T14:36:29.225Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 135
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 71 x 42 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "2982",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:37:36.273Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 136
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 80 x 88 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "7040",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:38:20.449Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 137
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 13 x 21 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "273",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:38:54.990Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 138
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 62 x 5 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "310",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:39:19Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 139
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 38 x 4 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "152",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:39:52.205Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 140
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 11 x 69 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "759",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:40:24.396Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 141
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 52 x 16 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "832",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:41:00.186Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 142
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 48 x 92 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "4416",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:41:25.839Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 143
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 91 x 8 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "728",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:41:55.403Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 144
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 29 x 3 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "87",
+    "skill": 4,
+    "pub_date": "2015-12-06T14:42:36.088Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 145
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Ch\u1ecdn c\u00e1c s\u1ed1 l\u00e0 \u01b0\u1edbc chung c\u1ee7a hai s\u1ed1 58 v\u00e0 22.",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 16,
+    "pub_date": "2015-12-06T14:54:01.426Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 146
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Ch\u1ecdn c\u00e1c s\u1ed1 l\u00e0 \u01b0\u1edbc chung c\u1ee7a hai s\u1ed1 3 v\u00e0 29",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 16,
+    "pub_date": "2015-12-06T14:54:44.698Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 147
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Ch\u1ecdn c\u00e1c s\u1ed1 l\u00e0 \u01b0\u1edbc chung c\u1ee7a hai s\u1ed1 82 v\u00e0 68",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 16,
+    "pub_date": "2015-12-06T14:55:53.501Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 148
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Ch\u1ecdn c\u00e1c s\u1ed1 l\u00e0 \u01b0\u1edbc chung c\u1ee7a hai s\u1ed1 3 v\u00e0 66.",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 16,
+    "pub_date": "2015-12-06T14:56:37.501Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 149
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Ch\u1ecdn c\u00e1c s\u1ed1 l\u00e0 \u01b0\u1edbc chung c\u1ee7a hai s\u1ed1 84 v\u00e0 70",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 16,
+    "pub_date": "2015-12-06T14:58:08.942Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 150
+},
+{
+  "fields": {
+    "image": "",
+    "question": "13 c\u00f3 ph\u1ea3i l\u00e0 \u01b0\u1edbc c\u1ee7a 97 kh\u00f4ng?",
+    "question_type": "SC",
+    "answer": "0",
+    "skill": 16,
+    "pub_date": "2015-12-06T15:00:20.277Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 151
+},
+{
+  "fields": {
+    "image": "",
+    "question": "27 c\u00f3 ph\u1ea3i l\u00e0 \u01b0\u1edbc c\u1ee7a 162 kh\u00f4ng?",
+    "question_type": "SC",
+    "answer": "0",
+    "skill": 16,
+    "pub_date": "2015-12-06T15:01:01.871Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 152
+},
+{
+  "fields": {
+    "image": "",
+    "question": "12 c\u00f3 ph\u1ea3i l\u00e0 \u01b0\u1edbc c\u1ee7a 52 kh\u00f4ng?",
+    "question_type": "SC",
+    "answer": "0",
+    "skill": 16,
+    "pub_date": "2015-12-06T15:01:37.982Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 153
+},
+{
+  "fields": {
+    "image": "",
+    "question": "\u01af\u1edbc s\u1ed1 l\u1edbn nh\u1ea5t c\u1ee7a 100 l\u00e0?",
+    "question_type": "AN",
+    "answer": "100",
+    "skill": 16,
+    "pub_date": "2015-12-06T15:02:12.818Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 154
+},
+{
+  "fields": {
+    "image": "",
+    "question": "\u01af\u1edbc s\u1ed1 d\u01b0\u01a1ng b\u00e9 nh\u1ea5t c\u1ee7a 15348 l\u00e0?",
+    "question_type": "AN",
+    "answer": "1",
+    "skill": 16,
+    "pub_date": "2015-12-06T15:02:27.284Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 155
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u1eefng s\u1ed1 n\u00e0o sau \u0111\u00e2y l\u00e0 b\u1ed9i c\u1ee7a 17?",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:07:08.426Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 156
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u1eefng s\u1ed1 n\u00e0o sau \u0111\u00e2y l\u00e0 b\u1ed9i c\u1ee7a 24?",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:08:34.292Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 157
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u1eefng s\u1ed1 n\u00e0o sau \u0111\u00e2y l\u00e0 b\u1ed9i c\u1ee7a 16:",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:09:24.410Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 158
+},
+{
+  "fields": {
+    "image": "",
+    "question": "B\u1ed9i s\u1ed1 chung c\u1ee7a 5 v\u00e0 13 l\u00e0:",
+    "question_type": "SC",
+    "answer": "0",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:10:52.837Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 159
+},
+{
+  "fields": {
+    "image": "",
+    "question": "B\u1ed9i s\u1ed1 chung nh\u1ecf nh\u1ea5t c\u1ee7a 14 v\u00e0 6 l\u00e0:",
+    "question_type": "AN",
+    "answer": "42",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:11:51.195Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 160
+},
+{
+  "fields": {
+    "image": "",
+    "question": "B\u1ed9i s\u1ed1 chung nh\u1ecf nh\u1ea5t c\u1ee7a 5 v\u00e0 22 l\u00e0:",
+    "question_type": "AN",
+    "answer": "110",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:17:40.991Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 161
+},
+{
+  "fields": {
+    "image": "",
+    "question": "B\u1ed9i s\u1ed1 chung nh\u1ecf nh\u1ea5t c\u1ee7a 16 v\u00e0 4 l\u00e0:",
+    "question_type": "AN",
+    "answer": "16",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:17:58.741Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 162
+},
+{
+  "fields": {
+    "image": "",
+    "question": "B\u1ed9i s\u1ed1 chung nh\u1ecf nh\u1ea5t c\u1ee7a 18 v\u00e0 22 l\u00e0:",
+    "question_type": "AN",
+    "answer": "198",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:18:37.323Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 163
+},
+{
+  "fields": {
+    "image": "",
+    "question": "B\u1ed9i s\u1ed1 chung nh\u1ecf nh\u1ea5t c\u1ee7a 65 v\u00e0 35 l\u00e0:",
+    "question_type": "AN",
+    "answer": "455",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:25:35.511Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 164
+},
+{
+  "fields": {
+    "image": "",
+    "question": "B\u1ed9i s\u1ed1 chung nh\u1ecf nh\u1ea5t c\u1ee7a 26 v\u00e0 43 l\u00e0:",
+    "question_type": "AN",
+    "answer": "1118",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:34:07.496Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 165
+},
+{
+  "fields": {
+    "image": "",
+    "question": "B\u1ed9i s\u1ed1 chung nh\u1ecf nh\u1ea5t c\u1ee7a 15 v\u00e0 25 l\u00e0:",
+    "question_type": "AN",
+    "answer": "75",
+    "skill": 17,
+    "pub_date": "2015-12-06T15:40:11.914Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 166
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 li\u1ec1n tr\u01b0\u1edbc c\u1ee7a 0 l\u00e0 s\u1ed1 n\u00e0o?",
+    "question_type": "AN",
+    "answer": "-1",
+    "skill": 15,
+    "pub_date": "2015-12-06T15:49:22.038Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 167
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 li\u1ec1n tr\u01b0\u1edbc c\u1ee7a 60 l\u00e0 s\u1ed1 n\u00e0o?",
+    "question_type": "AN",
+    "answer": "59",
+    "skill": 15,
+    "pub_date": "2015-12-06T15:51:08.431Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 168
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 li\u1ec1n tr\u01b0\u1edbc c\u1ee7a 1412 l\u00e0 s\u1ed1 n\u00e0o?",
+    "question_type": "AN",
+    "answer": "1411",
+    "skill": 15,
+    "pub_date": "2015-12-06T15:54:00.028Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 169
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 li\u1ec1n sau c\u1ee7a 43 l\u00e0 s\u1ed1 n\u00e0o?",
+    "question_type": "AN",
+    "answer": "44",
+    "skill": 15,
+    "pub_date": "2015-12-06T15:54:39.673Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 170
+},
+{
+  "fields": {
+    "image": "",
+    "question": "S\u1ed1 li\u1ec1n sau c\u1ee7a 65 l\u00e0 s\u1ed1 n\u00e0o?",
+    "question_type": "AN",
+    "answer": "66",
+    "skill": 15,
+    "pub_date": "2015-12-06T15:54:53.996Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 171
+},
+{
+  "fields": {
+    "image": "",
+    "question": "T\u00e2m c\u00f3 5 qu\u1ea3 t\u00e1o, T\u00e2m cho An hai qu\u1ea3 t\u00e1o v\u00e0 nh\u1eadn th\u00eam t\u1eeb Hi\u1ebfu 9 qu\u1ea3 t\u00e1o. V\u1eady s\u1ed1 t\u00e1o T\u00e2m \u0111ang c\u00f3 nh\u01b0 th\u1ebf n\u00e0o so v\u1edbi ban \u0111\u1ea7u?",
+    "question_type": "SC",
+    "answer": ">",
+    "skill": 14,
+    "pub_date": "2015-12-06T16:00:28.014Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 172
+},
+{
+  "fields": {
+    "image": "",
+    "question": "A cao h\u01a1n B nh\u01b0ng l\u1ea1i th\u1ea5p h\u01a1n C. B th\u1ea5p h\u01a1n D nh\u01b0ng l\u1ea1i cao h\u01a1n E. V\u1eady chi\u1ec1u cao c\u1ee7a A nh\u01b0 th\u1ebf n\u00e0o so v\u1edbi E?",
+    "question_type": "SC",
+    "answer": ">",
+    "skill": 14,
+    "pub_date": "2015-12-06T16:04:21.574Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 173
+},
+{
+  "fields": {
+    "image": "",
+    "question": "A cao h\u01a1n B nh\u01b0ng l\u1ea1i th\u1ea5p h\u01a1n C. B th\u1ea5p h\u01a1n D nh\u01b0ng l\u1ea1i cao h\u01a1n E. V\u1eady chi\u1ec1u cao c\u1ee7a A nh\u01b0 th\u1ebf n\u00e0o so v\u1edbi D?",
+    "question_type": "SC",
+    "answer": "NA",
+    "skill": 14,
+    "pub_date": "2015-12-06T16:05:03.161Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 174
+},
+{
+  "fields": {
+    "image": "",
+    "question": "A cao h\u01a1n B nh\u01b0ng l\u1ea1i th\u1ea5p h\u01a1n C. B th\u1ea5p h\u01a1n D nh\u01b0ng l\u1ea1i cao h\u01a1n E. V\u1eady chi\u1ec1u cao c\u1ee7a C nh\u01b0 th\u1ebf n\u00e0o so v\u1edbi E?",
+    "question_type": "SC",
+    "answer": ">",
+    "skill": 14,
+    "pub_date": "2015-12-06T16:09:10.970Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 175
+},
+{
+  "fields": {
+    "image": "",
+    "question": "A cao h\u01a1n B nh\u01b0ng l\u1ea1i th\u1ea5p h\u01a1n C. B th\u1ea5p h\u01a1n D nh\u01b0ng l\u1ea1i cao h\u01a1n E. V\u1eady chi\u1ec1u cao c\u1ee7a C nh\u01b0 th\u1ebf n\u00e0o so v\u1edbi D?",
+    "question_type": "SC",
+    "answer": "NA",
+    "skill": 14,
+    "pub_date": "2015-12-06T16:10:05.720Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 176
+},
+{
+  "fields": {
+    "image": "static/img/phantram1.PNG",
+    "question": "Di\u1ec7n t\u00edch ph\u1ea7n m\u00e0u xanh chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m t\u1ed5ng di\u1ec7n t\u00edch h\u00ecnh tr\u00f2n?",
+    "question_type": "AN",
+    "answer": "25%",
+    "skill": 13,
+    "pub_date": "2015-12-06T16:17:34.550Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 177
+},
+{
+  "fields": {
+    "image": "static/img/phantram1_qgSPX7Z.PNG",
+    "question": "Di\u1ec7n t\u00edch ph\u1ea7n m\u00e0u da cam chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m t\u1ed5ng di\u1ec7n t\u00edch h\u00ecnh tr\u00f2n?",
+    "question_type": "AN",
+    "answer": "75%",
+    "skill": 13,
+    "pub_date": "2015-12-06T16:18:00.536Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 178
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u00e0 Lan nu\u00f4i 20 con g\u00e0. M\u1eb9 Lan mang 8 con g\u00e0 \u0111i b\u00e1n? H\u1ecfi s\u1ed1 g\u00e0 m\u1eb9 b\u00e1n chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m t\u1ed5ng s\u1ed1 g\u00e0?",
+    "question_type": "AN",
+    "answer": "32%",
+    "skill": 13,
+    "pub_date": "2015-12-06T16:28:14.323Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 179
+},
+{
+  "fields": {
+    "image": "",
+    "question": "C\u00f4 giao cho b\u00e9 10 b\u00e0i t\u1eadp to\u00e1n v\u1ec1 nh\u00e0. Trong gi\u1edd ra ch\u01a1i b\u00e9 \u0111\u00e3 tranh th\u1ee7 l\u00e0m xong 4 b\u00e0i. V\u1eady s\u1ed1 b\u00e0i t\u1eadp c\u00f2n l\u1ea1i b\u00e9 ph\u1ea3i l\u00e0m chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m t\u1ed5ng s\u1ed1 b\u00e0i?",
+    "question_type": "AN",
+    "answer": "60%",
+    "skill": 13,
+    "pub_date": "2015-12-06T16:32:48.357Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 180
+},
+{
+  "fields": {
+    "image": "",
+    "question": "T\u00ecm x?\r\n16 : 40 = x%",
+    "question_type": "AN",
+    "answer": "45%",
+    "skill": 13,
+    "pub_date": "2015-12-06T16:33:58.929Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 181
+},
+{
+  "fields": {
+    "image": "",
+    "question": "M\u1ed9t gi\u1edd c\u00f3 bao nhi\u00eau ph\u00fat?",
+    "question_type": "AN",
+    "answer": "60",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:39:08.105Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 182
+},
+{
+  "fields": {
+    "image": "",
+    "question": "M\u1ed9t ph\u00fat c\u00f3 bao nhi\u00eau gi\u00e2y?",
+    "question_type": "AN",
+    "answer": "60",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:39:31.090Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 183
+},
+{
+  "fields": {
+    "image": "",
+    "question": "M\u1ed9t n\u0103m (kh\u00f4ng ph\u1ea3i n\u0103m nhu\u1eadn) c\u00f3 bao nhi\u00eau ng\u00e0y?",
+    "question_type": "AN",
+    "answer": "365",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:40:12.183Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 184
+},
+{
+  "fields": {
+    "image": "",
+    "question": "M\u1ed9t n\u0103m nhu\u1eadn c\u00f3 bao nhi\u00eau ng\u00e0y?",
+    "question_type": "AN",
+    "answer": "366",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:40:41.834Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 185
+},
+{
+  "fields": {
+    "image": "",
+    "question": "M\u1ed9t tu\u1ea7n c\u00f3 bao nhi\u00eau ng\u00e0y?",
+    "question_type": "AN",
+    "answer": "7",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:41:07.832Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 186
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u1eefng th\u00e1ng n\u00e0o sau \u0111\u00e2y c\u00f3 31 ng\u00e0y?",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:41:55.676Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 187
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Nh\u1eefng th\u00e1ng n\u00e1o sau \u0111\u00e2y c\u00f3 30 ng\u00e0y?",
+    "question_type": "MC",
+    "answer": "0",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:42:39.563Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 188
+},
+{
+  "fields": {
+    "image": "",
+    "question": "7 gi\u1edd t\u1ed1i v\u00e0 19 gi\u1edd c\u00f3 ch\u1ec9 c\u00f9ng m\u1ed9t th\u1eddi \u0111i\u1ec3m trong ng\u00e0y kh\u00f4ng?",
+    "question_type": "SC",
+    "answer": "0",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:44:46.929Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 189
+},
+{
+  "fields": {
+    "image": "",
+    "question": "8 gi\u1edd s\u00e1ng v\u00e0 8 gi\u1edd t\u1ed1i c\u00f3 ch\u1ec9 c\u00f9ng m\u1ed9t th\u1eddi \u0111i\u1ec3m trong ng\u00e0y kh\u00f4ng?",
+    "question_type": "AN",
+    "answer": "0",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:45:40.826Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 190
+},
+{
+  "fields": {
+    "image": "",
+    "question": "Lo\u1ea1i kim n\u00e0o sau \u0111\u00e2y kh\u00f4ng ph\u1ea3i kim \u0111\u1ed3ng h\u1ed3?",
+    "question_type": "SC",
+    "answer": "0",
+    "skill": 5,
+    "pub_date": "2015-12-06T16:48:40.247Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 191
+},
+{
+  "fields": {
+    "image": "",
+    "question": "T\u00ecm X:\r\n( 7 gi\u1edd 3 ph\u00fat 2 gi\u00e2y ) x 2 = 14 gi\u1edd X ph\u00fat 4 gi\u00e2y",
+    "question_type": "AN",
+    "answer": "6",
+    "skill": 11,
+    "pub_date": "2015-12-06T16:56:23.909Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 192
+},
+{
+  "fields": {
+    "image": "",
+    "question": "T\u00ecm X:\r\n( 7 gi\u1edd 40 ph\u00fat 2 gi\u00e2y ) x 2 = X gi\u1edd 20 ph\u00fat 4 gi\u00e2y",
+    "question_type": "AN",
+    "answer": "15",
+    "skill": 11,
+    "pub_date": "2015-12-06T16:57:12.178Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 193
+},
+{
+  "fields": {
+    "image": "",
+    "question": "T\u00ecm X:\r\n( 10 gi\u1edd 13 ph\u00fat 3 gi\u00e2y ) : 9 = 1 gi\u1edd 8 ph\u00fat X gi\u00e2y",
+    "question_type": "AN",
+    "answer": "7",
+    "skill": 11,
+    "pub_date": "2015-12-06T16:58:54.566Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 194
+},
+{
+  "fields": {
+    "image": "",
+    "question": "T\u00ecm X:\r\n( 11 gi\u1edd 25 ph\u00fat 3 gi\u00e2y ) : 9 = 1 gi\u1edd X ph\u00fat 7 gi\u00e2y",
+    "question_type": "AN",
+    "answer": "16",
+    "skill": 11,
+    "pub_date": "2015-12-06T16:59:39.320Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 195
+},
+{
+  "fields": {
+    "image": "",
+    "question": "T\u00ecm X:\r\n( 17 ph\u00fat 7 gi\u00e2y ) x 5 = 1 gi\u1edd X ph\u00fat 35 gi\u00e2y",
+    "question_type": "AN",
+    "answer": "25",
+    "skill": 11,
+    "pub_date": "2015-12-06T17:01:20.615Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 196
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 81 + 64 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "145",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:06:10.236Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 197
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 97 + 70 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "167",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:07:20.674Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 198
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 16 + 16 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "32",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:07:41.229Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 199
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 35 + 47 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "82",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:08:29.562Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 200
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 91 + 36 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "127",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:09:00.718Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 201
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 19 + 28 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "47",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:09:40.479Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 202
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 28 + 47 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "75",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:10:07.463Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 203
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 40 + 11 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "51",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:10:37.237Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 204
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 9 + 23 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "32",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:13:48.194Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 205
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 14 + 96 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "110",
+    "skill": 7,
+    "pub_date": "2015-12-06T17:15:27.781Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 206
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 67 - 52 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "15",
+    "skill": 8,
+    "pub_date": "2015-12-06T17:23:53.672Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 207
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 97 - 53 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "44",
+    "skill": 8,
+    "pub_date": "2015-12-06T17:24:21.355Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 208
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 98 - 77 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "21",
+    "skill": 8,
+    "pub_date": "2015-12-06T17:24:48.573Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 209
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 81 - 36 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "45",
+    "skill": 8,
+    "pub_date": "2015-12-06T17:25:15.107Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 210
+},
+{
+  "fields": {
+    "image": "",
+    "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 87 - 14 l\u00e0 bao nhi\u00eau?",
+    "question_type": "AN",
+    "answer": "73",
+    "skill": 8,
+    "pub_date": "2015-12-06T17:25:46.469Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 211
+},
+{
+  "fields": {
+    "image": "",
+    "question": "\u0110i\u1ec1n gi\u00e1 tr\u1ecb th\u00edch h\u1ee3p c\u1ee7a x:\r\n53 + x = 71",
+    "question_type": "AN",
+    "answer": "18",
+    "skill": 9,
+    "pub_date": "2015-12-06T17:27:51.570Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 212
+},
+{
+  "fields": {
+    "image": "",
+    "question": "\u0110i\u1ec1n gi\u00e1 tr\u1ecb th\u00edch h\u1ee3p c\u1ee7a x:\r\n12 + 63 = x",
+    "question_type": "AN",
+    "answer": "75",
+    "skill": 9,
+    "pub_date": "2015-12-06T17:28:12.536Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 213
+},
+{
+  "fields": {
+    "image": "",
+    "question": "\u0110i\u1ec1n gi\u00e1 tr\u1ecb th\u00edch h\u1ee3p c\u1ee7a x:\r\n52 + 36 + 29 = x",
+    "question_type": "AN",
+    "answer": "117",
+    "skill": 9,
+    "pub_date": "2015-12-06T17:28:40.809Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 214
+},
+{
+  "fields": {
+    "image": "",
+    "question": "\u0110i\u1ec1n gi\u00e1 tr\u1ecb th\u00edch h\u1ee3p c\u1ee7a x:\r\n23 + x + 66 = 265",
+    "question_type": "AN",
+    "answer": "176",
+    "skill": 9,
+    "pub_date": "2015-12-06T17:29:12.614Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 215
+},
+{
+  "fields": {
+    "image": "",
+    "question": "\u0110i\u1ec1n gi\u00e1 tr\u1ecb th\u00edch h\u1ee3p c\u1ee7a x:\r\n32 + x = 98",
+    "question_type": "AN",
+    "answer": "66",
+    "skill": 9,
+    "pub_date": "2015-12-06T17:29:35.910Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 216
+},
+{
+  "fields": {
+    "image": "static/img/ps1.PNG",
+    "question": "T\u00ecm s\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 tr\u1ed1ng:",
+    "question_type": "AN",
+    "answer": "32",
+    "skill": 10,
+    "pub_date": "2015-12-06T17:31:57.299Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 217
+},
+{
+  "fields": {
+    "image": "static/img/ps2.PNG",
+    "question": "T\u00ecm s\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 tr\u1ed1ng:",
+    "question_type": "AN",
+    "answer": "14",
+    "skill": 10,
+    "pub_date": "2015-12-06T17:32:51.661Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 218
+},
+{
+  "fields": {
+    "image": "static/img/ps3.PNG",
+    "question": "T\u00ecm X, bi\u1ebft:",
+    "question_type": "AN",
+    "answer": "12",
+    "skill": 10,
+    "pub_date": "2015-12-06T17:34:11.410Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 219
+},
+{
+  "fields": {
+    "image": "static/img/ps4.PNG",
+    "question": "T\u00ecm X, bi\u1ebft:",
+    "question_type": "AN",
+    "answer": "30",
+    "skill": 10,
+    "pub_date": "2015-12-06T17:35:25.320Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 220
+},
+{
+  "fields": {
+    "image": "static/img/ps5.PNG",
+    "question": "T\u00ecm s\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o \u00f4 tr\u1ed1ng:",
+    "question_type": "AN",
+    "answer": "4",
+    "skill": 10,
+    "pub_date": "2015-12-06T17:37:11.059Z"
+  },
+  "model": "exercises.exercise",
+  "pk": 221
 }
 ]

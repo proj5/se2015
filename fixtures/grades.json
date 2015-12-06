@@ -2,7 +2,7 @@
 {
   "fields": {
     "name": "1",
-    "num_exercises": 31,
+    "num_exercises": 51,
     "num_skills": 3
   },
   "model": "exercises.grade",
@@ -11,7 +11,7 @@
 {
   "fields": {
     "name": "2",
-    "num_exercises": 25,
+    "num_exercises": 45,
     "num_skills": 4
   },
   "model": "exercises.grade",
@@ -20,7 +20,7 @@
 {
   "fields": {
     "name": "3",
-    "num_exercises": 35,
+    "num_exercises": 48,
     "num_skills": 3
   },
   "model": "exercises.grade",
@@ -29,7 +29,7 @@
 {
   "fields": {
     "name": "4",
-    "num_exercises": 20,
+    "num_exercises": 30,
     "num_skills": 3
   },
   "model": "exercises.grade",
@@ -38,7 +38,7 @@
 {
   "fields": {
     "name": "5",
-    "num_exercises": 25,
+    "num_exercises": 35,
     "num_skills": 3
   },
   "model": "exercises.grade",
@@ -47,7 +47,7 @@
 {
   "fields": {
     "name": "6",
-    "num_exercises": 15,
+    "num_exercises": 41,
     "num_skills": 3
   },
   "model": "exercises.grade",
