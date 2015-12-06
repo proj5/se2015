@@ -48,10 +48,14 @@
 }
 
 .question-img {
-    margin-top: -1em;
-    margin-left: 1em;
-    height: auto;
-    width: auto;
-    max-width: 10em;
-    max-height: 10em;
+  margin-top: -1em;
+  margin-left: 1em;
+  height: auto;
+  width: auto;
+  max-width: 10em;
+  max-height: 10em;
+}
+
+.question-answer-box {
+  margin-bottom: 1em;
 }

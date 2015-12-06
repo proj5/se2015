@@ -13,31 +13,43 @@
         <img class = "question-img" src="{{vm.data.image}}">
       </div>
     </div>
-    <div class="question-Answer-Container">
-      <div ng-if="vm.data.question_type == 'AN'">
-        <form>
-          <input type="text" ng-model="vm.userAnswer" ng-change="vm.submitted = false"></input>
-        </form>
-      </div>
-      <div ng-if="vm.data.question_type == 'MC'">
-        <div ng-repeat="answer in vm.data.possible">
-          <label>
-            <input type="checkbox" ng-click="vm.chooseAnswer(answer.possible_answer)">
-              {{answer.possible_answer}}
-          </label>
+    <div class="well">
+      <div class="question-Answer-Container">
+        <div class="question-answer-box" ng-if="vm.data.question_type == 'AN'">
+          <h4>Điền đáp án vào ô trống: </h4>
+          <form>
+            <input type="text" ng-model="vm.userAnswer" ng-change="vm.submitted = false"></input>
+          </form>
         </div>
-      </div>
-      <div ng-if="vm.data.question_type == 'SC'">
-        <div ng-repeat="answer in vm.data.possible">
-          <label>
-            <input type="radio" ng-model="vm.userAnswer" ng-change="vm.submitted = false" value="{{answer.possible_answer}}">
-              {{answer.possible_answer}}
-          </label>
+        <div ng-if="vm.data.question_type == 'MC'">
+          <h4>Chọn các đáp án thích hợp: </h4>
+          <form role="form">
+            <div ng-repeat="answer in vm.data.possible">
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" id = "checkbox{{answer.possible_answer}}" ng-click="vm.chooseAnswer(answer.possible_answer)">
+                <label for="checkbox{{answer.possible_answer}}">
+                  {{answer.possible_answer}}
+                </label>
+              </div>
+            </div>
+          </form>
         </div>
+        <div ng-if="vm.data.question_type == 'SC'">
+          <h4>Chọn đáp án đúng: </h4>
+          <form role="form">
+            <div ng-repeat="answer in vm.data.possible">
+              <div class="radio radio-primary">
+                <input type="radio" ng-model="vm.userAnswer" id="radio{{answer.possible_answer}}" ng-change="vm.submitted = false" value="{{answer.possible_answer}}">
+                <label for="radio{{answer.possible_answer}}" >
+                  {{answer.possible_answer}}
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <button type="button" class="btn-md btn-primary" ng-click="vm.checkAnswer()">Nộp bài</button>
+        <button type="button" class="btn-md btn-primary" ng-click="vm.change()">Đổi câu hỏi</button>
       </div>
-      <button type="button" class="btn-md btn-primary" ng-click="vm.checkAnswer()">Nộp bài</button>
-      <button type="button" class="btn-md btn-primary" ng-click="vm.change()">Đổi câu hỏi</button>
-
     </div>
     <div class="question-alert-after-submit">
       <div ng-show="vm.submitted">
