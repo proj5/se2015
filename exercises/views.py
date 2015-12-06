@@ -205,10 +205,13 @@ class ExerciseView(views.APIView):
                 user=request.user.profile
             )
 
+            string_answer = request.data.get('answer')
+            list_answer = string_answer.split('|')
+
             if self.check_correct_answer(request, exercise):
                 record.score = 10
                 record.save()
-                for _answer in request.data.get("answer"):
+                for _answer in list_answer:
                     user_answer = UserAnswerRecord(
                         exercise_record=record,
                         answer=_answer
@@ -218,7 +221,7 @@ class ExerciseView(views.APIView):
             else:
                 record.score = 0
                 record.save()
-                for _answer in request.data.get("answer"):
+                for _answer in list_answer:
                     user_answer = UserAnswerRecord(
                         exercise_record=record,
                         answer=_answer
