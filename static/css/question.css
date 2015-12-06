@@ -59,3 +59,45 @@
 .question-answer-box {
   margin-bottom: 1em;
 }
+
+.question-button {
+  -moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+  box-shadow:inset 0px 1px 0px 0px #bee2f9;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #54b4f0), color-stop(1, #296399));
+  background:-moz-linear-gradient(top, #54b4f0 5%, #296399 100%);
+  background:-webkit-linear-gradient(top, #54b4f0 5%, #296399 100%);
+  background:-o-linear-gradient(top, #54b4f0 5%, #296399 100%);
+  background:-ms-linear-gradient(top, #54b4f0 5%, #296399 100%);
+  background:linear-gradient(to bottom, #54b4f0 5%, #296399 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#54b4f0', endColorstr='#296399',GradientType=0);
+  background-color:#54b4f0;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  border:1px solid #3866a3;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:10px;
+  font-weight:bold;
+  padding:8px 20px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #7cacde;
+}
+.question-button:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #296399), color-stop(1, #54b4f0));
+  background:-moz-linear-gradient(top, #296399 5%, #54b4f0 100%);
+  background:-webkit-linear-gradient(top, #296399 5%, #54b4f0 100%);
+  background:-o-linear-gradient(top, #296399 5%, #54b4f0 100%);
+  background:-ms-linear-gradient(top, #296399 5%, #54b4f0 100%);
+  background:linear-gradient(to bottom, #296399 5%, #54b4f0 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#296399', endColorstr='#54b4f0',GradientType=0);
+  background-color:#296399;
+}
+.question-button:active {
+  position:relative;
+  top:1px;
+}
+
