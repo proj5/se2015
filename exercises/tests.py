@@ -54,7 +54,7 @@ class ExerciseTest(APITestCase):
         url = '/api/v1/exercise/3/3/'
         response = self.client.post(url, {
             "id": 16,
-            "answer": "3 * 4|20 - 8"
+            "answer": "3 x 4|20 - 8"
         })
         self.assertEqual(response.data, True)
 
@@ -67,7 +67,7 @@ class ExerciseTest(APITestCase):
         url = '/api/v1/exercise/3/3/'
         response = self.client.post(url, {
             "id": 16,
-            "answer": "3 * 4|20 - 8|4 / 3"
+            "answer": "3 x 4|20 - 8|4 : 3"
         })
         self.assertEqual(response.data, False)
 
