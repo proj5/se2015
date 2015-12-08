@@ -7,13 +7,11 @@ from exercises.serializers import ExerciseSerializer, ExerciseAnswerSerializer
 from records.models import ExamRecord, ExerciseRecord, UserAnswerRecord
 from exercises.serializers import SkillSerializer, GradeSerializer
 from exercises.serializers import ExamListSerializer, ExamDetailSerializer
-from exercises.serializers import ExamRecordSerializer
+from exercises.serializers import ExamAnswerSerializer
 
 from rest_framework import status
 
 from random import randint
-import json
-import re
 
 
 class GradeView(views.APIView):
@@ -62,18 +60,24 @@ class ExamListView(views.APIView):
 class ExamDetailView(views.APIView):
 
     def get_permissions(self):
-        if self.request.method == 'GET':
-            return (permissions.AllowAny(),)
         return (permissions.IsAuthenticated(), )
 
     def get(self, request, exam_id, format=None):
         exam = Exam.objects.get(id=exam_id)
+        try:
+            exam_record = ExamRecord.objects.get(
+                exam__id=exam_id,
+                user=request.user.profile
+            )
+            exam.taken = True
+        except ExamRecord.DoesNotExist:
+            exam.taken = False
         serializer = ExamDetailSerializer(exam)
         return Response(serializer.data)
 
     def check_correct_answer(self, _exercise, exercise):
         if exercise.question_type == 'AN':
-            if _exercise.get('answer') == exercise.answer:
+            if _exercise == exercise.answer:
                 return True
             else:
                 return False
@@ -85,27 +89,18 @@ class ExamDetailView(views.APIView):
                 for answer in exercise.possible.all():
                     if answer.is_correct_answer:
                         count1 += 1
-                if isinstance(_exercise.get('answer'), basestring):
-                    count2 = 1
-                else:
-                    count2 = 0
-                    for answer in _exercise.get('answer'):
-                        count2 += 1
+                _answers = _exercise.split('|')
+                count2 = len(_answers)
                 if not count1 == count2:
                     return False
                 # Check if two lists are equivalent
                 for answer in exercise.possible.all():
                     if answer.is_correct_answer:
                         found = False
-                        if isinstance(_exercise.get('answer'), basestring):
-                            if (_exercise.get('answer') ==
-                               answer.possible_answer):
+                        for _answer in _answers:
+                            if answer.possible_answer == _answer:
                                 found = True
-                        else:
-                            for _answer in _exercise.get('answer'):
-                                if _answer == answer.possible_answer:
-                                    found = True
-                                    break
+                                break
                         if not found:
                             return False
                 return True
@@ -114,26 +109,48 @@ class ExamDetailView(views.APIView):
     def post(self, request, exam_id, format=None):
         exam = Exam.objects.get(id=exam_id)
         score = 0
-        serializer = ExamRecordSerializer(exam, data=request.data)
+        serializer = ExamAnswerSerializer(exam, data=request.data)
+        try:
+            exam_record = ExamRecord.objects.get(
+                exam=exam,
+                user=request.user.profile
+            )
+        except ExamRecord.DoesNotExist:
+            exam_record = ExamRecord(
+                exam=exam,
+                user=request.user.profile
+            )
+        exam_record.save()
         if serializer.is_valid():
             for exercise in exam.exercises.all():
-                for s in request.data.getlist('exercises'):
-                    json_object = re.sub('\'', '\"', s)
-                    _exercise = json.loads(json_object)
-                    if _exercise.get('id') == exercise.id:
+                _exercises = request.data.get('exercises').split('&')
+                for string in _exercises:
+                    id = string.split('|', 1)[0]
+                    _exercise = string.split('|', 1)[1]
+                    if id == str(exercise.id):
                         if self.check_correct_answer(_exercise,
                            exercise):
-                            score += 1
+                            exercise_score = 1
                         else:
-                            score += 0
+                            exercise_score = 0
+                        score += exercise_score
+                        exercise_record = ExerciseRecord(
+                            exercise=exercise,
+                            exam_record=exam_record,
+                            user=request.user.profile,
+                            score=exercise_score
+                        )
+                        exercise_record.save()
+                        for answer in _exercise.split('|'):
+                            user_answer_record = UserAnswerRecord(
+                                exercise_record=exercise_record,
+                                answer=answer
+                            )
+                            user_answer_record.save()
             # Save exam record
-            record = ExamRecord(
-                exam=exam,
-                user=request.user.profile,
-                done_time=request.data.get('done_time'),
-                score=score
-            )
-            record.save()
+            exam_record.done_time = request.data.get('done_time')
+            exam_record.score = score
+            exam_record.save()
             return Response(score)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

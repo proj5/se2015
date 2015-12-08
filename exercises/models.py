@@ -86,6 +86,7 @@ class Exam(models.Model):
     exercises = models.ManyToManyField(Exercise, blank=True)
     num_exercises = models.IntegerField(default=10)
     time_limit = models.IntegerField(default=0)
+    taken = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.name

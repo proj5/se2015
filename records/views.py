@@ -2,6 +2,7 @@ from rest_framework import permissions, views
 from rest_framework.response import Response
 
 from records.models import ExerciseRecord, ExamRecord
+from records.serializers import ExamRecordOneUserSerializer
 from records.serializers import ExamRecordSerializer
 
 
@@ -44,3 +45,20 @@ class ExerciseRecordView(views.APIView):
             "total_record": total_record,
             "count_correct_answer": count_correct_answer,
             "count_wrong_answer": count_wrong_answer})
+
+
+class ExamRecordUserView(views.APIView):
+
+    def get_permissions(self):
+        return (permissions.IsAuthenticated(),)
+
+    def get(self, request, exam_id, format=None):
+        try:
+            record = ExamRecord.objects.get(
+                exam__id=exam_id,
+                user=request.user.profile
+            )
+            serializer = ExamRecordOneUserSerializer(record)
+            return Response(serializer.data)
+        except ExamRecord.DoesNotExist:
+            return Response(False)
