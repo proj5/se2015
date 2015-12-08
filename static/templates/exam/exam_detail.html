@@ -1,0 +1,105 @@
+<div>
+  <div class="col-sm-9 col-md-9">
+    <p ng-if="vm.exam.taken == true">Bạn đã làm bài kiểm tra này!</p>
+    <div ng-repeat="exercise in vm.exam.exercises">
+      <div class="panel panel-default">
+        <div class="panel-heading" id="panel{{exercise.id}}">          
+          <p ng-if="vm.show_exercise_result == false">Câu hỏi {{$index + 1}}</p>
+          <div ng-if="vm.show_exercise_result == true">
+            <p ng-if="vm.correct[exercise.id] == true">Câu hỏi {{$index + 1}} ĐÚNG</p>
+            <p ng-if="vm.correct[exercise.id] == false">Câu hỏi {{$index + 1}} SAI</p>
+          </div> 
+          </p>          
+        </div>
+        <div class="panel-body">
+          <div class="question-Detail well">
+            <p class="question-Require"> Trả lời câu hỏi sau: </p>
+            <p class="question-Text"> {{ exercise.question }} </p>
+            <div ng-if = "exercise.image != '' && exercise.image != null">
+              <img class = "question-img" src="{{exercise.image}}">
+            </div>
+          </div>
+          <div class="well">
+            <div class="question-Answer-Container">
+              <div class="question-answer-box" ng-if="exercise.question_type == 'AN'">
+                <h4>Điền đáp án vào ô trống: </h4>
+                <form>
+                  <input type="text" ng-model="vm.userAnswer[exercise.id]"/>
+                </form>
+              </div>
+              <div ng-if="exercise.question_type == 'MC'">
+                <h4>Chọn các đáp án thích hợp: </h4>
+                <form role="form">
+                  <div ng-repeat="answer in exercise.possible">
+                    <div class="checkbox checkbox-primary">
+                      <input type="checkbox" id = "checkbox{{answer.possible_answer}}" ng-click="vm.chooseAnswer(exercise.id, answer.possible_answer)"/>
+                      <label for="checkbox{{answer.possible_answer}}">
+                        {{answer.possible_answer}}
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div ng-if="exercise.question_type == 'SC'">
+                <h4>Chọn đáp án đúng: </h4>
+                <form role="form">
+                  <div ng-repeat="answer in exercise.possible">
+                    <div class="radio radio-primary">
+                      <input type="radio" ng-model="vm.userAnswer[exercise.id]" id="radio{{answer.possible_answer}}" value="{{answer.possible_answer}}">
+                      <label for="radio{{answer.possible_answer}}" >
+                        {{answer.possible_answer}}
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-3 col-md-3" id="exam_timer">
+    <p id="text">Thời gian còn lại:</p>
+    <p id="remaining">{{vm.minutes | fixedLength:2}}:{{vm.seconds | fixedLength:2}}</p>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_alert" ng-click="vm.checkFillAnswer()" id="button_submit">Nộp bài</button>
+
+  </div>
+</div>
+
+<div id="modal_alert" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">        
+        <h4 class="modal-title">Thông báo</h4>
+      </div>
+      <div class="modal-body">
+        <p ng-show="vm.fillAnswer">Bạn có chắc chắn nộp bài không?</p>
+        <p ng-hide="vm.fillAnswer">Bạn vẫn chưa hoàn thành các câu hỏi, bạn muốn tiếp tục làm bài hay nộp bài luôn?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal" ng-click="vm.submit()">Nộp bài</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-hide="vm.fillAnswer">Tiếp tục làm bài</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-show="vm.fillAnswer">Xem lại bài</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal_result" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Kết quả</h4>
+      </div>
+      <div class="modal-body">
+        <p>Bạn được {{vm.score}}/{{vm.exam.num_exercises}} điểm!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+
+  </div>
+</div>

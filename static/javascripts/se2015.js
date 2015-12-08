@@ -9,7 +9,8 @@
       'se2015.profiles',
       'se2015.layout',
       'se2015.controllers',
-      'se2015.learning'
+      'se2015.learning',
+      'se2015.exam'
   ]);
 
   angular
