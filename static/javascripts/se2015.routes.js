@@ -23,10 +23,40 @@
       templateUrl: 'static/templates/users/login.html'
     })
     .when('/learning', {
-      controller: 'LearningController',
+      controller: 'LearningController1',
       controllerAs: 'vm',
-      templateUrl: 'static/templates/learning/learning.html'
+      templateUrl: 'static/templates/learning/learning1.html'
     })    
+    .when('/learning/toan-lop-1', {
+      controller: 'LearningController1',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/learning/learning1.html'
+    })
+    .when('/learning/toan-lop-2', {
+      controller: 'LearningController2',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/learning/learning2.html'
+    })
+    .when('/learning/toan-lop-3', {
+      controller: 'LearningController3',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/learning/learning3.html'
+    })
+    .when('/learning/toan-lop-4', {
+      controller: 'LearningController4',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/learning/learning4.html'
+    })
+    .when('/learning/toan-lop-5', {
+      controller: 'LearningController5',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/learning/learning5.html'
+    })
+    .when('/learning/toan-lop-6', {
+      controller: 'LearningController6',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/learning/learning6.html'
+    })
     .when('/learning/:gradeId/:skillId', {
       controller: 'QuestionController',
       controllerAs: 'vm',
@@ -43,6 +73,8 @@
       templateUrl: 'static/templates/exam/exam_detail.html'
     })
     .when('/main', {
+      controller: 'MainController',
+      controllerAs: 'vm',
       templateUrl: '/static/templates/main/main.html'
     })
     .when('/user/:username', {
