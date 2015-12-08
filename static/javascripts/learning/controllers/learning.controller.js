@@ -1,7 +1,7 @@
 (function() {
   var learningController = angular.module('se2015.learning.controllers');
 
-  learningController.controller('LearningController', function($http) {
+  learningController.controller('LearningController', function($http, $routeParams) {
     var vm = this;
 
     init();
@@ -11,7 +11,7 @@
       $http.get(vm.url)
       .then(function successCallback(response) {
         vm.grades = response.data;
-        vm.currentGrade = vm.grades[0];
+        vm.currentGrade = vm.grades[$routeParams.gradeId - 1];
         getSkills(vm.currentGrade.id);
       }, function errorCallback(response) {
         console.log("Error get grade list");

@@ -14,7 +14,7 @@
   /*
   It's better when we create an gradient bottom up with black color to highlight the text
   */
-  background: url("http://webcorestudio.com/wp-content/uploads/2009/12/metal-apple-desktop-wallpaper.jpg") no-repeat center center; 
+  background: url("/static/img/cover.jpg") no-repeat center center; 
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -26,11 +26,11 @@
   color: inherit;
 }
 .main-jumbotron h2 {
-  color: #FFFFFF;
+  color: #FFFFFF;  
 }
 .main-jumbotron p {
   color: #FFFFFF;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   font-size: 21px;
   font-weight: 200;
 }
@@ -68,8 +68,8 @@
 /*-----------------------------------------------*/
 .main-grade-menu-container {
   background-color: #FFFFFF;
-  min-height: 50em;
-  border-radius: 10px;
+  min-height: 100%;
+  border-radius: 10px;  
 }
 .main-row-list-grades {
   margin-left:10px; 
@@ -83,4 +83,7 @@
   margin-right: 5em;
   width: 200;
   height: 200;
+}
+#grade_button {
+  text-align: center;
 }
