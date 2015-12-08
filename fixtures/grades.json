@@ -1,8 +1,8 @@
 [
 {
   "fields": {
-    "name": "L\u1edbp 1",
-    "num_exercises": 9,
+    "name": "1",
+    "num_exercises": 51,
     "num_skills": 3
   },
   "model": "exercises.grade",
@@ -10,20 +10,47 @@
 },
 {
   "fields": {
-    "name": "L\u1edbp 2",
-    "num_exercises": 6,
-    "num_skills": 2
+    "name": "2",
+    "num_exercises": 45,
+    "num_skills": 4
   },
   "model": "exercises.grade",
   "pk": 2
 },
 {
   "fields": {
-    "name": "L\u1edbp 3",
-    "num_exercises": 1,
-    "num_skills": 1
+    "name": "3",
+    "num_exercises": 48,
+    "num_skills": 3
   },
   "model": "exercises.grade",
   "pk": 3
+},
+{
+  "fields": {
+    "name": "4",
+    "num_exercises": 30,
+    "num_skills": 3
+  },
+  "model": "exercises.grade",
+  "pk": 4
+},
+{
+  "fields": {
+    "name": "5",
+    "num_exercises": 35,
+    "num_skills": 3
+  },
+  "model": "exercises.grade",
+  "pk": 5
+},
+{
+  "fields": {
+    "name": "6",
+    "num_exercises": 41,
+    "num_skills": 3
+  },
+  "model": "exercises.grade",
+  "pk": 6
 }
 ]
