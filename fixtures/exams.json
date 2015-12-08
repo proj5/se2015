@@ -1,14 +1,15 @@
 [
 {
   "fields": {
-    "grade": 1,
     "time_limit": 270,
+    "name": "Testing 1",
+    "grade": 1,
     "exercises": [
       1,
       3,
       8
     ],
-    "name": "Testing 1",
+    "taken": false,
     "num_exercises": 3
   },
   "model": "exercises.exam",
@@ -16,15 +17,16 @@
 },
 {
   "fields": {
-    "grade": 1,
     "time_limit": 360,
+    "name": "Testing 2",
+    "grade": 1,
     "exercises": [
       4,
       7,
       9,
       14
     ],
-    "name": "Testing 2",
+    "taken": false,
     "num_exercises": 4
   },
   "model": "exercises.exam",
@@ -32,12 +34,13 @@
 },
 {
   "fields": {
-    "grade": 3,
     "time_limit": 90,
+    "name": "Testing 3",
+    "grade": 3,
     "exercises": [
       16
     ],
-    "name": "Testing 3",
+    "taken": false,
     "num_exercises": 1
   },
   "model": "exercises.exam",
@@ -45,8 +48,9 @@
 },
 {
   "fields": {
-    "grade": 2,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "grade": 2,
     "exercises": [
       203,
       204,
@@ -54,7 +58,7 @@
       210,
       213
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -62,8 +66,9 @@
 },
 {
   "fields": {
-    "grade": 4,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "grade": 4,
     "exercises": [
       48,
       119,
@@ -71,7 +76,7 @@
       219,
       221
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -79,8 +84,9 @@
 },
 {
   "fields": {
-    "grade": 5,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "grade": 5,
     "exercises": [
       61,
       64,
@@ -88,7 +94,7 @@
       112,
       175
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -96,8 +102,9 @@
 },
 {
   "fields": {
-    "grade": 6,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "grade": 6,
     "exercises": [
       69,
       77,
@@ -105,7 +112,7 @@
       152,
       165
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -113,8 +120,9 @@
 },
 {
   "fields": {
-    "grade": 1,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "grade": 1,
     "exercises": [
       1,
       9,
@@ -122,7 +130,7 @@
       17,
       18
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -130,8 +138,9 @@
 },
 {
   "fields": {
-    "grade": 1,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "grade": 1,
     "exercises": [
       3,
       9,
@@ -139,7 +148,7 @@
       20,
       21
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -147,8 +156,9 @@
 },
 {
   "fields": {
-    "grade": 2,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "grade": 2,
     "exercises": [
       200,
       208,
@@ -156,7 +166,7 @@
       212,
       215
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -164,8 +174,9 @@
 },
 {
   "fields": {
-    "grade": 3,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "grade": 3,
     "exercises": [
       40,
       101,
@@ -173,7 +184,7 @@
       142,
       145
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -181,8 +192,9 @@
 },
 {
   "fields": {
-    "grade": 4,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "grade": 4,
     "exercises": [
       120,
       121,
@@ -190,7 +202,7 @@
       195,
       217
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -198,8 +210,9 @@
 },
 {
   "fields": {
-    "grade": 5,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "grade": 5,
     "exercises": [
       59,
       66,
@@ -207,7 +220,7 @@
       114,
       176
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -215,8 +228,9 @@
 },
 {
   "fields": {
-    "grade": 3,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "grade": 3,
     "exercises": [
       6,
       34,
@@ -224,7 +238,7 @@
       103,
       144
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
@@ -232,8 +246,9 @@
 },
 {
   "fields": {
-    "grade": 6,
     "time_limit": 25,
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "grade": 6,
     "exercises": [
       67,
       148,
@@ -241,7 +256,7 @@
       162,
       165
     ],
-    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "taken": false,
     "num_exercises": 5
   },
   "model": "exercises.exam",
