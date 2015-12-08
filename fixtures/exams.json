@@ -8,7 +8,7 @@
       3,
       8
     ],
-    "name": "Exam 1",
+    "name": "Testing 1",
     "num_exercises": 3
   },
   "model": "exercises.exam",
@@ -24,7 +24,7 @@
       9,
       14
     ],
-    "name": "Exam 2",
+    "name": "Testing 2",
     "num_exercises": 4
   },
   "model": "exercises.exam",
@@ -37,10 +37,214 @@
     "exercises": [
       16
     ],
-    "name": "Exam 3",
+    "name": "Testing 3",
     "num_exercises": 1
   },
   "model": "exercises.exam",
   "pk": 3
+},
+{
+  "fields": {
+    "grade": 2,
+    "time_limit": 25,
+    "exercises": [
+      203,
+      204,
+      208,
+      210,
+      213
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 4
+},
+{
+  "fields": {
+    "grade": 4,
+    "time_limit": 25,
+    "exercises": [
+      48,
+      119,
+      121,
+      219,
+      221
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 5
+},
+{
+  "fields": {
+    "grade": 5,
+    "time_limit": 25,
+    "exercises": [
+      61,
+      64,
+      85,
+      112,
+      175
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 6
+},
+{
+  "fields": {
+    "grade": 6,
+    "time_limit": 25,
+    "exercises": [
+      69,
+      77,
+      148,
+      152,
+      165
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 7
+},
+{
+  "fields": {
+    "grade": 1,
+    "time_limit": 25,
+    "exercises": [
+      1,
+      9,
+      15,
+      17,
+      18
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 8
+},
+{
+  "fields": {
+    "grade": 1,
+    "time_limit": 25,
+    "exercises": [
+      3,
+      9,
+      10,
+      20,
+      21
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 9
+},
+{
+  "fields": {
+    "grade": 2,
+    "time_limit": 25,
+    "exercises": [
+      200,
+      208,
+      211,
+      212,
+      215
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 10
+},
+{
+  "fields": {
+    "grade": 3,
+    "time_limit": 25,
+    "exercises": [
+      40,
+      101,
+      102,
+      142,
+      145
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 9/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 11
+},
+{
+  "fields": {
+    "grade": 4,
+    "time_limit": 25,
+    "exercises": [
+      120,
+      121,
+      192,
+      195,
+      217
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 12
+},
+{
+  "fields": {
+    "grade": 5,
+    "time_limit": 25,
+    "exercises": [
+      59,
+      66,
+      82,
+      114,
+      176
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 13
+},
+{
+  "fields": {
+    "grade": 3,
+    "time_limit": 25,
+    "exercises": [
+      6,
+      34,
+      39,
+      103,
+      144
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 14
+},
+{
+  "fields": {
+    "grade": 6,
+    "time_limit": 25,
+    "exercises": [
+      67,
+      148,
+      150,
+      162,
+      165
+    ],
+    "name": "Ki\u1ec3m tra th\u00e1ng 10/2015",
+    "num_exercises": 5
+  },
+  "model": "exercises.exam",
+  "pk": 15
 }
 ]
