@@ -1,30 +1,7 @@
-<!--
-<div>
-  <div class="questionDetail">
-    {{vm.data.question}}
-    <br/>
-    Your answer here:
-    <form>
-      <input type="text" ng-model="vm.userAnswer" ng-change="vm.submitted = false"></input>
-      <button type="button" class="btn btn-primary" ng-click="vm.checkAnswer()">Submit</button>
-      <button type="button" class="btn btn-primary" ng-click="vm.change()">Change question</button>        
-    </form>
-    <div ng-show="vm.submitted">
-      <div class="questionCorrect" ng-show="vm.answerCorrect">
-        Your answer is correct
-      </div>
-      <div class="questionWrong" ng-hide="vm.answerCorrect">
-        Your answer is wrong!
-      </div>
-    </div>               
-  </div>
-</div> 
--->
-
 <div class="panel panel-default">
   <div class="panel-heading">
     <ol class="question-breadcrumb">
-      <li><a href="#">Lớp {{ vm.data.skill.grade.name }}</a></li>
+      <li><a href="#">{{ vm.data.skill.grade.name }}</a></li>
       <li><a href="#">{{ vm.data.skill.name }}</a></li>
     </ol>
   </div>
@@ -32,13 +9,47 @@
     <div class="question-Detail well">
       <p class="question-Require"> Trả lời câu hỏi sau: </p>
       <p class="question-Text"> {{ vm.data.question }} </p>
+      <div ng-if = "vm.data.image != '' && vm.data.image != null">
+        <img class = "question-img" src="{{vm.data.image}}">
+      </div>
     </div>
-    <div class="question-Answer-Container">
-      <form>
-        <input type="text" ng-model="vm.userAnswer" ng-change="vm.submitted = false"></input>
-        <button type="button" class="btn-md btn-primary" ng-click="vm.checkAnswer()">Nộp bài</button>
-        <button type="button" class="btn-md btn-primary" ng-click="vm.change()">Đổi câu hỏi</button>        
-      </form>
+    <div class="well">
+      <div class="question-Answer-Container">
+        <div class="question-answer-box" ng-if="vm.data.question_type == 'AN'">
+          <h4>Điền đáp án vào ô trống: </h4>
+          <form>
+            <input type="text" ng-model="vm.userAnswer" ng-change="vm.submitted = false"></input>
+          </form>
+        </div>
+        <div ng-if="vm.data.question_type == 'MC'">
+          <h4>Chọn các đáp án thích hợp: </h4>
+          <form role="form">
+            <div ng-repeat="answer in vm.data.possible">
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" id = "checkbox{{answer.possible_answer}}" ng-click="vm.chooseAnswer(answer.possible_answer)">
+                <label for="checkbox{{answer.possible_answer}}">
+                  {{answer.possible_answer}}
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div ng-if="vm.data.question_type == 'SC'">
+          <h4>Chọn đáp án đúng: </h4>
+          <form role="form">
+            <div ng-repeat="answer in vm.data.possible">
+              <div class="radio radio-primary">
+                <input type="radio" ng-model="vm.userAnswer" id="radio{{answer.possible_answer}}" ng-change="vm.submitted = false" value="{{answer.possible_answer}}">
+                <label for="radio{{answer.possible_answer}}" >
+                  {{answer.possible_answer}}
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <button type="button" class="question-button" ng-click="vm.checkAnswer()">Nộp bài</button>
+        <button type="button" class="question-button" ng-click="vm.change()">Đổi câu hỏi</button>
+      </div>
     </div>
     <div class="question-alert-after-submit">
       <div ng-show="vm.submitted">
@@ -49,7 +60,7 @@
         <div class="question-Wrong" ng-hide="vm.answerCorrect">
           <div class="alert alert-danger" role="alert">Bé trả lời sai mất rồi, làm lại nhé!</div>
         </div>
-      </div> 
+      </div>
     </div>
 
   </div>

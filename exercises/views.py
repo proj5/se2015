@@ -171,7 +171,9 @@ class ExerciseView(views.APIView):
                     if answer.is_correct_answer:
                         count1 += 1
                 count2 = 0
-                for answer in request.data.getlist('answer'):
+                string_answer = request.data.get('answer')
+                list_answer = string_answer.split('|')
+                for answer in list_answer:
                     count2 += 1
                 if not count1 == count2:
                     return False
@@ -179,7 +181,7 @@ class ExerciseView(views.APIView):
                 for answer in exercise.possible.all():
                     if answer.is_correct_answer:
                         found = False
-                        for _answer in request.data.getlist('answer'):
+                        for _answer in list_answer:
                             if _answer == answer.possible_answer:
                                 found = True
                                 break
@@ -203,10 +205,13 @@ class ExerciseView(views.APIView):
                 user=request.user.profile
             )
 
+            string_answer = request.data.get('answer')
+            list_answer = string_answer.split('|')
+
             if self.check_correct_answer(request, exercise):
                 record.score = 10
                 record.save()
-                for _answer in request.data.get("answer"):
+                for _answer in list_answer:
                     user_answer = UserAnswerRecord(
                         exercise_record=record,
                         answer=_answer
@@ -216,7 +221,7 @@ class ExerciseView(views.APIView):
             else:
                 record.score = 0
                 record.save()
-                for _answer in request.data.get("answer"):
+                for _answer in list_answer:
                     user_answer = UserAnswerRecord(
                         exercise_record=record,
                         answer=_answer

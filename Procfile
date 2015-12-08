@@ -1,1 +1,1 @@
-web: sh init.sh
+web: sh load_heroku.sh
