@@ -20,14 +20,4 @@ python manage.py loaddata exams.json
 python manage.py loaddata records.json
 python manage.py loaddata possible_answer.json
 
-# Force check pep8 when commit
-commit_script="#!/bin/bash
-set -e
-echo '---------------------------------'
-pep8 --exclude=*/migrations/,se2015/wsgi.py .
-echo '---------------------------------'
-python manage.py test
-"
-
-echo "$commit_script" > .git/hooks/pre-commit
-chmod 755 .git/hooks/pre-commit
+gunicorn se2015.wsgi
