@@ -2248,5 +2248,68 @@
   },
   "model": "exercises.possibleanswer",
   "pk": 254
+},
+{
+  "fields": {
+    "possible_answer": "07:00",
+    "is_correct_answer": true,
+    "exercise": 20
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 255
+},
+{
+  "fields": {
+    "possible_answer": "12:00",
+    "is_correct_answer": false,
+    "exercise": 20
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 256
+},
+{
+  "fields": {
+    "possible_answer": "C\u00f3",
+    "is_correct_answer": true,
+    "exercise": 22
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 257
+},
+{
+  "fields": {
+    "possible_answer": "Kh\u00f4ng",
+    "is_correct_answer": false,
+    "exercise": 22
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 258
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c vu\u00f4ng",
+    "is_correct_answer": false,
+    "exercise": 56
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 259
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c nh\u1ecdn",
+    "is_correct_answer": false,
+    "exercise": 56
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 260
+},
+{
+  "fields": {
+    "possible_answer": "G\u00f3c t\u00f9",
+    "is_correct_answer": true,
+    "exercise": 56
+  },
+  "model": "exercises.possibleanswer",
+  "pk": 261
 }
 ]
