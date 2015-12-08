@@ -31,7 +31,6 @@ class UserListView(views.APIView):
 
     # Handle POST request to create new users
     def post(self, request, format=None):
-        print(request.data)
         serializer = UserAccountSerializer(data=request.data)
 
         if serializer.is_valid():
@@ -88,7 +87,6 @@ class UserDetailView(views.APIView):
         serializer = UserAccountSerializer(data=request.data)
 
         if serializer.is_valid() is False:
-            print(serializer.errors)
             return Response({
                 'message': 'Cannnot update profile with provided information'
             }, status=status.HTTP_400_BAD_REQUEST)
