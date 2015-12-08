@@ -18,8 +18,8 @@ class UserAccountTest(APITestCase):
         user_data = response.data['user']
         self.assertEqual(user_data['username'], 'user')
         self.assertEqual(user_data['email'], 'user@email.com')
-        self.assertEqual(user_data['first_name'], 'User')
-        self.assertEqual(user_data['last_name'], 'Nguyen')
+        self.assertEqual(user_data['first_name'], 'Nguyen User')
+        # self.assertEqual(user_data['last_name'], 'Nguyen')
 
     def test_get_user_fail(self):
         url = '/api/v1/accounts/abc/'
@@ -58,8 +58,10 @@ class AuthenticationTest(APITestCase):
         # Create user and then login
         data = {
             'user': {
+                'first_name': 'Nguyen Van A',
                 'username': 'abc',
                 'password': 'abc',
+                'confirm_password': 'abc',
                 'email': 'abc@example.com'
             }
         }

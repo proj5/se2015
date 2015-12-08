@@ -31,11 +31,13 @@
     * @param {string} email The email entered by the user
     * @returns {Promise}
     */
-    function register(username, email, password, school, class_in_school) {
+    function register(username, name, email, password, confirm_password, school, class_in_school) {
       return $http.post('/api/v1/accounts/', {
         user:{
           username: username,
+          first_name: name,
           password: password,
+          confirm_password: confirm_password,
           email: email
         },
         school: school,
@@ -55,7 +57,7 @@
       * @desc Log "Epic failure!" to the console
       */
       function registerErrorFn(data, status, headers, config) {
-        console.error('Epic failure!');
+        console.error('Registration failed!');
       }
     }
 

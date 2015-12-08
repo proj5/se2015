@@ -7,5 +7,5 @@ install:
 before_script:
   - ./init.sh
 script:
-  - "pep8 --exclude=*/migrations/ ."
+  - "pep8 --exclude=*/migrations/,se2015/wsgi.py ."
   - python manage.py test

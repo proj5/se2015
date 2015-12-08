@@ -44,7 +44,6 @@
     * @returns {Promise}
     */
     function update(profile) {
-      var tmp = profile.user.username
       return $http.put('/api/v1/accounts/' + profile.user.username + '/', profile);
     }
   }

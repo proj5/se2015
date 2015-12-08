@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class UserAccountManager(models.Manager):
-    def create_user(self, username, email, password, **kwargs):
+    def create_user(self, username, name, email, password, **kwargs):
         if not email:
             raise ValueError('Users must have a valid email address.')
 
@@ -12,6 +12,7 @@ class UserAccountManager(models.Manager):
 
         user = User.objects.create_user(username,
                                         email, password)
+        user.first_name = name
         user.save()
 
         account = self.model(
