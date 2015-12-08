@@ -19,7 +19,7 @@
     }
 
     function getExamList(gradeId) {
-      var exam_list_url = "api/exam_list/" + gradeId + "/";
+      var exam_list_url = "api/v1/exam_list/" + gradeId + "/";
       $http.get(exam_list_url)
       .then(function successCallback(response) {
         vm.exam_list = response.data;

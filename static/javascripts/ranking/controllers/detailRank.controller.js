@@ -10,7 +10,7 @@
     getExam(vm.exam_id);
 
     function getExamRecord(exam_id) {
-      var exam_record_url = "api/exam_record/" + exam_id + "/";
+      var exam_record_url = "api/v1/exam_record/" + exam_id + "/";
       $http.get(exam_record_url)
       .then(function successCallback(response){
         vm.exam_record = response.data;
@@ -20,7 +20,7 @@
     }
 
     function getExam(exam_id) {
-      var exam_record_url = "api/exam/" + exam_id + "/";
+      var exam_record_url = "api/v1/exam/" + exam_id + "/";
       $http.get(exam_record_url)
       .then(function successCallback(response){
         vm.exam = response.data;
