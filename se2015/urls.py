@@ -12,7 +12,7 @@ from exercises.views import ExamListView
 
 
 urlpatterns = [
-    url(r'^api/avatar/(?P<username>.+)/$', AvatarView.as_view()),
+    url(r'^api/v1/avatar/(?P<username>.+)/$', AvatarView.as_view()),
     url(r'^api/v1/exam_list/(?P<grade_id>.+)/$', ExamListView.as_view()),
     url(r'^api/v1/exam/(?P<exam_id>.+)/$', ExamDetailView.as_view()),
     url(r'^api/v1/exam_record_user/(?P<exam_id>.+)/$',
