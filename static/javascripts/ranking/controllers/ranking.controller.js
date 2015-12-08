@@ -1,7 +1,7 @@
 (function() {
-  var learningController = angular.module('se2015.learning.controllers');
+  var rankingController = angular.module('se2015.ranking.controllers');
 
-  learningController.controller('LearningController', function($http) {
+  rankingController.controller('RankingController', function($http) {
     var vm = this;
 
     init();
@@ -12,24 +12,24 @@
       .then(function successCallback(response) {
         vm.grades = response.data;
         vm.currentGrade = vm.grades[0];
-        getSkills(vm.currentGrade.id);
+        getExamList(vm.currentGrade.id);
       }, function errorCallback(response) {
         console.log("Error get grade list");
       });
     }
 
-    function getSkills(gradeId) {
-      var skillUrl = "api/v1/exercise/" + gradeId + "/";
-      $http.get(skillUrl)
+    function getExamList(gradeId) {
+      var exam_list_url = "api/v1/exam_list/" + gradeId + "/";
+      $http.get(exam_list_url)
       .then(function successCallback(response) {
-        vm.skills = response.data;
+        vm.exam_list = response.data;
       }, function errorCallback(response) {
-        console.log("Error get skill list");
+        console.log("Error get exam list");
       });
     }
 
     vm.switchGrade = function() {
-      getSkills(vm.currentGrade.id);
+      getExamList(vm.currentGrade.id);
     };
   });
 })();

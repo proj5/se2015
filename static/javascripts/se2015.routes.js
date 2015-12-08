@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  
+
   angular
     .module('se2015.routes')
     .config(config);
@@ -13,7 +13,7 @@
   */
   function config($routeProvider) {
     $routeProvider.when('/register', {
-      controller: 'RegisterController', 
+      controller: 'RegisterController',
       controllerAs: 'vm',
       templateUrl: '/static/templates/users/register.html'
     })
@@ -61,6 +61,16 @@
       controller: 'QuestionController',
       controllerAs: 'vm',
       templateUrl: 'static/templates/learning/question.html'
+    })
+    .when('/ranking', {
+      controller: 'RankingController',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/ranking/ranking.html'
+    })
+    .when('/ranking/:examId', {
+      controller: 'DetailRankController',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/ranking/detailRank.html'
     })
     .when('/exam', {
       controller: 'ExamController',
