@@ -39,10 +39,18 @@ class UserListView(views.APIView):
             username = data.get('username')
             email = data.get('email')
             password = data.get('password')
+            confirm_password = data.get('confirm_password')
+            name = data.get('first_name')
             # client should post facebook_id to enable this
             # facebook_id = data.get('facebook_id')
+
+            if password != confirm_password:
+                return Response({
+                    'message': 'Password and confirm password don\'t match'
+                }, status=status.HTTP_400_BAD_REQUEST)
+
             UserAccount.objects.create_user(
-                username, email, password,
+                username, name, email, password,
                 **serializer.validated_data
             )
 
@@ -77,7 +85,23 @@ class UserDetailView(views.APIView):
 
     # Handle PUT request to update user profile
     def put(self, request, username, format=None):
-        data = UserAccountSerializer(data=request.data).data
+        serializer = UserAccountSerializer(data=request.data)
+
+        if serializer.is_valid() is False:
+            print(serializer.errors)
+            return Response({
+                'message': 'Cannnot update profile with provided information'
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        data = serializer.validated_data
+
+        password = data['user'].get('password')
+        confirm_password = data['user'].get('confirm_password')
+
+        if password != confirm_password:
+            return Response({
+                'message': 'Password and confirm password don\'t match'
+            }, status=status.HTTP_400_BAD_REQUEST)
 
         user = User.objects.get(username=username)
         user_serializer = UserSerializer(user,

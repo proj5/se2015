@@ -1,21 +1,22 @@
 from rest_framework import serializers
 
 from users.models import UserAccount
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 
 
-class UserSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True, required=False)
-    confirm_password = serializers.CharField(write_only=True, required=False)
+class UserSerializer(serializers.Serializer):
+    password = serializers.CharField(max_length=20, required=False)
+    confirm_password = serializers.CharField(max_length=20, required=False)
+    email = serializers.EmailField()
+    username = serializers.CharField(max_length=20)
+    first_name = serializers.CharField(max_length=100)
 
-    class Meta:
-        model = User
-        fields = ('username', 'email', 'password', 'confirm_password',
-                  'first_name', 'last_name')
-        lookup_field = 'username'
+    lookup_field = 'username'
 
     def update(self, instance, validated_data):
         instance.email = validated_data.get('email', instance.email)
+        instance.first_name = validated_data.get('first_name',
+                                                 instance.first_name)
         instance.save()
 
         password = validated_data.get('password', None)

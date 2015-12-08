@@ -20,7 +20,8 @@
     * @desc Register a new user
     */
     function register() {
-      Authentication.register(vm.username, vm.email, vm.password, vm.school, vm.class_in_school);
+      Authentication.register(vm.username, vm.name, vm.email, vm.password, vm.confirm_password, 
+                              vm.school, vm.class_in_school);
     }
 
     activate();
