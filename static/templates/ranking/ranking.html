@@ -15,8 +15,8 @@
   <div class="col-md-9">
     <div class="well">
       <h2>Lớp {{ vm.currentGrade.name }}</h2>
-      <ul ng-repeat="exam in vm.exams track by $index">
-        <li><a href="/exam/{{exam.id}}">{{exam.name}}</a></li>
+      <ul ng-repeat="exam in vm.exam_list">
+        <a href="ranking/{{exam.id}}">{{exam.name}}</a>
       </ul>
     </div>
   </div>

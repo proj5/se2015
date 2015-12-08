@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="well">
+    <h2>{{vm.exam.name}}</h2>
+    <table class="table table-striped table-bordered">
+      <thead>
+        <th>#</th>
+        <th>Tên</th>
+        <th>Trường</th>
+        <th>Điểm</th>
+        <th>Thời gian làm bài</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="record in vm.exam_record  | orderBy:'-score'">
+          <th>{{$index + 1}}</th>
+          <th>{{record.user.user.last_name}} {{record.user.user.first_name}}</th>
+          <th>{{record.user.school}}</th>
+          <th>{{record.score}}</th>
+          <th>{{record.done_time}}</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

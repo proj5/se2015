@@ -34,7 +34,6 @@ class ExerciseRecordNoUserSerializer(serializers.ModelSerializer):
 
 class ExamRecordSerializer(serializers.ModelSerializer):
     user = UserAccountSerializer()
-    exercise_records = ExerciseRecordSerializer(many=True)
 
     class Meta:
         model = ExamRecord
