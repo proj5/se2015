@@ -1,12 +1,91 @@
 from rest_framework.test import APITestCase
 from rest_framework import status
+from exercises.models import Exercise, Skill, Grade
+
+
+class GradeTest(APITestCase):
+    fixtures = [
+        'auth', 'users', 'grades', 'skills'
+    ]
+
+    def test_get_list_grade(self):
+        url = '/api/v1/grades/'
+        response = self.client.get(url)
+
+        # Check status code
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # Check number of grades
+        self.assertEqual(
+            len(response.data),
+            len(Grade.objects.all())
+        )
+
+
+class SkillTest(APITestCase):
+    fixtures = [
+        'auth', 'users', 'grades', 'skills'
+    ]
+
+    def test_create_skill(self):
+        grade = Grade.objects.get(pk=1)
+        skill = Skill(name='Test', id_in_grade=10, grade=grade)
+
+        grade_num_skills = grade.num_skills
+        skill.save()
+        # The number of skills should increase
+        self.assertEqual(grade.num_skills, grade_num_skills + 1)
+
+    def test_get_list_skill(self):
+        grade_id = 1
+        url = '/api/v1/exercise/' + str(grade_id) + '/'
+        response = self.client.get(url)
+
+        # Check status code
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # Check number of skills
+        self.assertEqual(
+            len(response.data),
+            len(Skill.objects.filter(grade__id=grade_id))
+        )
 
 
 class ExerciseTest(APITestCase):
     fixtures = [
         'auth', 'users', 'grades', 'skills', 'exercises', 'possible_answer',
-        'exams'
     ]
+
+    def test_create_exercise(self):
+        skill = Skill.objects.get(id=1)
+        grade = skill.grade
+
+        skill_num_exercise = skill.num_exercises
+        grade_num_exercise = grade.num_exercises
+
+        exercise = Exercise(
+            question='1+1=',
+            question_type='AN',
+            answer='2',
+            skill=skill
+        )
+        exercise.save()
+
+        # The number of exercise should increase
+        self.assertEqual(skill.num_exercises, skill_num_exercise + 1)
+        self.assertEqual(grade.num_exercises, grade_num_exercise + 1)
+
+    def test_update_exercise(self):
+        exercise = Exercise.objects.get(id=1)
+        skill = exercise.skill
+        grade = skill.grade
+        exercise.answer = '2'
+
+        skill_num_exercise = skill.num_exercises
+        grade_num_exercise = grade.num_exercises
+        exercise.save()
+
+        # The number of exercise should not change
+        self.assertEqual(skill.num_exercises, skill_num_exercise)
+        self.assertEqual(grade.num_exercises, grade_num_exercise)
 
     def test_get_exercise(self):
         url = '/api/v1/exercise/1/1/'
@@ -70,6 +149,13 @@ class ExerciseTest(APITestCase):
             "answer": "3 x 4|20 - 8|4 : 3"
         })
         self.assertEqual(response.data, False)
+
+
+class ExamTest(APITestCase):
+    fixtures = [
+        'auth', 'users', 'grades', 'skills', 'exercises', 'possible_answer',
+        'exams'
+    ]
 
     def test_post_exam_correct(self):
         url = '/api/v1/auth/login/'
