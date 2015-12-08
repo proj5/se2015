@@ -6,15 +6,18 @@ from users.views import AvatarView
 from se2015.views import IndexView
 
 from records.views import ExerciseRecordView, ExamRecordView
+from records.views import ExamRecordUserView
 from exercises.views import ExerciseView, SkillView, GradeView, ExamDetailView
 from exercises.views import ExamListView
 
 
 urlpatterns = [
     url(r'^api/avatar/(?P<username>.+)/$', AvatarView.as_view()),
-    url(r'^api/exam_list/(?P<grade_id>.+)/$', ExamListView.as_view()),
-    url(r'^api/exam/(?P<exam_id>.+)/$', ExamDetailView.as_view()),
-    url(r'^api/exam_record/(?P<exam_id>.+)/$', ExamRecordView.as_view()),
+    url(r'^api/v1/exam_list/(?P<grade_id>.+)/$', ExamListView.as_view()),
+    url(r'^api/v1/exam/(?P<exam_id>.+)/$', ExamDetailView.as_view()),
+    url(r'^api/v1/exam_record_user/(?P<exam_id>.+)/$',
+        ExamRecordUserView.as_view()),
+    url(r'^api/v1/exam_record/(?P<exam_id>.+)/$', ExamRecordView.as_view()),
     url(r'^api/v1/exercise/(?P<grade_id>.+)/(?P<skill_id>.+)/$',
         ExerciseView.as_view()),
     url(r'^api/v1/exercise/(?P<grade_id>.+)/$', SkillView.as_view()),

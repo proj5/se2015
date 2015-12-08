@@ -24,7 +24,7 @@ python manage.py loaddata possible_answer.json
 commit_script="#!/bin/bash
 set -e
 echo '---------------------------------'
-pep8 --exclude=*/migrations/ .
+pep8 --exclude=*/migrations/,se2015/wsgi.py .
 echo '---------------------------------'
 python manage.py test
 "

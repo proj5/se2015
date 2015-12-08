@@ -1,0 +1,11 @@
+#exam_timer {
+  text-align: center;
+}
+
+#exam_timer #text {
+  font-size: 1.5em;
+}
+
+#exam_timer #remaining {
+  font-size: 5em;
+}

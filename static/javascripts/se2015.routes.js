@@ -42,6 +42,16 @@
       controllerAs: 'vm',
       templateUrl: 'static/templates/ranking/detailRank.html'
     })
+    .when('/exam', {
+      controller: 'ExamController',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/exam/exam.html'
+    })
+    .when('/exam/:examId', {
+      controller: 'ExamDetailController',
+      controllerAs: 'vm',
+      templateUrl: 'static/templates/exam/exam_detail.html'
+    })
     .when('/main', {
       templateUrl: '/static/templates/main/main.html'
     })

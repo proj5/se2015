@@ -4,17 +4,17 @@
     "grade": 1,
     "id_in_grade": 1,
     "name": "Ph\u00e9p c\u1ed9ng hai s\u1ed1 c\u00f3 m\u1ed9t ch\u1eef s\u1ed1",
-    "num_exercises": 4
+    "num_exercises": 15
   },
   "model": "exercises.skill",
   "pk": 1
 },
 {
   "fields": {
-    "grade": 2,
+    "grade": 3,
     "id_in_grade": 2,
     "name": "Ph\u00e9p chia",
-    "num_exercises": 3
+    "num_exercises": 15
   },
   "model": "exercises.skill",
   "pk": 2
@@ -24,17 +24,17 @@
     "grade": 1,
     "id_in_grade": 2,
     "name": "S\u1ed1 l\u1edbn nh\u1ea5t, nh\u1ecf nh\u1ea5t",
-    "num_exercises": 4
+    "num_exercises": 15
   },
   "model": "exercises.skill",
   "pk": 3
 },
 {
   "fields": {
-    "grade": 2,
+    "grade": 3,
     "id_in_grade": 1,
     "name": "Ph\u00e9p nh\u00e2n",
-    "num_exercises": 3
+    "num_exercises": 15
   },
   "model": "exercises.skill",
   "pk": 4
@@ -44,7 +44,7 @@
     "grade": 1,
     "id_in_grade": 3,
     "name": "Th\u1eddi gian",
-    "num_exercises": 1
+    "num_exercises": 15
   },
   "model": "exercises.skill",
   "pk": 5
@@ -52,11 +52,131 @@
 {
   "fields": {
     "grade": 3,
-    "id_in_grade": 1,
+    "id_in_grade": 3,
     "name": "Ph\u00e9p to\u00e1n cho k\u1ebft qu\u1ea3 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng",
-    "num_exercises": 1
+    "num_exercises": 10
   },
   "model": "exercises.skill",
   "pk": 6
+},
+{
+  "fields": {
+    "grade": 2,
+    "id_in_grade": 2,
+    "name": "Ph\u00e9p c\u1ed9ng v\u1edbi s\u1ed1 c\u00f3 hai ch\u1eef s\u1ed1",
+    "num_exercises": 10
+  },
+  "model": "exercises.skill",
+  "pk": 7
+},
+{
+  "fields": {
+    "grade": 2,
+    "id_in_grade": 1,
+    "name": "Ph\u00e9p tr\u1eeb v\u1edbi s\u1ed1 c\u00f3 hai ch\u1eef s\u1ed1",
+    "num_exercises": 10
+  },
+  "model": "exercises.skill",
+  "pk": 8
+},
+{
+  "fields": {
+    "grade": 2,
+    "id_in_grade": 3,
+    "name": "T\u00ecm s\u1ed1 h\u1ea1ng trong m\u1ed9t ph\u00e9p c\u1ed9ng",
+    "num_exercises": 10
+  },
+  "model": "exercises.skill",
+  "pk": 9
+},
+{
+  "fields": {
+    "grade": 4,
+    "id_in_grade": 1,
+    "name": "Ph\u00e2n s\u1ed1 b\u1eb1ng nhau",
+    "num_exercises": 10
+  },
+  "model": "exercises.skill",
+  "pk": 10
+},
+{
+  "fields": {
+    "grade": 4,
+    "id_in_grade": 2,
+    "name": "C\u00e1c ph\u00e9p t\u00ednh v\u1ec1 th\u1eddi gian",
+    "num_exercises": 10
+  },
+  "model": "exercises.skill",
+  "pk": 11
+},
+{
+  "fields": {
+    "grade": 4,
+    "id_in_grade": 3,
+    "name": "G\u00f3c vu\u00f4ng, g\u00f3c nh\u1ecdn, g\u00f3c t\u00f9",
+    "num_exercises": 10
+  },
+  "model": "exercises.skill",
+  "pk": 12
+},
+{
+  "fields": {
+    "grade": 5,
+    "id_in_grade": 1,
+    "name": "S\u1ed1 ph\u1ea7n tr\u0103m",
+    "num_exercises": 10
+  },
+  "model": "exercises.skill",
+  "pk": 13
+},
+{
+  "fields": {
+    "grade": 5,
+    "id_in_grade": 2,
+    "name": "So s\u00e1nh d\u1ef1a tr\u00ean l\u1eddi v\u0103n",
+    "num_exercises": 10
+  },
+  "model": "exercises.skill",
+  "pk": 14
+},
+{
+  "fields": {
+    "grade": 6,
+    "id_in_grade": 1,
+    "name": "S\u1ed1 li\u1ec1n tr\u01b0\u1edbc, s\u1ed1 li\u1ec1n sau",
+    "num_exercises": 10
+  },
+  "model": "exercises.skill",
+  "pk": 15
+},
+{
+  "fields": {
+    "grade": 6,
+    "id_in_grade": 2,
+    "name": "\u01af\u1edbc s\u1ed1, \u01b0\u1edbc s\u1ed1 chung",
+    "num_exercises": 15
+  },
+  "model": "exercises.skill",
+  "pk": 16
+},
+{
+  "fields": {
+    "grade": 6,
+    "id_in_grade": 3,
+    "name": "B\u1ed9i s\u1ed1, b\u1ed9i s\u1ed1 chung nh\u1ecf nh\u1ea5t",
+    "num_exercises": 16
+  },
+  "model": "exercises.skill",
+  "pk": 17
+},
+{
+  "fields": {
+    "grade": 5,
+    "id_in_grade": 3,
+    "name": "T\u00ecm hai s\u1ed1 khi bi\u1ebft t\u1ed5ng v\u00e0 hi\u1ec7u",
+    "num_exercises": 15
+  },
+  "model": "exercises.skill",
+  "pk": 18
 }
 ]

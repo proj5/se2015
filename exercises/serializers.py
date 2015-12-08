@@ -82,7 +82,8 @@ class ExamDetailSerializer(serializers.ModelSerializer):
             'name',
             'time_limit',
             'num_exercises',
-            'exercises'
+            'exercises',
+            'taken'
         )
         read_only_fields = (
             'id',
@@ -96,19 +97,7 @@ class ExamDetailSerializer(serializers.ModelSerializer):
 
 class ExamAnswerSerializer(serializers.ModelSerializer):
 
-    exercises = ExerciseSerializer(many=True)
-
-    class Meta:
-        model = Exam
-        fields = ('id', 'exercises')
-        read_only_fields = ('id',)
-
-
-class ExamRecordSerializer(serializers.ModelSerializer):
-
-    exercises = ExerciseAnswerSerializer(many=True)
-
     class Meta:
         model = ExamRecord
-        fields = ('id', 'exercises', 'done_time')
-        read_only_fields = ('id', )
+        fields = ('id', 'done_time')
+        read_only_fields = ('id',)
