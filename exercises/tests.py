@@ -38,7 +38,7 @@ class ExerciseTest(APITestCase):
         data = {'username': 'user', 'password': 'user'}
         response = self.client.post(url, data, format='json')
 
-        url = '/api/v1/exercise/2/2/'
+        url = '/api/v1/exercise/3/2/'
         response = self.client.post(url, {
             "id": 6, "answer": {"3"}
         })
@@ -51,10 +51,10 @@ class ExerciseTest(APITestCase):
         data = {'username': 'user', 'password': 'user'}
         response = self.client.post(url, data, format='json')
 
-        url = '/api/v1/exercise/3/1/'
+        url = '/api/v1/exercise/3/3/'
         response = self.client.post(url, {
             "id": 16,
-            "answer": "3 * 4|20 - 8"
+            "answer": "3 x 4|20 - 8"
         })
         self.assertEqual(response.data, True)
 
@@ -64,10 +64,10 @@ class ExerciseTest(APITestCase):
         data = {'username': 'user', 'password': 'user'}
         response = self.client.post(url, data, format='json')
 
-        url = '/api/v1/exercise/3/1/'
+        url = '/api/v1/exercise/3/3/'
         response = self.client.post(url, {
             "id": 16,
-            "answer": "3 * 4|20 - 8|4 / 3"
+            "answer": "3 x 4|20 - 8|4 : 3"
         })
         self.assertEqual(response.data, False)
 
@@ -80,7 +80,7 @@ class ExerciseTest(APITestCase):
         url = '/api/v1/exam/3/'
         response = self.client.post(url, {
             "id": 3,
-            "exercises": "16|3 * 4|20 - 8",
+            "exercises": "16|3 x 4|20 - 8",
             "done_time": 80
         })
         self.assertEqual(response.data, 1)
@@ -102,7 +102,7 @@ class ExerciseTest(APITestCase):
         url = '/api/v1/exam/3/'
         response = self.client.post(url, {
             "id": 3,
-            "exercises": "16|3 * 4|20 - 8|2 + 4",
+            "exercises": "16|3 x 4|20 - 8|2 + 4",
             "done_time": 80
         })
         self.assertEqual(response.data, 0)
