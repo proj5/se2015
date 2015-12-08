@@ -31,6 +31,7 @@ class UserListView(views.APIView):
 
     # Handle POST request to create new users
     def post(self, request, format=None):
+        print(request.data)
         serializer = UserAccountSerializer(data=request.data)
 
         if serializer.is_valid():
@@ -43,7 +44,6 @@ class UserListView(views.APIView):
             name = data.get('first_name')
             # client should post facebook_id to enable this
             # facebook_id = data.get('facebook_id')
-
             if password != confirm_password:
                 return Response({
                     'message': 'Password and confirm password don\'t match'
