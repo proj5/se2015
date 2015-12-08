@@ -1,0 +1,1 @@
+web: sh load_heroku.sh

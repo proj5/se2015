@@ -24,7 +24,7 @@ set filename=.git/hooks/pre-commit
 echo #!/bin/bash >%filename%
 echo set -e >>%filename%
 echo echo '---------------------------------' >>%filename%
-echo pep8 --exclude=*/migrations/ . >>%filename%
+echo pep8 --exclude=*/migrations/,se2015/wsgi.py . >>%filename%
 echo echo '---------------------------------' >>%filename%
 echo python manage.py test >>%filename%
 
