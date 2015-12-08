@@ -1,20 +1,19 @@
-<!--
-<div class="profile" ng-show="vm.profile">
-  <div class="jumbotron profile__header">
-    <h1 class="profile__username">{{ vm.profile.user.username }}</h1>
-    <h2 class="profile__email">{{ vm.profile.user.email }}</h2>
-  </div>
-</div>
--->
-
 <div class="profile" ng-show="vm.profile">
   <div class="panel panel-default">
     <div class="panel-heading">
       {{ vm.profile.user.username }}
     </div>
     <div class="row">
-      <div class="col-md-3">
-        Avatar should be here
+      <div class="col-md-3" id="avatar">
+        <h4 style="margin-top: 0.5em">Ảnh đại diện của bạn</h4>
+        <div ng-if='vm.avatar.avatar != null && vm.avatar.avatar != ""'>
+          <img src="{{vm.avatar.avatar}}"/>
+        </div>
+        <button class="btn btn-default" id="change-avatar-button" ng-click="vm.changeAvatar = true">Đổi ảnh đại diện</button>
+        <div ng-if="vm.changeAvatar">
+          <input type="file" file-model="vm.newAvatar"/>
+          <button class="btn btn-default" id="upload-button" ng-click="vm.changeAvatar = !vm.changeAvatar; vm.uploadAvatar()">Upload</button>
+        </div>
       </div>
       <div class="col-md-5 panel-body">
         <h3 class="user-profile-name">{{ vm.profile.user.last_name }} {{ vm.profile.user.first_name }} </h3>

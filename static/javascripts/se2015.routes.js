@@ -21,12 +21,12 @@
       controller: 'LoginController',
       controllerAs: 'vm',
       templateUrl: 'static/templates/users/login.html'
-    })
-    .when('/learning', {
+    })    
+    .when('/learning/:gradeId', {
       controller: 'LearningController',
       controllerAs: 'vm',
       templateUrl: 'static/templates/learning/learning.html'
-    })
+    })    
     .when('/learning/:gradeId/:skillId', {
       controller: 'QuestionController',
       controllerAs: 'vm',
@@ -53,6 +53,8 @@
       templateUrl: 'static/templates/exam/exam_detail.html'
     })
     .when('/main', {
+      controller: 'MainController',
+      controllerAs: 'vm',
       templateUrl: '/static/templates/main/main.html'
     })
     .when('/user/:username', {

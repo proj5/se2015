@@ -5,15 +5,16 @@
     .module('se2015.profiles.controllers', ['chart.js'])
     .controller('ProfileController', ProfileController);
 
-  ProfileController.$inject = ['$location', '$routeParams', 'Profile', '$http'];
+  ProfileController.$inject = ['$location', '$routeParams', 'Profile', '$http', '$window', 'fileUpload'];
 
-  function ProfileController($location, $routeParams, Profile, $http) {
+  function ProfileController($location, $routeParams, Profile, $http, $window, fileUpload) {
     var vm = this;
 
     vm.profile = undefined;
 
     activate();
     getRecord();
+    getAvatar();
 
     vm.labels = ["Đúng", "Sai"];
 
@@ -53,5 +54,40 @@
         console.log("Error");
       });
     }
+
+    function getAvatar() {
+      var url = "api/v1/avatar/" + $routeParams.username + "/";
+      $http.get(url)
+      .then(function successCallback(response) {
+        vm.avatar = response.data;        
+      }, function errorCallback(response) {
+        console.log("Error get avatar");
+      })
+    }
+
+    vm.uploadAvatar = function() {
+      var file = vm.newAvatar;
+      var uploadUrl = "api/v1/avatar/" + $routeParams.username + "/";
+      fileUpload.uploadFileToUrl(file, uploadUrl);
+      $window.location.reload();
+    }
   }
+
+  angular
+    .module('se2015.profiles.controllers')
+    .directive('fileModel', ['$parse', function ($parse) {
+      return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            var model = $parse(attrs.fileModel);
+            var modelSetter = model.assign;
+            
+            element.bind('change', function(){
+                scope.$apply(function(){
+                    modelSetter(scope, element[0].files[0]);
+                });
+            });
+        }
+      };
+    }]);
 })();

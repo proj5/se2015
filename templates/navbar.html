@@ -14,7 +14,7 @@
       <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li ng-class="{ active: vm.isActive('/main') }"><a href="/">Trang chủ</a></li>
-          <li ng-class="{ active: vm.isActive('/learning') }"><a href="/learning">Học</a></li>
+          <li ng-class="{ active: vm.isActive('/learning/1') }"><a href="/learning/1">Học</a></li>
           <li ng-class="{ active: vm.isActive('/exam') }"><a href="/exam">Kiểm tra</a></li>
           <li ng-class="{ active: vm.isActive('/ranking') }"><a href="/ranking">Bảng xếp hạng</a></li>
           <!-- Uncomment after finsihed
@@ -35,8 +35,8 @@
               </ul>
             </div>
           {% else %}
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Đăng nhập</a></li>
+            <li><a href="/register">Đăng ký</a></li>
           {% endif %}
         </ul>
       </div>
