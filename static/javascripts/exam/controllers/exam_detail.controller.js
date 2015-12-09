@@ -25,7 +25,6 @@
           var id = vm.exam.exercises[i].id;
           vm.correct[id] = false;
         }
-        console.log(vm.exam);
         timer();
         if (vm.exam.taken == true) getExamRecord();
       }, function errorCallback(response) {
@@ -131,6 +130,12 @@
     }
 
     vm.checkFillAnswer = function() {
+      /*
+      if (!Authentication.getAuthenticatedAccount()) {
+        $('#modal_not_login').modal('show');
+        return;
+      }
+      */
       for (var i = 0; i < vm.exam.num_exercises; i++) {
         var key = vm.exam.exercises[i].id;
         var found = false;
