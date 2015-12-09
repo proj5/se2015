@@ -36,6 +36,10 @@
     */
     function login() {
       Authentication.login(vm.username, vm.password);
+      //vm.checkLogin();
+    }
+
+    vm.checkLogin = function() {
       if (!Authentication.getAuthenticatedAccount())
         $('#modal_not_login').modal('show');
     }
