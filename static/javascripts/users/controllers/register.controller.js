@@ -22,6 +22,8 @@
     function register() {
       Authentication.register(vm.username, vm.name, vm.email, vm.password, vm.confirm_password, 
                               vm.school, vm.class_in_school);
+      if (!Authentication.getAuthenticatedAccount())
+        $('#modal_not_login').modal('show');
     }
 
     activate();

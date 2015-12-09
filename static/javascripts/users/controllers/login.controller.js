@@ -36,6 +36,8 @@
     */
     function login() {
       Authentication.login(vm.username, vm.password);
+      if (!Authentication.getAuthenticatedAccount())
+        $('#modal_not_login').modal('show');
     }
   }
 })();

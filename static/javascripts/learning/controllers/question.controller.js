@@ -3,7 +3,7 @@
 
   var questionController = angular.module('se2015.learning.controllers');
 
-  questionController.controller('QuestionController', function($http, $routeParams) {
+  questionController.controller('QuestionController', function($http, $routeParams, Authentication) {
     var vm = this;
     vm.gradeId = $routeParams.gradeId;
     vm.skillId = $routeParams.skillId;
@@ -36,6 +36,8 @@
     vm.checkAnswer = function() {
       vm.url = "api/v1/exercise/" + vm.gradeId + "/" + vm.skillId + "/";
       postAnswer();
+      if (!Authentication.getAuthenticatedAccount())
+        $("#modal_not_login").modal('show');
     };
 
     var list_answer = [];

@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <ol class="question-breadcrumb">
-      <li><a href="#">{{ vm.data.skill.grade.name }}</a></li>
+      <li><a href="/learning/{{ vm.data.skill.grade.name }}">Lớp {{ vm.data.skill.grade.name }}</a></li>
       <li><a href="#">{{ vm.data.skill.name }}</a></li>
     </ol>
   </div>
@@ -63,5 +63,21 @@
       </div>
     </div>
 
+  </div>
+
+  <div id="modal_not_login" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">        
+          <h4 class="modal-title">Thông báo</h4>
+        </div>
+        <div class="modal-body">
+          <p>Bạn chưa đăng nhập!</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
